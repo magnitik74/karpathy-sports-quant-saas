@@ -1488,6 +1488,31 @@
             border-bottom: 1px solid #F1F5F9;
             vertical-align: middle;
         }
+        .time-live-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(239, 68, 68, 0.1);
+            color: #EF4444;
+            padding: 2px 7px;
+            border-radius: 6px;
+            font-size: 10.5px;
+            font-weight: 800;
+            margin-top: 2px;
+        }
+        .time-live-badge .live-dot-pulse {
+            width: 6px;
+            height: 6px;
+            background: #EF4444;
+            border-radius: 50%;
+            display: inline-block;
+            animation: livePulse 1.5s infinite;
+        }
+        @keyframes livePulse {
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.3; transform: scale(1.3); }
+            100% { opacity: 1; transform: scale(1); }
+        }
         .league-pill { font-size: 12px; font-weight: 800; color: #0F172A; }
         .time-mono { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); }
         .matchup-title { font-size: 14px; font-weight: 800; color: #0F172A; }
@@ -2120,12 +2145,12 @@
                 </div>
             </div>
             
-            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;ATP_184959&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис ATP (Мужчины) • Alexander Bublik vs Alexander Zverev&quot;, &quot;market&quot;: &quot;Победа в матче: Alexander Zverev (П1/П2) (Кэф 1.44)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Alexander Zverev (П1/П2)&quot;, &quot;odd&quot;: &quot;1.44&quot;, &quot;bestOdd&quot;: &quot;1.44&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.69&quot;, &quot;edge&quot;: &quot;+1.6%&quot;, &quot;cleanOdd&quot;: &quot;1.44&quot;, &quot;prob&quot;: &quot;59.1%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Alexander Zverev (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;3996250f5596a2363345c20c968fa66f4ffa1d8a120f84c5542d296b4a8bd6b8&quot;, &quot;time&quot;: &quot;13.10.2026 13:00 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +1.6% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) По базе прошлых игр Alexander Zverev держит свою подачу значительно стабильнее соперника (Alexander Bublik) и лучше играет на приёме на текущем покрытии. 2) Даже если Alexander Zverev отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 87.1% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.44 на победу и 1.12 с подстраховкой.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора по сетам: Alexander Zverev (+1.5) / Выиграет сет: Да (кэф 1.12).&quot;]})">
+            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;ATP_184959&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис ATP (Мужчины) • Alexander Bublik vs Alexander Zverev&quot;, &quot;market&quot;: &quot;Победа в матче: Alexander Zverev (П1/П2) (Кэф 1.44)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Alexander Zverev (П1/П2)&quot;, &quot;odd&quot;: &quot;1.44&quot;, &quot;bestOdd&quot;: &quot;1.44&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.69&quot;, &quot;edge&quot;: &quot;+1.6%&quot;, &quot;cleanOdd&quot;: &quot;1.44&quot;, &quot;prob&quot;: &quot;59.1%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Alexander Zverev (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;3996250f5596a2363345c20c968fa66f4ffa1d8a120f84c5542d296b4a8bd6b8&quot;, &quot;time&quot;: &quot;13.10.2026 13:10 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +1.6% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) По базе прошлых игр Alexander Zverev держит свою подачу значительно стабильнее соперника (Alexander Bublik) и лучше играет на приёме на текущем покрытии. 2) Даже если Alexander Zverev отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 87.1% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.44 на победу и 1.12 с подстраховкой.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора по сетам: Alexander Zverev (+1.5) / Выиграет сет: Да (кэф 1.12).&quot;]})">
                 <img class="poster-bg" src="assets/card_khl_hockey_3d_1791875172212.jpg" alt="Alexander Bublik vs Alexander Zverev" loading="lazy">
                 <div class="poster-overlay"></div>
                 
                 <div class="poster-top">
-                    <div class="poster-timer" data-start="2026-10-13T10:00Z">
+                    <div class="poster-timer" data-start="2026-10-13T10:10Z">
                         <span class="timer-dot"></span>
                         <span class="timer-text">⏱ 04:12:18</span>
                     </div>
@@ -2157,12 +2182,12 @@
                 </div>
             </div>
             
-            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185453&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Erika Andreeva vs Anouk Koevermans&quot;, &quot;market&quot;: &quot;Победа в матче: Erika Andreeva (П1/П2) (Кэф 1.32)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Erika Andreeva (П1/П2)&quot;, &quot;odd&quot;: &quot;1.32&quot;, &quot;bestOdd&quot;: &quot;1.32&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.34&quot;, &quot;edge&quot;: &quot;+2.0%&quot;, &quot;cleanOdd&quot;: &quot;1.32&quot;, &quot;prob&quot;: &quot;74.9%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Erika Andreeva (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;4d8f1ed975a1b2e92643384162f03200b052c5ac6738054a0d2a58d892e1c5a8&quot;, &quot;time&quot;: &quot;13.10.2026 07:00 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +2.0% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) По базе прошлых игр Erika Andreeva держит свою подачу значительно стабильнее соперника (Anouk Koevermans) и лучше играет на приёме на текущем покрытии. 2) Даже если Erika Andreeva отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 90.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.32 на победу и 1.12 с подстраховкой.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора по сетам: Erika Andreeva (+1.5) / Выиграет сет: Да (кэф 1.12).&quot;]})">
+            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185453&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Erika Andreeva vs Anouk Koevermans&quot;, &quot;market&quot;: &quot;Победа в матче: Erika Andreeva (П1/П2) (Кэф 1.32)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Erika Andreeva (П1/П2)&quot;, &quot;odd&quot;: &quot;1.32&quot;, &quot;bestOdd&quot;: &quot;1.32&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.34&quot;, &quot;edge&quot;: &quot;+2.0%&quot;, &quot;cleanOdd&quot;: &quot;1.32&quot;, &quot;prob&quot;: &quot;74.9%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Erika Andreeva (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;4d8f1ed975a1b2e92643384162f03200b052c5ac6738054a0d2a58d892e1c5a8&quot;, &quot;time&quot;: &quot;13.10.2026 16:30 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +2.0% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) По базе прошлых игр Erika Andreeva держит свою подачу значительно стабильнее соперника (Anouk Koevermans) и лучше играет на приёме на текущем покрытии. 2) Даже если Erika Andreeva отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 90.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.32 на победу и 1.12 с подстраховкой.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора по сетам: Erika Andreeva (+1.5) / Выиграет сет: Да (кэф 1.12).&quot;]})">
                 <img class="poster-bg" src="assets/card_khl_hockey_3d_1791875172212.jpg" alt="Erika Andreeva vs Anouk Koevermans" loading="lazy">
                 <div class="poster-overlay"></div>
                 
                 <div class="poster-top">
-                    <div class="poster-timer" data-start="2026-10-13T04:00Z">
+                    <div class="poster-timer" data-start="2026-10-13T13:30Z">
                         <span class="timer-dot"></span>
                         <span class="timer-text">⏱ 04:12:18</span>
                     </div>
@@ -2194,12 +2219,12 @@
                 </div>
             </div>
             
-            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185402&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Francesca Jones vs Martina Colmegna&quot;, &quot;market&quot;: &quot;Победа в матче: Martina Colmegna (П1/П2) (Кэф 1.25)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Martina Colmegna (П1/П2)&quot;, &quot;odd&quot;: &quot;1.25&quot;, &quot;bestOdd&quot;: &quot;1.25&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.26&quot;, &quot;edge&quot;: &quot;+2.2%&quot;, &quot;cleanOdd&quot;: &quot;1.25&quot;, &quot;prob&quot;: &quot;79.2%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Martina Colmegna (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;acaa8a82bd739597ed6616b30c0c6ba9613bc78b7e82e7c31e1d1fae825f21bb&quot;, &quot;time&quot;: &quot;13.10.2026 07:00 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +2.2% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) По базе прошлых игр Martina Colmegna держит свою подачу значительно стабильнее соперника (Francesca Jones) и лучше играет на приёме на текущем покрытии. 2) Даже если Martina Colmegna отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 92.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.25 на победу и 1.12 с подстраховкой.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора по сетам: Martina Colmegna (+1.5) / Выиграет сет: Да (кэф 1.12).&quot;]})">
+            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185402&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Francesca Jones vs Martina Colmegna&quot;, &quot;market&quot;: &quot;Победа в матче: Martina Colmegna (П1/П2) (Кэф 1.25)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Martina Colmegna (П1/П2)&quot;, &quot;odd&quot;: &quot;1.25&quot;, &quot;bestOdd&quot;: &quot;1.25&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.26&quot;, &quot;edge&quot;: &quot;+2.2%&quot;, &quot;cleanOdd&quot;: &quot;1.25&quot;, &quot;prob&quot;: &quot;79.2%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Martina Colmegna (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;acaa8a82bd739597ed6616b30c0c6ba9613bc78b7e82e7c31e1d1fae825f21bb&quot;, &quot;time&quot;: &quot;13.10.2026 13:05 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +2.2% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) По базе прошлых игр Martina Colmegna держит свою подачу значительно стабильнее соперника (Francesca Jones) и лучше играет на приёме на текущем покрытии. 2) Даже если Martina Colmegna отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 92.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.25 на победу и 1.12 с подстраховкой.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора по сетам: Martina Colmegna (+1.5) / Выиграет сет: Да (кэф 1.12).&quot;]})">
                 <img class="poster-bg" src="assets/card_khl_hockey_3d_1791875172212.jpg" alt="Francesca Jones vs Martina Colmegna" loading="lazy">
                 <div class="poster-overlay"></div>
                 
                 <div class="poster-top">
-                    <div class="poster-timer" data-start="2026-10-13T04:00Z">
+                    <div class="poster-timer" data-start="2026-10-13T10:05Z">
                         <span class="timer-dot"></span>
                         <span class="timer-text">⏱ 04:12:18</span>
                     </div>
@@ -2231,12 +2256,12 @@
                 </div>
             </div>
             
-            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185485&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Ariana Geerlings vs Tea Kovacevic&quot;, &quot;market&quot;: &quot;Победа в матче: Tea Kovacevic (П1/П2) (Кэф 1.48)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Tea Kovacevic (П1/П2)&quot;, &quot;odd&quot;: &quot;1.48&quot;, &quot;bestOdd&quot;: &quot;1.48&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.51&quot;, &quot;edge&quot;: &quot;+1.5%&quot;, &quot;cleanOdd&quot;: &quot;1.48&quot;, &quot;prob&quot;: &quot;66.3%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Tea Kovacevic (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;82b144e5e8bbf4fcb4d505f9e0cf55ea42ba01fece239517b14c2f9b8634e0c3&quot;, &quot;time&quot;: &quot;13.10.2026 07:00 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +1.5% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) По базе прошлых игр Tea Kovacevic держит свою подачу значительно стабильнее соперника (Ariana Geerlings) и лучше играет на приёме на текущем покрытии. 2) Даже если Tea Kovacevic отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 86.1% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.48 на победу и 1.12 с подстраховкой.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора по сетам: Tea Kovacevic (+1.5) / Выиграет сет: Да (кэф 1.12).&quot;]})">
+            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185485&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Ariana Geerlings vs Tea Kovacevic&quot;, &quot;market&quot;: &quot;Победа в матче: Tea Kovacevic (П1/П2) (Кэф 1.48)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Tea Kovacevic (П1/П2)&quot;, &quot;odd&quot;: &quot;1.48&quot;, &quot;bestOdd&quot;: &quot;1.48&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.51&quot;, &quot;edge&quot;: &quot;+1.5%&quot;, &quot;cleanOdd&quot;: &quot;1.48&quot;, &quot;prob&quot;: &quot;66.3%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Tea Kovacevic (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;82b144e5e8bbf4fcb4d505f9e0cf55ea42ba01fece239517b14c2f9b8634e0c3&quot;, &quot;time&quot;: &quot;13.10.2026 14:00 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +1.5% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) По базе прошлых игр Tea Kovacevic держит свою подачу значительно стабильнее соперника (Ariana Geerlings) и лучше играет на приёме на текущем покрытии. 2) Даже если Tea Kovacevic отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 86.1% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.48 на победу и 1.12 с подстраховкой.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора по сетам: Tea Kovacevic (+1.5) / Выиграет сет: Да (кэф 1.12).&quot;]})">
                 <img class="poster-bg" src="assets/card_khl_hockey_3d_1791875172212.jpg" alt="Ariana Geerlings vs Tea Kovacevic" loading="lazy">
                 <div class="poster-overlay"></div>
                 
                 <div class="poster-top">
-                    <div class="poster-timer" data-start="2026-10-13T04:00Z">
+                    <div class="poster-timer" data-start="2026-10-13T11:00Z">
                         <span class="timer-dot"></span>
                         <span class="timer-text">⏱ 04:12:18</span>
                     </div>
@@ -2268,12 +2293,12 @@
                 </div>
             </div>
             
-            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185405&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Viktoria Morvayova vs Irene Burillo&quot;, &quot;market&quot;: &quot;Победа в матче: Viktoria Morvayova (П1/П2) (Кэф 1.46)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Viktoria Morvayova (П1/П2)&quot;, &quot;odd&quot;: &quot;1.46&quot;, &quot;bestOdd&quot;: &quot;1.46&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.49&quot;, &quot;edge&quot;: &quot;+1.5%&quot;, &quot;cleanOdd&quot;: &quot;1.46&quot;, &quot;prob&quot;: &quot;67.2%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Viktoria Morvayova (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;440552420bebf47d6b724817cdb2541974917950ca28e09c59b1249bf517e45d&quot;, &quot;time&quot;: &quot;13.10.2026 07:00 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +1.5% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) По базе прошлых игр Viktoria Morvayova держит свою подачу значительно стабильнее соперника (Irene Burillo) и лучше играет на приёме на текущем покрытии. 2) Даже если Viktoria Morvayova отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 86.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.46 на победу и 1.12 с подстраховкой.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора по сетам: Viktoria Morvayova (+1.5) / Выиграет сет: Да (кэф 1.12).&quot;]})">
+            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185405&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Viktoria Morvayova vs Irene Burillo&quot;, &quot;market&quot;: &quot;Победа в матче: Viktoria Morvayova (П1/П2) (Кэф 1.46)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Viktoria Morvayova (П1/П2)&quot;, &quot;odd&quot;: &quot;1.46&quot;, &quot;bestOdd&quot;: &quot;1.46&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.49&quot;, &quot;edge&quot;: &quot;+1.5%&quot;, &quot;cleanOdd&quot;: &quot;1.46&quot;, &quot;prob&quot;: &quot;67.2%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Viktoria Morvayova (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;440552420bebf47d6b724817cdb2541974917950ca28e09c59b1249bf517e45d&quot;, &quot;time&quot;: &quot;13.10.2026 16:00 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +1.5% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) По базе прошлых игр Viktoria Morvayova держит свою подачу значительно стабильнее соперника (Irene Burillo) и лучше играет на приёме на текущем покрытии. 2) Даже если Viktoria Morvayova отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 86.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.46 на победу и 1.12 с подстраховкой.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора по сетам: Viktoria Morvayova (+1.5) / Выиграет сет: Да (кэф 1.12).&quot;]})">
                 <img class="poster-bg" src="assets/card_khl_hockey_3d_1791875172212.jpg" alt="Viktoria Morvayova vs Irene Burillo" loading="lazy">
                 <div class="poster-overlay"></div>
                 
                 <div class="poster-top">
-                    <div class="poster-timer" data-start="2026-10-13T04:00Z">
+                    <div class="poster-timer" data-start="2026-10-13T13:00Z">
                         <span class="timer-dot"></span>
                         <span class="timer-text">⏱ 04:12:18</span>
                     </div>
@@ -2540,7 +2565,7 @@
             <tr class="pred-row" data-tier="elite sniper" data-status="today active pending" data-league="WTA">
                 <td>
                     <div class="league-pill">🎾 Теннис WTA (Женщины)</div>
-                    <div class="time-mono">⏰ 13.10.2026 07:00 (МСК) МСК</div>
+                    <div class="time-live-badge"><span class="live-dot-pulse"></span> <b>LIVE НА КОРТЕ</b></div><div class="time-mono" style="font-size:10px; color:#64748B; margin-top:2px;">Старт: 13.10.2026 13:05 (МСК)</div>
                 </td>
                 <td>
                     <div class="matchup-title">Francesca Jones vs Martina Colmegna</div>
@@ -2561,9 +2586,9 @@
                         <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.25 🔥</span>
                     </div>
                 </td>
-                <td><div class="res-box res-pending"><div class="res-title">⏳ В ИГРЕ СЕГОДНЯ</div><div class="res-sub">13.10 • Хеш зафиксирован</div></div></td>
+                <td><div class="res-box res-live" style="background:rgba(239,68,68,0.08); border:1px solid rgba(239,68,68,0.3); border-radius:10px; padding:6px 10px;"><div class="res-title" style="color:#EF4444; font-weight:800; font-size:11px;">🔴 ИДЕТ ПРЯМО СЕЙЧАС</div><div class="res-sub" style="color:#64748B; font-size:10px;">1-й сет • Live корт</div></div></td>
                 <td>
-                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185402&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Francesca Jones vs Martina Colmegna&quot;, &quot;market&quot;: &quot;Победа в матче: Martina Colmegna (П1/П2) (Кэф 1.25)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Martina Colmegna (П1/П2)&quot;, &quot;odd&quot;: &quot;1.25&quot;, &quot;bestOdd&quot;: &quot;1.25&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.26&quot;, &quot;edge&quot;: &quot;+2.2%&quot;, &quot;cleanOdd&quot;: &quot;1.25&quot;, &quot;prob&quot;: &quot;79.2%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Martina Colmegna (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;acaa8a82bd739597ed6616b30c0c6ba9613bc78b7e82e7c31e1d1fae825f21bb&quot;, &quot;time&quot;: &quot;13.10.2026 07:00 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Martina Colmegna держит свою подачу значительно стабильнее соперника (Francesca Jones) и лучше играет на приёме на текущем покрытии. 2) Даже если Martina Colmegna отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 92.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.25 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.25).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
+                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185402&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Francesca Jones vs Martina Colmegna&quot;, &quot;market&quot;: &quot;Победа в матче: Martina Colmegna (П1/П2) (Кэф 1.25)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Martina Colmegna (П1/П2)&quot;, &quot;odd&quot;: &quot;1.25&quot;, &quot;bestOdd&quot;: &quot;1.25&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.26&quot;, &quot;edge&quot;: &quot;+2.2%&quot;, &quot;cleanOdd&quot;: &quot;1.25&quot;, &quot;prob&quot;: &quot;79.2%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Martina Colmegna (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;acaa8a82bd739597ed6616b30c0c6ba9613bc78b7e82e7c31e1d1fae825f21bb&quot;, &quot;time&quot;: &quot;13.10.2026 13:05 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Martina Colmegna держит свою подачу значительно стабильнее соперника (Francesca Jones) и лучше играет на приёме на текущем покрытии. 2) Даже если Martina Colmegna отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 92.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.25 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.25).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
                         📋 Купон & 6 БК
                     </button>
                     <div class="sha-mini">#acaa8a82</div>
@@ -2574,121 +2599,10 @@
                 </td>
             </tr>
             
-            <tr class="pred-row" data-tier="elite sniper" data-status="today active pending" data-league="WTA">
-                <td>
-                    <div class="league-pill">🎾 Теннис WTA (Женщины)</div>
-                    <div class="time-mono">⏰ 13.10.2026 07:00 (МСК) МСК</div>
-                </td>
-                <td>
-                    <div class="matchup-title">Erika Andreeva vs Anouk Koevermans</div>
-                    <div class="bookie-line">🏦 Фонбет, Winline, BetBoom, PARI, Марафонбет</div>
-                </td>
-                <td><span class="badge badge-elite">🎯 VALUE СНАЙПЕР</span></td>
-                <td>
-                    <div class="market-shield">⚡️ Фора по сетам: Erika Andreeva (+1.5) / Выиграет сет: Да</div>
-                    <div class="metrics-row">
-                        <span class="shield-prob-chip">Шанс: 90.6%</span>
-                        <span class="odd-chip">Кэф 1.12</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="market-primary">🎯 Победа в матче: Erika Andreeva (П1/П2)</div>
-                    <div class="metrics-row">
-                        <span class="prob-chip">Шанс: 74.9%</span>
-                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.32 🔥</span>
-                    </div>
-                </td>
-                <td><div class="res-box res-pending"><div class="res-title">⏳ В ИГРЕ СЕГОДНЯ</div><div class="res-sub">13.10 • Хеш зафиксирован</div></div></td>
-                <td>
-                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185453&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Erika Andreeva vs Anouk Koevermans&quot;, &quot;market&quot;: &quot;Победа в матче: Erika Andreeva (П1/П2) (Кэф 1.32)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Erika Andreeva (П1/П2)&quot;, &quot;odd&quot;: &quot;1.32&quot;, &quot;bestOdd&quot;: &quot;1.32&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.34&quot;, &quot;edge&quot;: &quot;+2.0%&quot;, &quot;cleanOdd&quot;: &quot;1.32&quot;, &quot;prob&quot;: &quot;74.9%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Erika Andreeva (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;4d8f1ed975a1b2e92643384162f03200b052c5ac6738054a0d2a58d892e1c5a8&quot;, &quot;time&quot;: &quot;13.10.2026 07:00 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Erika Andreeva держит свою подачу значительно стабильнее соперника (Anouk Koevermans) и лучше играет на приёме на текущем покрытии. 2) Даже если Erika Andreeva отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 90.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.32 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.32).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
-                        📋 Купон & 6 БК
-                    </button>
-                    <div class="sha-mini">#4d8f1ed9</div>
-                    <div class="ext-verify-mini">
-                        <a href="https://stavka.tv/" target="_blank" rel="noopener" title="Проверить на Ставка ТВ">Ставка ТВ</a> •
-                        <a href="https://blogabet.com/" target="_blank" rel="noopener" title="Проверить на Blogabet">Blogabet</a>
-                    </div>
-                </td>
-            </tr>
-            
-            <tr class="pred-row" data-tier="shield smart" data-status="today active pending" data-league="WTA">
-                <td>
-                    <div class="league-pill">🎾 Теннис WTA (Женщины)</div>
-                    <div class="time-mono">⏰ 13.10.2026 07:00 (МСК) МСК</div>
-                </td>
-                <td>
-                    <div class="matchup-title">Viktoria Morvayova vs Irene Burillo</div>
-                    <div class="bookie-line">🏦 Фонбет, Winline, BetBoom, PARI, Марафонбет</div>
-                </td>
-                <td><span class="badge badge-shield">🛡 СМАРТ-ДВОЙНИК</span></td>
-                <td>
-                    <div class="market-shield">⚡️ Фора по сетам: Viktoria Morvayova (+1.5) / Выиграет сет: Да</div>
-                    <div class="metrics-row">
-                        <span class="shield-prob-chip">Шанс: 86.6%</span>
-                        <span class="odd-chip">Кэф 1.12</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="market-primary">🎯 Победа в матче: Viktoria Morvayova (П1/П2)</div>
-                    <div class="metrics-row">
-                        <span class="prob-chip">Шанс: 67.2%</span>
-                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.46 🔥</span>
-                    </div>
-                </td>
-                <td><div class="res-box res-pending"><div class="res-title">⏳ В ИГРЕ СЕГОДНЯ</div><div class="res-sub">13.10 • Хеш зафиксирован</div></div></td>
-                <td>
-                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185405&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Viktoria Morvayova vs Irene Burillo&quot;, &quot;market&quot;: &quot;Победа в матче: Viktoria Morvayova (П1/П2) (Кэф 1.46)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Viktoria Morvayova (П1/П2)&quot;, &quot;odd&quot;: &quot;1.46&quot;, &quot;bestOdd&quot;: &quot;1.46&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.49&quot;, &quot;edge&quot;: &quot;+1.5%&quot;, &quot;cleanOdd&quot;: &quot;1.46&quot;, &quot;prob&quot;: &quot;67.2%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Viktoria Morvayova (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;440552420bebf47d6b724817cdb2541974917950ca28e09c59b1249bf517e45d&quot;, &quot;time&quot;: &quot;13.10.2026 07:00 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Viktoria Morvayova держит свою подачу значительно стабильнее соперника (Irene Burillo) и лучше играет на приёме на текущем покрытии. 2) Даже если Viktoria Morvayova отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 86.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.46 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.46).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
-                        📋 Купон & 6 БК
-                    </button>
-                    <div class="sha-mini">#44055242</div>
-                    <div class="ext-verify-mini">
-                        <a href="https://stavka.tv/" target="_blank" rel="noopener" title="Проверить на Ставка ТВ">Ставка ТВ</a> •
-                        <a href="https://blogabet.com/" target="_blank" rel="noopener" title="Проверить на Blogabet">Blogabet</a>
-                    </div>
-                </td>
-            </tr>
-            
-            <tr class="pred-row" data-tier="shield smart" data-status="today active pending" data-league="WTA">
-                <td>
-                    <div class="league-pill">🎾 Теннис WTA (Женщины)</div>
-                    <div class="time-mono">⏰ 13.10.2026 07:00 (МСК) МСК</div>
-                </td>
-                <td>
-                    <div class="matchup-title">Ariana Geerlings vs Tea Kovacevic</div>
-                    <div class="bookie-line">🏦 Фонбет, Winline, BetBoom, PARI, Марафонбет</div>
-                </td>
-                <td><span class="badge badge-shield">🛡 СМАРТ-ДВОЙНИК</span></td>
-                <td>
-                    <div class="market-shield">⚡️ Фора по сетам: Tea Kovacevic (+1.5) / Выиграет сет: Да</div>
-                    <div class="metrics-row">
-                        <span class="shield-prob-chip">Шанс: 86.1%</span>
-                        <span class="odd-chip">Кэф 1.12</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="market-primary">🎯 Победа в матче: Tea Kovacevic (П1/П2)</div>
-                    <div class="metrics-row">
-                        <span class="prob-chip">Шанс: 66.3%</span>
-                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.48 🔥</span>
-                    </div>
-                </td>
-                <td><div class="res-box res-pending"><div class="res-title">⏳ В ИГРЕ СЕГОДНЯ</div><div class="res-sub">13.10 • Хеш зафиксирован</div></div></td>
-                <td>
-                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185485&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Ariana Geerlings vs Tea Kovacevic&quot;, &quot;market&quot;: &quot;Победа в матче: Tea Kovacevic (П1/П2) (Кэф 1.48)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Tea Kovacevic (П1/П2)&quot;, &quot;odd&quot;: &quot;1.48&quot;, &quot;bestOdd&quot;: &quot;1.48&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.51&quot;, &quot;edge&quot;: &quot;+1.5%&quot;, &quot;cleanOdd&quot;: &quot;1.48&quot;, &quot;prob&quot;: &quot;66.3%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Tea Kovacevic (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;82b144e5e8bbf4fcb4d505f9e0cf55ea42ba01fece239517b14c2f9b8634e0c3&quot;, &quot;time&quot;: &quot;13.10.2026 07:00 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Tea Kovacevic держит свою подачу значительно стабильнее соперника (Ariana Geerlings) и лучше играет на приёме на текущем покрытии. 2) Даже если Tea Kovacevic отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 86.1% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.48 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.48).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
-                        📋 Купон & 6 БК
-                    </button>
-                    <div class="sha-mini">#82b144e5</div>
-                    <div class="ext-verify-mini">
-                        <a href="https://stavka.tv/" target="_blank" rel="noopener" title="Проверить на Ставка ТВ">Ставка ТВ</a> •
-                        <a href="https://blogabet.com/" target="_blank" rel="noopener" title="Проверить на Blogabet">Blogabet</a>
-                    </div>
-                </td>
-            </tr>
-            
             <tr class="pred-row" data-tier="shield smart" data-status="today active pending" data-league="ATP">
                 <td>
                     <div class="league-pill">🎾 Теннис ATP (Мужчины)</div>
-                    <div class="time-mono">⏰ 13.10.2026 13:00 (МСК) МСК</div>
+                    <div class="time-live-badge"><span class="live-dot-pulse"></span> <b>LIVE НА КОРТЕ</b></div><div class="time-mono" style="font-size:10px; color:#64748B; margin-top:2px;">Старт: 13.10.2026 13:10 (МСК)</div>
                 </td>
                 <td>
                     <div class="matchup-title">Alexander Bublik vs Alexander Zverev</div>
@@ -2709,9 +2623,9 @@
                         <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.44 🔥</span>
                     </div>
                 </td>
-                <td><div class="res-box res-pending"><div class="res-title">⏳ В ИГРЕ СЕГОДНЯ</div><div class="res-sub">13.10 • Хеш зафиксирован</div></div></td>
+                <td><div class="res-box res-live" style="background:rgba(239,68,68,0.08); border:1px solid rgba(239,68,68,0.3); border-radius:10px; padding:6px 10px;"><div class="res-title" style="color:#EF4444; font-weight:800; font-size:11px;">🔴 ИДЕТ ПРЯМО СЕЙЧАС</div><div class="res-sub" style="color:#64748B; font-size:10px;">1-й сет • Live корт</div></div></td>
                 <td>
-                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;ATP_184959&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис ATP (Мужчины) • Alexander Bublik vs Alexander Zverev&quot;, &quot;market&quot;: &quot;Победа в матче: Alexander Zverev (П1/П2) (Кэф 1.44)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Alexander Zverev (П1/П2)&quot;, &quot;odd&quot;: &quot;1.44&quot;, &quot;bestOdd&quot;: &quot;1.44&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.69&quot;, &quot;edge&quot;: &quot;+1.6%&quot;, &quot;cleanOdd&quot;: &quot;1.44&quot;, &quot;prob&quot;: &quot;59.1%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Alexander Zverev (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;3996250f5596a2363345c20c968fa66f4ffa1d8a120f84c5542d296b4a8bd6b8&quot;, &quot;time&quot;: &quot;13.10.2026 13:00 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Alexander Zverev держит свою подачу значительно стабильнее соперника (Alexander Bublik) и лучше играет на приёме на текущем покрытии. 2) Даже если Alexander Zverev отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 87.1% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.44 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.44).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
+                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;ATP_184959&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис ATP (Мужчины) • Alexander Bublik vs Alexander Zverev&quot;, &quot;market&quot;: &quot;Победа в матче: Alexander Zverev (П1/П2) (Кэф 1.44)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Alexander Zverev (П1/П2)&quot;, &quot;odd&quot;: &quot;1.44&quot;, &quot;bestOdd&quot;: &quot;1.44&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.69&quot;, &quot;edge&quot;: &quot;+1.6%&quot;, &quot;cleanOdd&quot;: &quot;1.44&quot;, &quot;prob&quot;: &quot;59.1%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Alexander Zverev (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;3996250f5596a2363345c20c968fa66f4ffa1d8a120f84c5542d296b4a8bd6b8&quot;, &quot;time&quot;: &quot;13.10.2026 13:10 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Alexander Zverev держит свою подачу значительно стабильнее соперника (Alexander Bublik) и лучше играет на приёме на текущем покрытии. 2) Даже если Alexander Zverev отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 87.1% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.44 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.44).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
                         📋 Купон & 6 БК
                     </button>
                     <div class="sha-mini">#3996250f</div>
@@ -2722,10 +2636,121 @@
                 </td>
             </tr>
             
+            <tr class="pred-row" data-tier="shield smart" data-status="today active pending" data-league="WTA">
+                <td>
+                    <div class="league-pill">🎾 Теннис WTA (Женщины)</div>
+                    <div class="time-mono" style="font-weight:800; color:#0F172A;">⏰ 13.10.2026 14:00 (МСК)</div><div style="font-size:10px; color:#D97706; font-weight:700;">⏳ Разминка на корте</div>
+                </td>
+                <td>
+                    <div class="matchup-title">Ariana Geerlings vs Tea Kovacevic</div>
+                    <div class="bookie-line">🏦 Фонбет, Winline, BetBoom, PARI, Марафонбет</div>
+                </td>
+                <td><span class="badge badge-shield">🛡 СМАРТ-ДВОЙНИК</span></td>
+                <td>
+                    <div class="market-shield">⚡️ Фора по сетам: Tea Kovacevic (+1.5) / Выиграет сет: Да</div>
+                    <div class="metrics-row">
+                        <span class="shield-prob-chip">Шанс: 86.1%</span>
+                        <span class="odd-chip">Кэф 1.12</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="market-primary">🎯 Победа в матче: Tea Kovacevic (П1/П2)</div>
+                    <div class="metrics-row">
+                        <span class="prob-chip">Шанс: 66.3%</span>
+                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.48 🔥</span>
+                    </div>
+                </td>
+                <td><div class="res-box res-pending"><div class="res-title" style="color:#D97706;">⏳ ВЫХОД НА КОРТ</div><div class="res-sub">2-й запуск Мальорка</div></div></td>
+                <td>
+                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185485&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Ariana Geerlings vs Tea Kovacevic&quot;, &quot;market&quot;: &quot;Победа в матче: Tea Kovacevic (П1/П2) (Кэф 1.48)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Tea Kovacevic (П1/П2)&quot;, &quot;odd&quot;: &quot;1.48&quot;, &quot;bestOdd&quot;: &quot;1.48&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.51&quot;, &quot;edge&quot;: &quot;+1.5%&quot;, &quot;cleanOdd&quot;: &quot;1.48&quot;, &quot;prob&quot;: &quot;66.3%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Tea Kovacevic (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;82b144e5e8bbf4fcb4d505f9e0cf55ea42ba01fece239517b14c2f9b8634e0c3&quot;, &quot;time&quot;: &quot;13.10.2026 14:00 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Tea Kovacevic держит свою подачу значительно стабильнее соперника (Ariana Geerlings) и лучше играет на приёме на текущем покрытии. 2) Даже если Tea Kovacevic отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 86.1% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.48 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.48).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
+                        📋 Купон & 6 БК
+                    </button>
+                    <div class="sha-mini">#82b144e5</div>
+                    <div class="ext-verify-mini">
+                        <a href="https://stavka.tv/" target="_blank" rel="noopener" title="Проверить на Ставка ТВ">Ставка ТВ</a> •
+                        <a href="https://blogabet.com/" target="_blank" rel="noopener" title="Проверить на Blogabet">Blogabet</a>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="pred-row" data-tier="shield smart" data-status="today active pending" data-league="WTA">
+                <td>
+                    <div class="league-pill">🎾 Теннис WTA (Женщины)</div>
+                    <div class="time-mono" style="font-weight:800; color:#0F172A;">⏰ 13.10.2026 16:00 (МСК)</div><div style="font-size:10px; color:#2563EB; font-weight:700;">⏳ Скоро (через 20-50 мин)</div>
+                </td>
+                <td>
+                    <div class="matchup-title">Viktoria Morvayova vs Irene Burillo</div>
+                    <div class="bookie-line">🏦 Фонбет, Winline, BetBoom, PARI, Марафонбет</div>
+                </td>
+                <td><span class="badge badge-shield">🛡 СМАРТ-ДВОЙНИК</span></td>
+                <td>
+                    <div class="market-shield">⚡️ Фора по сетам: Viktoria Morvayova (+1.5) / Выиграет сет: Да</div>
+                    <div class="metrics-row">
+                        <span class="shield-prob-chip">Шанс: 86.6%</span>
+                        <span class="odd-chip">Кэф 1.12</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="market-primary">🎯 Победа в матче: Viktoria Morvayova (П1/П2)</div>
+                    <div class="metrics-row">
+                        <span class="prob-chip">Шанс: 67.2%</span>
+                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.46 🔥</span>
+                    </div>
+                </td>
+                <td><div class="res-box res-pending"><div class="res-title" style="color:#2563EB;">⏳ СКОРО СТАРТ</div><div class="res-sub">Сегодня в 16:00-16:30</div></div></td>
+                <td>
+                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185405&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Viktoria Morvayova vs Irene Burillo&quot;, &quot;market&quot;: &quot;Победа в матче: Viktoria Morvayova (П1/П2) (Кэф 1.46)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Viktoria Morvayova (П1/П2)&quot;, &quot;odd&quot;: &quot;1.46&quot;, &quot;bestOdd&quot;: &quot;1.46&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.49&quot;, &quot;edge&quot;: &quot;+1.5%&quot;, &quot;cleanOdd&quot;: &quot;1.46&quot;, &quot;prob&quot;: &quot;67.2%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Viktoria Morvayova (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;440552420bebf47d6b724817cdb2541974917950ca28e09c59b1249bf517e45d&quot;, &quot;time&quot;: &quot;13.10.2026 16:00 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Viktoria Morvayova держит свою подачу значительно стабильнее соперника (Irene Burillo) и лучше играет на приёме на текущем покрытии. 2) Даже если Viktoria Morvayova отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 86.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.46 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.46).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
+                        📋 Купон & 6 БК
+                    </button>
+                    <div class="sha-mini">#44055242</div>
+                    <div class="ext-verify-mini">
+                        <a href="https://stavka.tv/" target="_blank" rel="noopener" title="Проверить на Ставка ТВ">Ставка ТВ</a> •
+                        <a href="https://blogabet.com/" target="_blank" rel="noopener" title="Проверить на Blogabet">Blogabet</a>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="pred-row" data-tier="elite sniper" data-status="today active pending" data-league="WTA">
+                <td>
+                    <div class="league-pill">🎾 Теннис WTA (Женщины)</div>
+                    <div class="time-mono" style="font-weight:800; color:#0F172A;">⏰ 13.10.2026 16:30 (МСК)</div><div style="font-size:10px; color:#2563EB; font-weight:700;">⏳ Скоро (через 20-50 мин)</div>
+                </td>
+                <td>
+                    <div class="matchup-title">Erika Andreeva vs Anouk Koevermans</div>
+                    <div class="bookie-line">🏦 Фонбет, Winline, BetBoom, PARI, Марафонбет</div>
+                </td>
+                <td><span class="badge badge-elite">🎯 VALUE СНАЙПЕР</span></td>
+                <td>
+                    <div class="market-shield">⚡️ Фора по сетам: Erika Andreeva (+1.5) / Выиграет сет: Да</div>
+                    <div class="metrics-row">
+                        <span class="shield-prob-chip">Шанс: 90.6%</span>
+                        <span class="odd-chip">Кэф 1.12</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="market-primary">🎯 Победа в матче: Erika Andreeva (П1/П2)</div>
+                    <div class="metrics-row">
+                        <span class="prob-chip">Шанс: 74.9%</span>
+                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.32 🔥</span>
+                    </div>
+                </td>
+                <td><div class="res-box res-pending"><div class="res-title" style="color:#2563EB;">⏳ СКОРО СТАРТ</div><div class="res-sub">Сегодня в 16:00-16:30</div></div></td>
+                <td>
+                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185453&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Erika Andreeva vs Anouk Koevermans&quot;, &quot;market&quot;: &quot;Победа в матче: Erika Andreeva (П1/П2) (Кэф 1.32)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Erika Andreeva (П1/П2)&quot;, &quot;odd&quot;: &quot;1.32&quot;, &quot;bestOdd&quot;: &quot;1.32&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.34&quot;, &quot;edge&quot;: &quot;+2.0%&quot;, &quot;cleanOdd&quot;: &quot;1.32&quot;, &quot;prob&quot;: &quot;74.9%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Erika Andreeva (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;4d8f1ed975a1b2e92643384162f03200b052c5ac6738054a0d2a58d892e1c5a8&quot;, &quot;time&quot;: &quot;13.10.2026 16:30 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Erika Andreeva держит свою подачу значительно стабильнее соперника (Anouk Koevermans) и лучше играет на приёме на текущем покрытии. 2) Даже если Erika Andreeva отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 90.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.32 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.32).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
+                        📋 Купон & 6 БК
+                    </button>
+                    <div class="sha-mini">#4d8f1ed9</div>
+                    <div class="ext-verify-mini">
+                        <a href="https://stavka.tv/" target="_blank" rel="noopener" title="Проверить на Ставка ТВ">Ставка ТВ</a> •
+                        <a href="https://blogabet.com/" target="_blank" rel="noopener" title="Проверить на Blogabet">Blogabet</a>
+                    </div>
+                </td>
+            </tr>
+            
             <tr class="pred-row" data-tier="shield smart" data-status="today active pending" data-league="UCL">
                 <td>
                     <div class="league-pill">⚽ Футбол (Лига Чемпионов)</div>
-                    <div class="time-mono">⏰ 13.10.2026 22:00 (МСК) МСК</div>
+                    <div class="time-mono" style="font-weight:800; color:#0F172A;">⏰ 13.10.2026 22:00 (МСК)</div><div style="font-size:10px; color:#059669; font-weight:700;">⚽ Вечер (22:00 МСК)</div>
                 </td>
                 <td>
                     <div class="matchup-title">Napoli @ Villarreal</div>
@@ -2746,7 +2771,7 @@
                         <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.56 🔥</span>
                     </div>
                 </td>
-                <td><div class="res-box res-pending"><div class="res-title">⏳ В ИГРЕ СЕГОДНЯ</div><div class="res-sub">13.10 • Хеш зафиксирован</div></div></td>
+                <td><div class="res-box res-pending"><div class="res-title" style="color:#059669;">⏳ ГЛАВНЫЙ МАТЧ ВЕЧЕРА</div><div class="res-sub">Лига Чемпионов • 22:00</div></div></td>
                 <td>
                     <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;UCL_401915410&quot;, &quot;leagueAndMatch&quot;: &quot;⚽ Футбол (Лига Чемпионов) • Napoli @ Villarreal&quot;, &quot;market&quot;: &quot;Победа в осн. время: Napoli (П1/П2) (Кэф 1.56)&quot;, &quot;cleanMarket&quot;: &quot;Победа в осн. время: Napoli (П1/П2)&quot;, &quot;odd&quot;: &quot;1.56&quot;, &quot;bestOdd&quot;: &quot;1.56&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.59&quot;, &quot;edge&quot;: &quot;+1.3%&quot;, &quot;cleanOdd&quot;: &quot;1.56&quot;, &quot;prob&quot;: &quot;62.8%&quot;, &quot;shieldAlt&quot;: &quot;Двойной шанс: Napoli не проиграет (1Х / Х2) (кэф 1.18)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;93065df0f2f06b0d90f18c4dc906e57c531441527290794b94c185e02ac50289&quot;, &quot;time&quot;: &quot;13.10.2026 22:00 (МСК)&quot;, &quot;facts&quot;: [&quot;1) Футбол: «Napoli» создаёт почти в 2 раза больше опасных моментов у чужих ворот, чем «Villarreal». 2) Чтобы не сгореть на случайной ничьей на 90-й минуте, в основную броню берём «Двойной шанс: Napoli не проиграет (1Х/Х2)» — проходит в 80.9% матчей.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.56).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
                         📋 Купон & 6 БК
@@ -2762,7 +2787,7 @@
             <tr class="pred-row" data-tier="elite sniper" data-status="tomorrow staged pending" data-league="NBA">
                 <td>
                     <div class="league-pill">🏀 Баскетбол (НБА)</div>
-                    <div class="time-mono">⏰ 14.10.2026 02:00 (МСК) МСК</div>
+                    <div class="time-mono" style="color:#FF5500; font-weight:800;">⏰ 14.10.2026 02:00 (МСК)</div><div style="font-size:10px; color:#64748B;">Релиз в 20:30 МСК</div>
                 </td>
                 <td>
                     <div class="matchup-title">New York Knicks @ Toronto Raptors</div>
@@ -2799,7 +2824,7 @@
             <tr class="pred-row" data-tier="elite sniper" data-status="tomorrow staged pending" data-league="NBA">
                 <td>
                     <div class="league-pill">🏀 Баскетбол (НБА)</div>
-                    <div class="time-mono">⏰ 14.10.2026 02:00 (МСК) МСК</div>
+                    <div class="time-mono" style="color:#FF5500; font-weight:800;">⏰ 14.10.2026 02:00 (МСК)</div><div style="font-size:10px; color:#64748B;">Релиз в 20:30 МСК</div>
                 </td>
                 <td>
                     <div class="matchup-title">Cleveland Cavaliers @ Orlando Magic</div>
@@ -2836,7 +2861,7 @@
             <tr class="pred-row" data-tier="elite sniper" data-status="tomorrow staged pending" data-league="NBA">
                 <td>
                     <div class="league-pill">🏀 Баскетбол (НБА)</div>
-                    <div class="time-mono">⏰ 14.10.2026 03:00 (МСК) МСК</div>
+                    <div class="time-mono" style="color:#FF5500; font-weight:800;">⏰ 14.10.2026 03:00 (МСК)</div><div style="font-size:10px; color:#64748B;">Релиз в 20:30 МСК</div>
                 </td>
                 <td>
                     <div class="matchup-title">Indiana Pacers @ Oklahoma City Thunder</div>
@@ -2873,7 +2898,7 @@
             <tr class="pred-row" data-tier="elite sniper" data-status="tomorrow staged pending" data-league="NBA">
                 <td>
                     <div class="league-pill">🏀 Баскетбол (НБА)</div>
-                    <div class="time-mono">⏰ 14.10.2026 05:00 (МСК) МСК</div>
+                    <div class="time-mono" style="color:#FF5500; font-weight:800;">⏰ 14.10.2026 05:00 (МСК)</div><div style="font-size:10px; color:#64748B;">Релиз в 20:30 МСК</div>
                 </td>
                 <td>
                     <div class="matchup-title">Golden State Warriors @ Los Angeles Lakers</div>
@@ -2910,7 +2935,7 @@
             <tr class="pred-row" data-tier="elite sniper" data-status="tomorrow staged pending" data-league="NBA">
                 <td>
                     <div class="league-pill">🏀 Баскетбол (НБА)</div>
-                    <div class="time-mono">⏰ 14.10.2026 05:00 (МСК) МСК</div>
+                    <div class="time-mono" style="color:#FF5500; font-weight:800;">⏰ 14.10.2026 05:00 (МСК)</div><div style="font-size:10px; color:#64748B;">Релиз в 20:30 МСК</div>
                 </td>
                 <td>
                     <div class="matchup-title">Portland Trail Blazers @ Sacramento Kings</div>
@@ -2947,7 +2972,7 @@
             <tr class="pred-row" data-tier="elite sniper" data-status="tomorrow staged pending" data-league="ATP">
                 <td>
                     <div class="league-pill">🎾 Теннис ATP (Мужчины)</div>
-                    <div class="time-mono">⏰ 14.10.2026 07:00 (МСК) МСК</div>
+                    <div class="time-mono" style="color:#FF5500; font-weight:800;">⏰ 14.10.2026 07:00 (МСК)</div><div style="font-size:10px; color:#64748B;">Релиз в 20:30 МСК</div>
                 </td>
                 <td>
                     <div class="matchup-title">Stefanos Tsitsipas vs Daniil Medvedev</div>
@@ -2984,7 +3009,7 @@
             <tr class="pred-row" data-tier="elite sniper" data-status="tomorrow staged pending" data-league="KHL">
                 <td>
                     <div class="league-pill">🏒 КХЛ (Хоккей РФ)</div>
-                    <div class="time-mono">⏰ 14.10.2026 19:00 МСК</div>
+                    <div class="time-mono" style="color:#FF5500; font-weight:800;">⏰ 14.10.2026 19:00</div><div style="font-size:10px; color:#64748B;">Релиз в 20:30 МСК</div>
                 </td>
                 <td>
                     <div class="matchup-title">Локомотив Ярославль vs ХК Сочи</div>
@@ -3021,7 +3046,7 @@
             <tr class="pred-row" data-tier="shield smart" data-status="settled lost" data-league="WTA">
                 <td>
                     <div class="league-pill">🎾 Теннис WTA (Женщины)</div>
-                    <div class="time-mono">⏰ 13.10.2026 09:00 (МСК) МСК</div>
+                    <div class="time-mono">⏰ 13.10.2026 09:00 (МСК)</div>
                 </td>
                 <td>
                     <div class="matchup-title">Elise Mertens vs Daria Snigur</div>
@@ -3058,7 +3083,7 @@
             <tr class="pred-row" data-tier="shield smart" data-status="settled lost" data-league="ATP">
                 <td>
                     <div class="league-pill">🎾 Теннис ATP (Мужчины)</div>
-                    <div class="time-mono">⏰ 13.10.2026 08:30 (МСК) МСК</div>
+                    <div class="time-mono">⏰ 13.10.2026 08:30 (МСК)</div>
                 </td>
                 <td>
                     <div class="matchup-title">Jakub Mensik vs Arthur Gea</div>
@@ -3095,7 +3120,7 @@
             <tr class="pred-row" data-tier="shield smart" data-status="settled won" data-league="NBA">
                 <td>
                     <div class="league-pill">🏀 Баскетбол (НБА)</div>
-                    <div class="time-mono">⏰ 13.10.2026 04:00 (МСК) МСК</div>
+                    <div class="time-mono">⏰ 13.10.2026 04:00 (МСК)</div>
                 </td>
                 <td>
                     <div class="matchup-title">San Antonio Spurs @ Utah Jazz</div>
@@ -3132,7 +3157,7 @@
             <tr class="pred-row" data-tier="elite sniper" data-status="settled won" data-league="NBA">
                 <td>
                     <div class="league-pill">🏀 Баскетбол (НБА)</div>
-                    <div class="time-mono">⏰ 13.10.2026 02:30 (МСК) МСК</div>
+                    <div class="time-mono">⏰ 13.10.2026 02:30 (МСК)</div>
                 </td>
                 <td>
                     <div class="matchup-title">Minnesota Timberwolves @ New York Knicks</div>
@@ -3169,7 +3194,7 @@
             <tr class="pred-row" data-tier="shield smart" data-status="settled lost" data-league="NBA">
                 <td>
                     <div class="league-pill">🏀 Баскетбол (НБА)</div>
-                    <div class="time-mono">⏰ 13.10.2026 02:00 (МСК) МСК</div>
+                    <div class="time-mono">⏰ 13.10.2026 02:00 (МСК)</div>
                 </td>
                 <td>
                     <div class="matchup-title">Brooklyn Nets @ Washington Wizards</div>
@@ -3206,7 +3231,7 @@
             <tr class="pred-row" data-tier="shield smart" data-status="settled won" data-league="NBA">
                 <td>
                     <div class="league-pill">🏀 Баскетбол (НБА)</div>
-                    <div class="time-mono">⏰ 13.10.2026 02:00 (МСК) МСК</div>
+                    <div class="time-mono">⏰ 13.10.2026 02:00 (МСК)</div>
                 </td>
                 <td>
                     <div class="matchup-title">Oklahoma City Thunder @ Atlanta Hawks</div>
@@ -3243,7 +3268,7 @@
             <tr class="pred-row" data-tier="elite sniper" data-status="settled won" data-league="NBA">
                 <td>
                     <div class="league-pill">🏀 Баскетбол (НБА)</div>
-                    <div class="time-mono">⏰ 12.10.2026 23:00 (МСК) МСК</div>
+                    <div class="time-mono">⏰ 12.10.2026 23:00 (МСК)</div>
                 </td>
                 <td>
                     <div class="matchup-title">London Lions @ Portland Trail Blazers</div>
@@ -3280,7 +3305,7 @@
             <tr class="pred-row" data-tier="elite sniper" data-status="settled won" data-league="WTA">
                 <td>
                     <div class="league-pill">🎾 Теннис WTA (Женщины)</div>
-                    <div class="time-mono">⏰ 12.10.2026 16:30 (МСК) МСК</div>
+                    <div class="time-mono">⏰ 12.10.2026 16:30 (МСК)</div>
                 </td>
                 <td>
                     <div class="matchup-title">Harmony Tan vs Polina Iatcenko</div>
