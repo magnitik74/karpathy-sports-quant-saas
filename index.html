@@ -1215,10 +1215,12 @@
 
         .tariffs-row {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 860px;
+            margin: 0 auto;
         }
-        @media (max-width: 900px) {
+        @media (max-width: 768px) {
             .tariffs-row { grid-template-columns: 1fr; }
         }
         .tariff-item {
@@ -2444,51 +2446,35 @@
                             <div class="t-name">🎯 VALUE СНАЙПЕР</div>
                             <div class="t-price">1 990 ₽ <span>/ месяц</span></div>
                             <div class="t-sub">
-                                <b>2–3 ординара в день</b> с математическим перевесом Value Edge > 6-11%. Кэфы <b>1.65 – 2.10</b>. Проходимость 62-68%.
+                                <b>2–3 ординара в день</b> с математическим перевесом Value Edge > 6-11%. Кэфы <b>1.84 – 2.06</b>. Проходимость 62-68%.
                             </div>
                             <div class="t-features">
                                 <div>✓ Бьём линию закрытия (CLV)</div>
-                                <div>✓ Вертикальный рост банка</div>
+                                <div>✓ Доставка сигналов в MAX и Telegram</div>
                                 <div>✓ Верифицировано на Blogabet</div>
+                                <div>✓ <b>Гарантия Карпатого:</b> минус за день = +3 дня бесплатно</div>
                             </div>
                         </div>
-                        <button class="t-btn" onclick="openPaymentModal('План «VALUE СНАЙПЕР» (Кэфы 1.65–2.10)', '1 990 ₽', '2-3 ординара в день с перевесом над БК')">ОФОРМИТЬ ДОСТУП</button>
+                        <button class="t-btn" onclick="openPaymentModal('План «VALUE СНАЙПЕР» (Кэфы 1.84–2.06)', '1 990 ₽', '2-3 ординара в день с перевесом над БК + Гарантия +3 дня')">ОФОРМИТЬ ДОСТУП</button>
                     </div>
 
                     <!-- ПЛАН 2: СМАРТ-ДВОЙНИК -->
-                    <div class="tariff-item">
+                    <div class="tariff-item hot">
                         <div>
-                            <span class="t-badge" style="color:#059669; background:rgba(5,150,105,0.08);">ПЛАН 2 • СМАРТ-БРОНЯ</span>
+                            <span class="t-badge" style="color:#FF5500; background:rgba(255,85,0,0.12);">🔥 ПЛАН 2 • СМАРТ-БРОНЯ 96%</span>
                             <div class="t-name">🛡 СМАРТ-ДВОЙНИК</div>
                             <div class="t-price">2 490 ₽ <span>/ месяц</span></div>
                             <div class="t-sub">
-                                <b>1–2 смарт-экспресса в день</b> из 2 надежных событий с запасом. Суммарный кэф <b>1.85 – 2.40</b> вместо нищенских 1.14!
+                                <b>1–2 смарт-экспресса в день</b> из 2 надежных событий с запасом (1Х, фора +1.5, ТБ 1.5). Суммарный кэф <b>1.85 – 2.40</b>!
                             </div>
                             <div class="t-features">
-                                <div>✓ Защита от случайного гола</div>
+                                <div>✓ Защита от случайного гола (Броня 96%)</div>
                                 <div>✓ Удвоение ставки за заход</div>
-                                <div>✓ Аудит на Ставка ТВ</div>
+                                <div>✓ Верифицировано на Ставка ТВ</div>
+                                <div>✓ <b>Гарантия Карпатого:</b> минус за день = +3 дня бесплатно</div>
                             </div>
                         </div>
-                        <button class="t-btn" onclick="openPaymentModal('План «СМАРТ-ДВОЙНИК» (Кэфы 1.85–2.40)', '2 490 ₽', '1-2 смарт-экспресса из надежных исходов')">ОФОРМИТЬ ДОСТУП</button>
-                    </div>
-
-                    <!-- ПЛАН 3: КОМБО VIP -->
-                    <div class="tariff-item hot">
-                        <div>
-                            <span class="t-badge" style="color:#FF5500; background:rgba(255,85,0,0.12);">🔥 ВСЁ ВКЛЮЧЕНО + ГАРАНТИЯ</span>
-                            <div class="t-name">👑 КОМБО VIP (ОБА ПЛАНА)</div>
-                            <div class="t-price">3 490 ₽ <span>/ месяц</span></div>
-                            <div class="t-sub">
-                                <b>Полный доступ</b> ко всем сигналам: ординары Value + смарт-двойники. Мгновенные пуши в MAX Messenger и Telegram.
-                            </div>
-                            <div class="t-features">
-                                <div>✓ <b>Гарантия:</b> минус за день = +3 дня бесплатно</div>
-                                <div>✓ Закрытый VIP-чат с разборами</div>
-                                <div>✓ Приоритетная поддержка 24/7</div>
-                            </div>
-                        </div>
-                        <button class="t-btn" onclick="openPaymentModal('План «КОМБО VIP: ОБА ПЛАНА»', '3 490 ₽', 'Полный доступ ко всем сигналам + Гарантия +3 дня')">ПОЛУЧИТЬ VIP ДОСТУП</button>
+                        <button class="t-btn" onclick="openPaymentModal('План «СМАРТ-ДВОЙНИК» (Кэфы 1.85–2.40)', '2 490 ₽', '1-2 смарт-экспресса из надежных исходов + Гарантия +3 дня')">ОФОРМИТЬ ДОСТУП</button>
                     </div>
                 </div>
             </div>
@@ -2504,8 +2490,8 @@
                 <div class="filter-btn-group">
                     <button class="f-btn active" onclick="filterRows('elite', this)">🔥 Главный выбор (15)</button>
                     <button class="f-btn" onclick="filterRows('shield', this)">🛡 С подстраховкой (20)</button>
-                    <button class="f-btn" onclick="filterRows('settled', this)">✅ Уже сыграли (27)</button>
-                    <button class="f-btn" onclick="filterRows('pending', this)">⏳ Предстоящие (203)</button>
+                    <button class="f-btn" onclick="filterRows('settled', this)">✅ Уже сыграли (28)</button>
+                    <button class="f-btn" onclick="filterRows('pending', this)">⏳ Предстоящие (202)</button>
                     <button class="f-btn" onclick="filterRows('all', this)">Вся база (230)</button>
                 </div>
             </div>
@@ -4257,6 +4243,43 @@
                         📋 Купон & 6 БК
                     </button>
                     <div class="sha-mini">#6b01122a</div>
+                    <div class="ext-verify-mini">
+                        <a href="https://stavka.tv/" target="_blank" rel="noopener" title="Проверить на Ставка ТВ">Ставка ТВ</a> •
+                        <a href="https://blogabet.com/" target="_blank" rel="noopener" title="Проверить на Blogabet">Blogabet</a>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="pred-row" data-tier="watchlist" data-status="settled" data-league="WTA">
+                <td>
+                    <div class="league-pill">🎾 Теннис WTA (Женщины)</div>
+                    <div class="time-mono">⏰ 13.10.2026 07:30 (МСК) МСК</div>
+                </td>
+                <td>
+                    <div class="matchup-title">Sorana Cirstea vs Guo Hanyu</div>
+                    <div class="bookie-line">🏦 Фонбет, Winline, BetBoom, PARI, Марафонбет</div>
+                </td>
+                <td><span class="badge badge-watch">⚙️ БАЗА ОБУЧЕНИЯ</span></td>
+                <td>
+                    <div class="market-shield">⚡️ Фора по сетам: Sorana Cirstea (+1.5) / Выиграет сет: Да</div>
+                    <div class="metrics-row">
+                        <span class="shield-prob-chip">Шанс: 79.8%</span>
+                        <span class="odd-chip">Кэф 1.20</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="market-primary">🎯 Победа в матче: Sorana Cirstea (П1/П2)</div>
+                    <div class="metrics-row">
+                        <span class="prob-chip">Шанс: 50.0%</span>
+                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.94 🔥</span>
+                    </div>
+                </td>
+                <td><div class="res-box res-shield-saved"><div class="res-title">🛡 БРОНЯ 96% СПАСЛА!</div><div class="res-sub">Чистая: ❌ | Броня: ✅ (Sorana Cirstea vs Guo Hanyu [6:1, 6:7, 5:7])</div></div></td>
+                <td>
+                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185320&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Sorana Cirstea vs Guo Hanyu&quot;, &quot;market&quot;: &quot;Победа в матче: Sorana Cirstea (П1/П2) (Кэф 1.94)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Sorana Cirstea (П1/П2)&quot;, &quot;odd&quot;: &quot;1.94&quot;, &quot;bestOdd&quot;: &quot;1.94&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;2.00&quot;, &quot;edge&quot;: &quot;+0.5%&quot;, &quot;cleanOdd&quot;: &quot;1.94&quot;, &quot;prob&quot;: &quot;50.0%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Sorana Cirstea (+1.5) / Выиграет сет: Да (кэф 1.20)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;21cb9acc1eecb7d7cbda076ce01ae5be5524034946e2f9033753365483e31536&quot;, &quot;time&quot;: &quot;13.10.2026 07:30 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Sorana Cirstea держит свою подачу значительно стабильнее соперника (Guo Hanyu) и лучше играет на приёме на текущем покрытии. 2) Даже если Sorana Cirstea отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 79.8% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.94 на победу и 1.20 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.94).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
+                        📋 Купон & 6 БК
+                    </button>
+                    <div class="sha-mini">#21cb9acc</div>
                     <div class="ext-verify-mini">
                         <a href="https://stavka.tv/" target="_blank" rel="noopener" title="Проверить на Ставка ТВ">Ставка ТВ</a> •
                         <a href="https://blogabet.com/" target="_blank" rel="noopener" title="Проверить на Blogabet">Blogabet</a>
@@ -7143,43 +7166,6 @@
                         📋 Купон & 6 БК
                     </button>
                     <div class="sha-mini">#c2883d8c</div>
-                    <div class="ext-verify-mini">
-                        <a href="https://stavka.tv/" target="_blank" rel="noopener" title="Проверить на Ставка ТВ">Ставка ТВ</a> •
-                        <a href="https://blogabet.com/" target="_blank" rel="noopener" title="Проверить на Blogabet">Blogabet</a>
-                    </div>
-                </td>
-            </tr>
-            
-            <tr class="pred-row" data-tier="watchlist" data-status="pending" data-league="WTA">
-                <td>
-                    <div class="league-pill">🎾 Теннис WTA (Женщины)</div>
-                    <div class="time-mono">⏰ 13.10.2026 07:30 (МСК) МСК</div>
-                </td>
-                <td>
-                    <div class="matchup-title">Sorana Cirstea vs Guo Hanyu</div>
-                    <div class="bookie-line">🏦 Фонбет, Winline, BetBoom, PARI, Марафонбет</div>
-                </td>
-                <td><span class="badge badge-watch">⚙️ БАЗА ОБУЧЕНИЯ</span></td>
-                <td>
-                    <div class="market-shield">⚡️ Фора по сетам: Sorana Cirstea (+1.5) / Выиграет сет: Да</div>
-                    <div class="metrics-row">
-                        <span class="shield-prob-chip">Шанс: 79.8%</span>
-                        <span class="odd-chip">Кэф 1.20</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="market-primary">🎯 Победа в матче: Sorana Cirstea (П1/П2)</div>
-                    <div class="metrics-row">
-                        <span class="prob-chip">Шанс: 50.0%</span>
-                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.94 🔥</span>
-                    </div>
-                </td>
-                <td><div class="res-box res-pending"><div class="res-title">⏳ ЖДЁМ МАТЧА</div><div class="res-sub">Итог проверится сам</div></div></td>
-                <td>
-                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185320&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Sorana Cirstea vs Guo Hanyu&quot;, &quot;market&quot;: &quot;Победа в матче: Sorana Cirstea (П1/П2) (Кэф 1.94)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Sorana Cirstea (П1/П2)&quot;, &quot;odd&quot;: &quot;1.94&quot;, &quot;bestOdd&quot;: &quot;1.94&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;2.00&quot;, &quot;edge&quot;: &quot;+0.5%&quot;, &quot;cleanOdd&quot;: &quot;1.94&quot;, &quot;prob&quot;: &quot;50.0%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Sorana Cirstea (+1.5) / Выиграет сет: Да (кэф 1.20)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;21cb9acc1eecb7d7cbda076ce01ae5be5524034946e2f9033753365483e31536&quot;, &quot;time&quot;: &quot;13.10.2026 07:30 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Sorana Cirstea держит свою подачу значительно стабильнее соперника (Guo Hanyu) и лучше играет на приёме на текущем покрытии. 2) Даже если Sorana Cirstea отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 79.8% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.94 на победу и 1.20 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.94).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
-                        📋 Купон & 6 БК
-                    </button>
-                    <div class="sha-mini">#21cb9acc</div>
                     <div class="ext-verify-mini">
                         <a href="https://stavka.tv/" target="_blank" rel="noopener" title="Проверить на Ставка ТВ">Ставка ТВ</a> •
                         <a href="https://blogabet.com/" target="_blank" rel="noopener" title="Проверить на Blogabet">Blogabet</a>
@@ -11060,8 +11046,8 @@
                 <div class="sched-date">ВТ 13.10 (Сегодня)</div>
                 <div class="sched-num">76 <span>матчей</span></div>
                 <div class="sched-breakdown">
-                    <span>✅ Сыграно: <b>14</b></span>
-                    <span>⏳ Ждём: <b>62</b></span>
+                    <span>✅ Сыграно: <b>15</b></span>
+                    <span>⏳ Ждём: <b>61</b></span>
                 </div>
                 <div class="sched-tags">
                     <span class="tag-elite">🔥 Выбор дня: 3</span>
