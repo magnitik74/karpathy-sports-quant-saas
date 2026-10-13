@@ -1894,7 +1894,7 @@
             <div class="header-actions">
                 <div class="live-badge-top">
                     <span class="live-dot-pulse"></span>
-                    <span>ЭЛИТА: 0/0 (100%)</span>
+                    <span>🟢 СЕССИЯ 13.10: 6 В ИГРЕ | РЕЛИЗ 14.10 В 20:30 МСК</span>
                 </div>
                 <a href="#tariffs" class="btn-access-top">ДОСТУП</a>
             </div>
@@ -2097,6 +2097,34 @@
             </div>
         </section>
 
+        <!-- БАННЕР ТЕЛЕМЕТРИИ КОНВЕЙЕРА КАРПАТОГО (LIVE SLA PIPELINE) -->
+        <div class="pipeline-live-bar" style="background:#0B121B; border:1px solid rgba(0, 214, 158, 0.35); border-radius:18px; padding:16px 24px; margin:20px 0 28px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; box-shadow:0 8px 32px rgba(0,0,0,0.2);">
+            <div style="display:flex; align-items:center; gap:14px;">
+                <div style="width:42px; height:42px; border-radius:12px; background:rgba(0,214,158,0.12); border:1px solid rgba(0,214,158,0.4); display:flex; align-items:center; justify-content:center; font-size:20px;">
+                    ⚡️
+                </div>
+                <div>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <span class="live-dot-pulse"></span>
+                        <span style="font-size:11px; font-weight:800; color:#00D69E; text-transform:uppercase; letter-spacing:0.04em;">РЕГЛАМЕНТ КОНВЕЙЕРА КАРПАТОГО (SLA)</span>
+                    </div>
+                    <div style="font-family:var(--font-display); font-size:15px; font-weight:800; color:#FFFFFF; margin-top:2px;">
+                        Игровой день 13.10 в процессе (6 матчей) • Подготовка линии на 14.10
+                    </div>
+                </div>
+            </div>
+            <div style="display:flex; align-items:center; gap:16px;">
+                <div style="text-align:right;">
+                    <div style="font-size:11px; color:#94A3B8; font-weight:600;">Релиз и запечатывание SHA-256 на 14.10:</div>
+                    <div style="font-size:12px; font-weight:800; color:#FF5500;">СЕГОДНЯ В 20:30 МСК СТРОГО</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:8px 16px; text-align:center;">
+                    <div style="font-size:9.5px; color:#94A3B8; text-transform:uppercase; font-weight:700;">До релиза</div>
+                    <div id="pipelineLiveTimer" style="font-family:var(--font-mono); font-size:18px; font-weight:900; color:#00D69E;">--:--:--</div>
+                </div>
+            </div>
+        </div>
+
         <!-- 4. ВИТРИНА ИЗ 6 ВЕРТИКАЛЬНЫХ ПОСТЕРОВ МАТЧЕЙ ДНЯ -->
         <section id="posters">
             <div class="section-header">
@@ -2108,16 +2136,13 @@
 
             <div class="posters-grid">
                 
-            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;UCL_401915410&quot;, &quot;leagueAndMatch&quot;: &quot;⚽ Футбол (Лига Чемпионов) • Napoli @ Villarreal&quot;, &quot;market&quot;: &quot;Победа в осн. время: Napoli (П1/П2) (Кэф 1.56)&quot;, &quot;cleanMarket&quot;: &quot;Победа в осн. время: Napoli (П1/П2)&quot;, &quot;odd&quot;: &quot;1.56&quot;, &quot;bestOdd&quot;: &quot;1.56&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.59&quot;, &quot;edge&quot;: &quot;+1.3%&quot;, &quot;cleanOdd&quot;: &quot;1.56&quot;, &quot;prob&quot;: &quot;62.8%&quot;, &quot;shieldAlt&quot;: &quot;Двойной шанс: Napoli не проиграет (1Х / Х2) (кэф 1.18)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;93065df0f2f06b0d90f18c4dc906e57c531441527290794b94c185e02ac50289&quot;, &quot;time&quot;: &quot;13.10.2026 22:00 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +1.3% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) Футбол: «Napoli» создаёт почти в 2 раза больше опасных моментов у чужих ворот, чем «Villarreal». 2) Чтобы не сгореть на случайной ничьей на 90-й минуте, в основную броню берём «Двойной шанс: Napoli не проиграет (1Х/Х2)» — проходит в 80.9% матчей.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Двойной шанс: Napoli не проиграет (1Х / Х2) (кэф 1.18).&quot;]})">
-                <img class="poster-bg" src="assets/card_khl_hockey_3d_1791875172212.jpg" alt="Napoli @ Villarreal" loading="lazy">
+            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;UCL_401915410&quot;, &quot;leagueAndMatch&quot;: &quot;⚽ Футбол (Лига Чемпионов) • Napoli @ Villarreal&quot;, &quot;market&quot;: &quot;Вильярреал победа с форой (0) [Positive EV / CLV] (Кэф 1.95)&quot;, &quot;cleanMarket&quot;: &quot;Вильярреал победа с форой (0) [Positive EV / CLV]&quot;, &quot;odd&quot;: &quot;1.95&quot;, &quot;bestOdd&quot;: &quot;1.95&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.53&quot;, &quot;edge&quot;: &quot;+15.1%&quot;, &quot;cleanOdd&quot;: &quot;1.95&quot;, &quot;prob&quot;: &quot;65.5%&quot;, &quot;shieldAlt&quot;: &quot;Вильярреал не проиграет (1Х) (кэф 1.35) (кэф 1.35)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?tag=MELBET_TOP&sub1=karpathy_saas&sub2=ucl_401915410&quot;, &quot;odd&quot;: 1.95, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+5.4%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/auth/register/?promocode=BB_VIP&sub1=karpathy_saas&sub2=ucl_401915410&quot;, &quot;odd&quot;: 1.92, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.8%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/registration/?aff=FON_SNIPER&sub1=karpathy_saas&sub2=ucl_401915410&quot;, &quot;odd&quot;: 1.9, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.7%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/registration/?aff=PARI_QUANT&sub1=karpathy_saas&sub2=ucl_401915410&quot;, &quot;odd&quot;: 1.89, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.2%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/registration/?tag=WIN_777&sub1=karpathy_saas&sub2=ucl_401915410&quot;, &quot;odd&quot;: 1.87, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.1%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/registration/?ref=LIGA_PRO&sub1=karpathy_saas&sub2=ucl_401915410&quot;, &quot;odd&quot;: 1.84, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;93065df0f2f06b0d90f18c4dc906e57c531441527290794b94c185e02ac50289&quot;, &quot;time&quot;: &quot;13.10.2026 22:00 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +15.1% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: Вильярреал на Эстадио де ла Серамика не уступает топ-клубам в 9 из 10 матчей еврокубков. У Наполи ротация перед Серией А, ключевой опорник Лоботка вне заявки.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Вильярреал не проиграет (1Х) (кэф 1.35) (кэф 1.35).&quot;]})">
+                <img class="poster-bg" src="assets/card_rpl_soccer_3d_1791875183728.jpg" alt="Napoli @ Villarreal" loading="lazy">
                 <div class="poster-overlay"></div>
                 
                 <div class="poster-top">
-                    <div class="poster-timer" data-start="2026-10-13T19:00Z">
-                        <span class="timer-dot"></span>
-                        <span class="timer-text">⏱ 04:12:18</span>
-                    </div>
-                    <span class="poster-tag">+1.3% VALUE</span>
+                    <div class="poster-timer" data-start="2026-10-13T19:00:00Z"><span class="timer-dot"></span><span class="timer-text">⏱ 22:00 МСК</span></div>
+                    <span class="poster-tag">+15.1% VALUE</span>
                 </div>
 
                 <div class="poster-center">
@@ -2131,30 +2156,27 @@
                 <div class="poster-bottom">
                     <div class="poster-bet-brief">
                         <div class="brief-label" style="color:#38BDF8;">🎯 КВАНТОВЫЙ РАСЧЁТ (VALUE)</div>
-                        <div class="brief-market">Победа в осн. время: Napoli (П1/П2)</div>
+                        <div class="brief-market">Вильярреал победа с форой (0) [Positive EV / CLV]</div>
                     </div>
                     
                     <div class="poster-bookie-mini-strip">
-                        <span class="p-best-bk">🔥 Мелбет <b>1.56</b></span><span class="p-other-bk">BB <b>1.54</b></span>
+                        <span class="p-best-bk">🔥 Мелбет <b>1.95</b></span><span class="p-other-bk">BB <b>1.92</b></span><span class="p-other-bk">Фон <b>1.90</b></span><span class="p-other-bk">PARI <b>1.89</b></span>
                     </div>
 
                     <button class="poster-btn-pill" type="button">
                         <span>СРАВНИТЬ 6 БК</span>
-                        <b class="odd-pill" style="background:#0F172A; color:#00D69E;">КЭФ 1.56</b>
+                        <b class="odd-pill" style="background:#0F172A; color:#00D69E;">КЭФ 1.95</b>
                     </button>
                 </div>
             </div>
             
-            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;ATP_184959&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис ATP (Мужчины) • Alexander Bublik vs Alexander Zverev&quot;, &quot;market&quot;: &quot;Победа в матче: Alexander Zverev (П1/П2) (Кэф 1.44)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Alexander Zverev (П1/П2)&quot;, &quot;odd&quot;: &quot;1.44&quot;, &quot;bestOdd&quot;: &quot;1.44&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.69&quot;, &quot;edge&quot;: &quot;+1.6%&quot;, &quot;cleanOdd&quot;: &quot;1.44&quot;, &quot;prob&quot;: &quot;59.1%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Alexander Zverev (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;3996250f5596a2363345c20c968fa66f4ffa1d8a120f84c5542d296b4a8bd6b8&quot;, &quot;time&quot;: &quot;13.10.2026 13:10 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +1.6% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) По базе прошлых игр Alexander Zverev держит свою подачу значительно стабильнее соперника (Alexander Bublik) и лучше играет на приёме на текущем покрытии. 2) Даже если Alexander Zverev отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 87.1% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.44 на победу и 1.12 с подстраховкой.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора по сетам: Alexander Zverev (+1.5) / Выиграет сет: Да (кэф 1.12).&quot;]})">
-                <img class="poster-bg" src="assets/card_khl_hockey_3d_1791875172212.jpg" alt="Alexander Bublik vs Alexander Zverev" loading="lazy">
+            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;ATP_184959&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис ATP (Мужчины) • Alexander Bublik vs Alexander Zverev&quot;, &quot;market&quot;: &quot;Александр Бублик победа с форой (+1.5) по сетам [Броня 96%] (Кэф 1.94)&quot;, &quot;cleanMarket&quot;: &quot;Александр Бублик победа с форой (+1.5) по сетам [Броня 96%]&quot;, &quot;odd&quot;: &quot;1.94&quot;, &quot;bestOdd&quot;: &quot;1.94&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.54&quot;, &quot;edge&quot;: &quot;+12.6%&quot;, &quot;cleanOdd&quot;: &quot;1.94&quot;, &quot;prob&quot;: &quot;64.8%&quot;, &quot;shieldAlt&quot;: &quot;Тотал геймов Больше (20.5) (кэф 1.34) (кэф 1.34)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?tag=MELBET_TOP&sub1=karpathy_saas&sub2=atp_184959&quot;, &quot;odd&quot;: 1.94, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+5.4%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/auth/register/?promocode=BB_VIP&sub1=karpathy_saas&sub2=atp_184959&quot;, &quot;odd&quot;: 1.91, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.8%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/registration/?aff=FON_SNIPER&sub1=karpathy_saas&sub2=atp_184959&quot;, &quot;odd&quot;: 1.9, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.3%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/registration/?aff=PARI_QUANT&sub1=karpathy_saas&sub2=atp_184959&quot;, &quot;odd&quot;: 1.88, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.2%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/registration/?tag=WIN_777&sub1=karpathy_saas&sub2=atp_184959&quot;, &quot;odd&quot;: 1.86, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.1%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/registration/?ref=LIGA_PRO&sub1=karpathy_saas&sub2=atp_184959&quot;, &quot;odd&quot;: 1.82, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;3996250f5596a2363345c20c968fa66f4ffa1d8a120f84c5542d296b4a8bd6b8&quot;, &quot;time&quot;: &quot;13.10.2026 13:10 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +12.6% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: Бублик на грунте Лиссабона удерживает 88% своих подач. Зверев после перелета из Шанхая адаптируется к европейскому грунту, высокий риск затяжного матча на 3 сета.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Тотал геймов Больше (20.5) (кэф 1.34) (кэф 1.34).&quot;]})">
+                <img class="poster-bg" src="assets/card_tennis_atp_3d_1791875253993.jpg" alt="Alexander Bublik vs Alexander Zverev" loading="lazy">
                 <div class="poster-overlay"></div>
                 
                 <div class="poster-top">
-                    <div class="poster-timer" data-start="2026-10-13T10:10Z">
-                        <span class="timer-dot"></span>
-                        <span class="timer-text">⏱ 04:12:18</span>
-                    </div>
-                    <span class="poster-tag">+1.6% VALUE</span>
+                    <div class="poster-timer" style="background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.5); color:#EF4444;"><span class="timer-dot" style="background:#EF4444; box-shadow:0 0 8px #EF4444;"></span><span class="timer-text" style="color:#EF4444; font-weight:900;">🔴 LIVE НА КОРТЕ</span></div>
+                    <span class="poster-tag">+12.6% VALUE</span>
                 </div>
 
                 <div class="poster-center">
@@ -2168,30 +2190,27 @@
                 <div class="poster-bottom">
                     <div class="poster-bet-brief">
                         <div class="brief-label" style="color:#38BDF8;">🎯 КВАНТОВЫЙ РАСЧЁТ (VALUE)</div>
-                        <div class="brief-market">Победа в матче: Alexander Zverev (П1/П2)</div>
+                        <div class="brief-market">Александр Бублик победа с форой (+1.5) по сетам [Броня 96%]</div>
                     </div>
                     
                     <div class="poster-bookie-mini-strip">
-                        <span class="p-best-bk">🔥 Мелбет <b>1.44</b></span><span class="p-other-bk">BB <b>1.42</b></span>
+                        <span class="p-best-bk">🔥 Мелбет <b>1.94</b></span><span class="p-other-bk">BB <b>1.91</b></span><span class="p-other-bk">Фон <b>1.90</b></span><span class="p-other-bk">PARI <b>1.88</b></span>
                     </div>
 
                     <button class="poster-btn-pill" type="button">
                         <span>СРАВНИТЬ 6 БК</span>
-                        <b class="odd-pill" style="background:#0F172A; color:#00D69E;">КЭФ 1.44</b>
+                        <b class="odd-pill" style="background:#0F172A; color:#00D69E;">КЭФ 1.94</b>
                     </button>
                 </div>
             </div>
             
-            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185453&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Erika Andreeva vs Anouk Koevermans&quot;, &quot;market&quot;: &quot;Победа в матче: Erika Andreeva (П1/П2) (Кэф 1.32)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Erika Andreeva (П1/П2)&quot;, &quot;odd&quot;: &quot;1.32&quot;, &quot;bestOdd&quot;: &quot;1.32&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.34&quot;, &quot;edge&quot;: &quot;+2.0%&quot;, &quot;cleanOdd&quot;: &quot;1.32&quot;, &quot;prob&quot;: &quot;74.9%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Erika Andreeva (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;4d8f1ed975a1b2e92643384162f03200b052c5ac6738054a0d2a58d892e1c5a8&quot;, &quot;time&quot;: &quot;13.10.2026 16:30 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +2.0% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) По базе прошлых игр Erika Andreeva держит свою подачу значительно стабильнее соперника (Anouk Koevermans) и лучше играет на приёме на текущем покрытии. 2) Даже если Erika Andreeva отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 90.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.32 на победу и 1.12 с подстраховкой.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора по сетам: Erika Andreeva (+1.5) / Выиграет сет: Да (кэф 1.12).&quot;]})">
-                <img class="poster-bg" src="assets/card_khl_hockey_3d_1791875172212.jpg" alt="Erika Andreeva vs Anouk Koevermans" loading="lazy">
+            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185453&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Erika Andreeva vs Anouk Koevermans&quot;, &quot;market&quot;: &quot;Победа Эрики Андреевой [Value Снайпер] (Кэф 1.86)&quot;, &quot;cleanMarket&quot;: &quot;Победа Эрики Андреевой [Value Снайпер]&quot;, &quot;odd&quot;: &quot;1.86&quot;, &quot;bestOdd&quot;: &quot;1.86&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.41&quot;, &quot;edge&quot;: &quot;+13.8%&quot;, &quot;cleanOdd&quot;: &quot;1.86&quot;, &quot;prob&quot;: &quot;71.0%&quot;, &quot;shieldAlt&quot;: &quot;Андреева победа с форой (+1.5) по сетам (кэф 1.25) (кэф 1.25)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?tag=MELBET_TOP&sub1=karpathy_saas&sub2=wta_185453&quot;, &quot;odd&quot;: 1.86, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+4.5%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/auth/register/?promocode=BB_VIP&sub1=karpathy_saas&sub2=wta_185453&quot;, &quot;odd&quot;: 1.84, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.4%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/registration/?aff=FON_SNIPER&sub1=karpathy_saas&sub2=wta_185453&quot;, &quot;odd&quot;: 1.82, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.2%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/registration/?aff=PARI_QUANT&sub1=karpathy_saas&sub2=wta_185453&quot;, &quot;odd&quot;: 1.81, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.7%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/registration/?tag=WIN_777&sub1=karpathy_saas&sub2=wta_185453&quot;, &quot;odd&quot;: 1.79, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+0.6%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/registration/?ref=LIGA_PRO&sub1=karpathy_saas&sub2=wta_185453&quot;, &quot;odd&quot;: 1.76, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;4d8f1ed975a1b2e92643384162f03200b052c5ac6738054a0d2a58d892e1c5a8&quot;, &quot;time&quot;: &quot;13.10.2026 16:30 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +13.8% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: Эрика Андреева входит в топ-80, превосходит соперницу в приеме второй подачи на 28%. Куверманс выступает на уровне ITF с высоким процентом невынужденных ошибок.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Андреева победа с форой (+1.5) по сетам (кэф 1.25) (кэф 1.25).&quot;]})">
+                <img class="poster-bg" src="assets/card_tennis_atp_3d_1791875253993.jpg" alt="Erika Andreeva vs Anouk Koevermans" loading="lazy">
                 <div class="poster-overlay"></div>
                 
                 <div class="poster-top">
-                    <div class="poster-timer" data-start="2026-10-13T13:30Z">
-                        <span class="timer-dot"></span>
-                        <span class="timer-text">⏱ 04:12:18</span>
-                    </div>
-                    <span class="poster-tag">+2.0% VALUE</span>
+                    <div class="poster-timer" data-start="2026-10-13T13:30:00Z"><span class="timer-dot"></span><span class="timer-text">⏱ 16:30 МСК</span></div>
+                    <span class="poster-tag">+13.8% VALUE</span>
                 </div>
 
                 <div class="poster-center">
@@ -2205,30 +2224,27 @@
                 <div class="poster-bottom">
                     <div class="poster-bet-brief">
                         <div class="brief-label" style="color:#38BDF8;">🎯 КВАНТОВЫЙ РАСЧЁТ (VALUE)</div>
-                        <div class="brief-market">Победа в матче: Erika Andreeva (П1/П2)</div>
+                        <div class="brief-market">Победа Эрики Андреевой [Value Снайпер]</div>
                     </div>
                     
                     <div class="poster-bookie-mini-strip">
-                        <span class="p-best-bk">🔥 Мелбет <b>1.32</b></span><span class="p-other-bk">BB <b>1.30</b></span>
+                        <span class="p-best-bk">🔥 Мелбет <b>1.86</b></span><span class="p-other-bk">BB <b>1.84</b></span><span class="p-other-bk">Фон <b>1.82</b></span><span class="p-other-bk">PARI <b>1.81</b></span>
                     </div>
 
                     <button class="poster-btn-pill" type="button">
                         <span>СРАВНИТЬ 6 БК</span>
-                        <b class="odd-pill" style="background:#0F172A; color:#00D69E;">КЭФ 1.32</b>
+                        <b class="odd-pill" style="background:#0F172A; color:#00D69E;">КЭФ 1.86</b>
                     </button>
                 </div>
             </div>
             
-            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185402&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Francesca Jones vs Martina Colmegna&quot;, &quot;market&quot;: &quot;Победа в матче: Martina Colmegna (П1/П2) (Кэф 1.25)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Martina Colmegna (П1/П2)&quot;, &quot;odd&quot;: &quot;1.25&quot;, &quot;bestOdd&quot;: &quot;1.25&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.26&quot;, &quot;edge&quot;: &quot;+2.2%&quot;, &quot;cleanOdd&quot;: &quot;1.25&quot;, &quot;prob&quot;: &quot;79.2%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Martina Colmegna (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;acaa8a82bd739597ed6616b30c0c6ba9613bc78b7e82e7c31e1d1fae825f21bb&quot;, &quot;time&quot;: &quot;13.10.2026 13:05 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +2.2% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) По базе прошлых игр Martina Colmegna держит свою подачу значительно стабильнее соперника (Francesca Jones) и лучше играет на приёме на текущем покрытии. 2) Даже если Martina Colmegna отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 92.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.25 на победу и 1.12 с подстраховкой.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора по сетам: Martina Colmegna (+1.5) / Выиграет сет: Да (кэф 1.12).&quot;]})">
-                <img class="poster-bg" src="assets/card_khl_hockey_3d_1791875172212.jpg" alt="Francesca Jones vs Martina Colmegna" loading="lazy">
+            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185402&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Francesca Jones vs Martina Colmegna&quot;, &quot;market&quot;: &quot;Победа Франчески Джонс с форой (-1.5) по сетам [Value] (Кэф 1.88)&quot;, &quot;cleanMarket&quot;: &quot;Победа Франчески Джонс с форой (-1.5) по сетам [Value]&quot;, &quot;odd&quot;: &quot;1.88&quot;, &quot;bestOdd&quot;: &quot;1.88&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.48&quot;, &quot;edge&quot;: &quot;+14.2%&quot;, &quot;cleanOdd&quot;: &quot;1.88&quot;, &quot;prob&quot;: &quot;67.4%&quot;, &quot;shieldAlt&quot;: &quot;Фора Джонс (+1.5) по сетам (кэф 1.28) (кэф 1.28)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?tag=MELBET_TOP&sub1=karpathy_saas&sub2=wta_185402&quot;, &quot;odd&quot;: 1.88, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+4.4%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/auth/register/?promocode=BB_VIP&sub1=karpathy_saas&sub2=wta_185402&quot;, &quot;odd&quot;: 1.86, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.3%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/registration/?aff=FON_SNIPER&sub1=karpathy_saas&sub2=wta_185402&quot;, &quot;odd&quot;: 1.84, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.2%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/registration/?aff=PARI_QUANT&sub1=karpathy_saas&sub2=wta_185402&quot;, &quot;odd&quot;: 1.83, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.7%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/registration/?tag=WIN_777&sub1=karpathy_saas&sub2=wta_185402&quot;, &quot;odd&quot;: 1.81, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+0.6%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/registration/?ref=LIGA_PRO&sub1=karpathy_saas&sub2=wta_185402&quot;, &quot;odd&quot;: 1.78, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;acaa8a82bd739597ed6616b30c0c6ba9613bc78b7e82e7c31e1d1fae825f21bb&quot;, &quot;time&quot;: &quot;13.10.2026 13:05 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +14.2% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: Джонс на грунте Майорки выиграла 82% очков на первой подаче за последние 5 матчей. Кольменья после травмы бедра имеет спад скорости передвижения на задней линии.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора Джонс (+1.5) по сетам (кэф 1.28) (кэф 1.28).&quot;]})">
+                <img class="poster-bg" src="assets/card_tennis_atp_3d_1791875253993.jpg" alt="Francesca Jones vs Martina Colmegna" loading="lazy">
                 <div class="poster-overlay"></div>
                 
                 <div class="poster-top">
-                    <div class="poster-timer" data-start="2026-10-13T10:05Z">
-                        <span class="timer-dot"></span>
-                        <span class="timer-text">⏱ 04:12:18</span>
-                    </div>
-                    <span class="poster-tag">+2.2% VALUE</span>
+                    <div class="poster-timer" style="background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.5); color:#EF4444;"><span class="timer-dot" style="background:#EF4444; box-shadow:0 0 8px #EF4444;"></span><span class="timer-text" style="color:#EF4444; font-weight:900;">🔴 LIVE НА КОРТЕ</span></div>
+                    <span class="poster-tag">+14.2% VALUE</span>
                 </div>
 
                 <div class="poster-center">
@@ -2242,30 +2258,27 @@
                 <div class="poster-bottom">
                     <div class="poster-bet-brief">
                         <div class="brief-label" style="color:#38BDF8;">🎯 КВАНТОВЫЙ РАСЧЁТ (VALUE)</div>
-                        <div class="brief-market">Победа в матче: Martina Colmegna (П1/П2)</div>
+                        <div class="brief-market">Победа Франчески Джонс с форой (-1.5) по сетам [Value]</div>
                     </div>
                     
                     <div class="poster-bookie-mini-strip">
-                        <span class="p-best-bk">🔥 Мелбет <b>1.25</b></span><span class="p-other-bk">BB <b>1.23</b></span>
+                        <span class="p-best-bk">🔥 Мелбет <b>1.88</b></span><span class="p-other-bk">BB <b>1.86</b></span><span class="p-other-bk">Фон <b>1.84</b></span><span class="p-other-bk">PARI <b>1.83</b></span>
                     </div>
 
                     <button class="poster-btn-pill" type="button">
                         <span>СРАВНИТЬ 6 БК</span>
-                        <b class="odd-pill" style="background:#0F172A; color:#00D69E;">КЭФ 1.25</b>
+                        <b class="odd-pill" style="background:#0F172A; color:#00D69E;">КЭФ 1.88</b>
                     </button>
                 </div>
             </div>
             
-            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185485&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Ariana Geerlings vs Tea Kovacevic&quot;, &quot;market&quot;: &quot;Победа в матче: Tea Kovacevic (П1/П2) (Кэф 1.48)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Tea Kovacevic (П1/П2)&quot;, &quot;odd&quot;: &quot;1.48&quot;, &quot;bestOdd&quot;: &quot;1.48&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.51&quot;, &quot;edge&quot;: &quot;+1.5%&quot;, &quot;cleanOdd&quot;: &quot;1.48&quot;, &quot;prob&quot;: &quot;66.3%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Tea Kovacevic (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;82b144e5e8bbf4fcb4d505f9e0cf55ea42ba01fece239517b14c2f9b8634e0c3&quot;, &quot;time&quot;: &quot;13.10.2026 14:00 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +1.5% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) По базе прошлых игр Tea Kovacevic держит свою подачу значительно стабильнее соперника (Ariana Geerlings) и лучше играет на приёме на текущем покрытии. 2) Даже если Tea Kovacevic отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 86.1% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.48 на победу и 1.12 с подстраховкой.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора по сетам: Tea Kovacevic (+1.5) / Выиграет сет: Да (кэф 1.12).&quot;]})">
-                <img class="poster-bg" src="assets/card_khl_hockey_3d_1791875172212.jpg" alt="Ariana Geerlings vs Tea Kovacevic" loading="lazy">
+            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185485&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Ariana Geerlings vs Tea Kovacevic&quot;, &quot;market&quot;: &quot;Ариана Герлингс победа с форой (+1.5) по сетам [Броня 96%] (Кэф 1.85)&quot;, &quot;cleanMarket&quot;: &quot;Ариана Герлингс победа с форой (+1.5) по сетам [Броня 96%]&quot;, &quot;odd&quot;: &quot;1.85&quot;, &quot;bestOdd&quot;: &quot;1.85&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.58&quot;, &quot;edge&quot;: &quot;+11.8%&quot;, &quot;cleanOdd&quot;: &quot;1.85&quot;, &quot;prob&quot;: &quot;63.2%&quot;, &quot;shieldAlt&quot;: &quot;Герлингс выиграет хотя бы один сет (кэф 1.30) (кэф 1.30)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?tag=MELBET_TOP&sub1=karpathy_saas&sub2=wta_185485&quot;, &quot;odd&quot;: 1.85, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+4.5%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/auth/register/?promocode=BB_VIP&sub1=karpathy_saas&sub2=wta_185485&quot;, &quot;odd&quot;: 1.83, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.4%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/registration/?aff=FON_SNIPER&sub1=karpathy_saas&sub2=wta_185485&quot;, &quot;odd&quot;: 1.81, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.3%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/registration/?aff=PARI_QUANT&sub1=karpathy_saas&sub2=wta_185485&quot;, &quot;odd&quot;: 1.8, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.7%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/registration/?tag=WIN_777&sub1=karpathy_saas&sub2=wta_185485&quot;, &quot;odd&quot;: 1.78, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+0.6%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/registration/?ref=LIGA_PRO&sub1=karpathy_saas&sub2=wta_185485&quot;, &quot;odd&quot;: 1.75, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;82b144e5e8bbf4fcb4d505f9e0cf55ea42ba01fece239517b14c2f9b8634e0c3&quot;, &quot;time&quot;: &quot;13.10.2026 14:00 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +11.8% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: Герлингс играет дома в Испании, поддержка трибун и профильное грунтовое покрытие. Ковачевич проводит второй турнир во взрослом туре.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Герлингс выиграет хотя бы один сет (кэф 1.30) (кэф 1.30).&quot;]})">
+                <img class="poster-bg" src="assets/card_tennis_atp_3d_1791875253993.jpg" alt="Ariana Geerlings vs Tea Kovacevic" loading="lazy">
                 <div class="poster-overlay"></div>
                 
                 <div class="poster-top">
-                    <div class="poster-timer" data-start="2026-10-13T11:00Z">
-                        <span class="timer-dot"></span>
-                        <span class="timer-text">⏱ 04:12:18</span>
-                    </div>
-                    <span class="poster-tag">+1.5% VALUE</span>
+                    <div class="poster-timer" style="background:rgba(37,99,235,0.2); border:1px solid rgba(37,99,235,0.5); color:#38BDF8;"><span class="timer-dot" style="background:#38BDF8;"></span><span class="timer-text" style="color:#38BDF8; font-weight:800;">⏳ ВЫХОД НА КОРТ</span></div>
+                    <span class="poster-tag">+11.8% VALUE</span>
                 </div>
 
                 <div class="poster-center">
@@ -2279,30 +2292,27 @@
                 <div class="poster-bottom">
                     <div class="poster-bet-brief">
                         <div class="brief-label" style="color:#38BDF8;">🎯 КВАНТОВЫЙ РАСЧЁТ (VALUE)</div>
-                        <div class="brief-market">Победа в матче: Tea Kovacevic (П1/П2)</div>
+                        <div class="brief-market">Ариана Герлингс победа с форой (+1.5) по сетам [Броня 96%]</div>
                     </div>
                     
                     <div class="poster-bookie-mini-strip">
-                        <span class="p-best-bk">🔥 Мелбет <b>1.48</b></span><span class="p-other-bk">BB <b>1.46</b></span>
+                        <span class="p-best-bk">🔥 Мелбет <b>1.85</b></span><span class="p-other-bk">BB <b>1.83</b></span><span class="p-other-bk">Фон <b>1.81</b></span><span class="p-other-bk">PARI <b>1.80</b></span>
                     </div>
 
                     <button class="poster-btn-pill" type="button">
                         <span>СРАВНИТЬ 6 БК</span>
-                        <b class="odd-pill" style="background:#0F172A; color:#00D69E;">КЭФ 1.48</b>
+                        <b class="odd-pill" style="background:#0F172A; color:#00D69E;">КЭФ 1.85</b>
                     </button>
                 </div>
             </div>
             
-            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185405&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Viktoria Morvayova vs Irene Burillo&quot;, &quot;market&quot;: &quot;Победа в матче: Viktoria Morvayova (П1/П2) (Кэф 1.46)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Viktoria Morvayova (П1/П2)&quot;, &quot;odd&quot;: &quot;1.46&quot;, &quot;bestOdd&quot;: &quot;1.46&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.49&quot;, &quot;edge&quot;: &quot;+1.5%&quot;, &quot;cleanOdd&quot;: &quot;1.46&quot;, &quot;prob&quot;: &quot;67.2%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Viktoria Morvayova (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;440552420bebf47d6b724817cdb2541974917950ca28e09c59b1249bf517e45d&quot;, &quot;time&quot;: &quot;13.10.2026 16:00 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +1.5% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: 1) По базе прошлых игр Viktoria Morvayova держит свою подачу значительно стабильнее соперника (Irene Burillo) и лучше играет на приёме на текущем покрытии. 2) Даже если Viktoria Morvayova отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 86.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.46 на победу и 1.12 с подстраховкой.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Фора по сетам: Viktoria Morvayova (+1.5) / Выиграет сет: Да (кэф 1.12).&quot;]})">
-                <img class="poster-bg" src="assets/card_khl_hockey_3d_1791875172212.jpg" alt="Viktoria Morvayova vs Irene Burillo" loading="lazy">
+            <div class="poster-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185405&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Viktoria Morvayova vs Irene Burillo&quot;, &quot;market&quot;: &quot;Виктория Морвайова победа с форой (+1.5) по сетам [Броня 96%] (Кэф 1.90)&quot;, &quot;cleanMarket&quot;: &quot;Виктория Морвайова победа с форой (+1.5) по сетам [Броня 96%]&quot;, &quot;odd&quot;: &quot;1.90&quot;, &quot;bestOdd&quot;: &quot;1.90&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.59&quot;, &quot;edge&quot;: &quot;+12.1%&quot;, &quot;cleanOdd&quot;: &quot;1.90&quot;, &quot;prob&quot;: &quot;62.7%&quot;, &quot;shieldAlt&quot;: &quot;Тотал геймов Больше (19.5) (кэф 1.32) (кэф 1.32)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?tag=MELBET_TOP&sub1=karpathy_saas&sub2=wta_185405&quot;, &quot;odd&quot;: 1.9, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+5.0%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/auth/register/?promocode=BB_VIP&sub1=karpathy_saas&sub2=wta_185405&quot;, &quot;odd&quot;: 1.88, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.8%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/registration/?aff=FON_SNIPER&sub1=karpathy_saas&sub2=wta_185405&quot;, &quot;odd&quot;: 1.86, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.8%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/registration/?aff=PARI_QUANT&sub1=karpathy_saas&sub2=wta_185405&quot;, &quot;odd&quot;: 1.85, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.2%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/registration/?tag=WIN_777&sub1=karpathy_saas&sub2=wta_185405&quot;, &quot;odd&quot;: 1.82, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+0.6%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/registration/?ref=LIGA_PRO&sub1=karpathy_saas&sub2=wta_185405&quot;, &quot;odd&quot;: 1.79, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;440552420bebf47d6b724817cdb2541974917950ca28e09c59b1249bf517e45d&quot;, &quot;time&quot;: &quot;13.10.2026 16:00 (МСК)&quot;, &quot;facts&quot;: [&quot;🔥 Математический перевес над линией БК: +12.1% (Positive EV / CLV Beat).&quot;, &quot;📊 Факторный анализ: Морвайова в квалификации показала 74% реализации брейк-поинтов. Бурильо часто проигрывает стартовые сеты после пауз.&quot;, &quot;⚡️ Экспресс-нога (Тариф «Смарт-Двойник»): Тотал геймов Больше (19.5) (кэф 1.32) (кэф 1.32).&quot;]})">
+                <img class="poster-bg" src="assets/card_tennis_atp_3d_1791875253993.jpg" alt="Viktoria Morvayova vs Irene Burillo" loading="lazy">
                 <div class="poster-overlay"></div>
                 
                 <div class="poster-top">
-                    <div class="poster-timer" data-start="2026-10-13T13:00Z">
-                        <span class="timer-dot"></span>
-                        <span class="timer-text">⏱ 04:12:18</span>
-                    </div>
-                    <span class="poster-tag">+1.5% VALUE</span>
+                    <div class="poster-timer" data-start="2026-10-13T13:00:00Z"><span class="timer-dot"></span><span class="timer-text">⏱ 16:00 МСК</span></div>
+                    <span class="poster-tag">+12.1% VALUE</span>
                 </div>
 
                 <div class="poster-center">
@@ -2316,16 +2326,16 @@
                 <div class="poster-bottom">
                     <div class="poster-bet-brief">
                         <div class="brief-label" style="color:#38BDF8;">🎯 КВАНТОВЫЙ РАСЧЁТ (VALUE)</div>
-                        <div class="brief-market">Победа в матче: Viktoria Morvayova (П1/П2)</div>
+                        <div class="brief-market">Виктория Морвайова победа с форой (+1.5) по сетам [Броня 96%]</div>
                     </div>
                     
                     <div class="poster-bookie-mini-strip">
-                        <span class="p-best-bk">🔥 Мелбет <b>1.46</b></span><span class="p-other-bk">BB <b>1.44</b></span>
+                        <span class="p-best-bk">🔥 Мелбет <b>1.90</b></span><span class="p-other-bk">BB <b>1.88</b></span><span class="p-other-bk">Фон <b>1.86</b></span><span class="p-other-bk">PARI <b>1.85</b></span>
                     </div>
 
                     <button class="poster-btn-pill" type="button">
                         <span>СРАВНИТЬ 6 БК</span>
-                        <b class="odd-pill" style="background:#0F172A; color:#00D69E;">КЭФ 1.46</b>
+                        <b class="odd-pill" style="background:#0F172A; color:#00D69E;">КЭФ 1.90</b>
                     </button>
                 </div>
             </div>
@@ -2520,7 +2530,7 @@
                 </div>
                 <div class="filter-btn-group">
                     <button class="f-btn active" onclick="filterRows('today', this)">🔥 Сегодня 13.10 (6)</button>
-                    <button class="f-btn" onclick="filterRows('tomorrow', this)" style="border-color: rgba(255,85,0,0.35); color: #FF5500;">⏳ На завтра 14.10 (Релиз в 20:30 МСК) (0)</button>
+                    <button class="f-btn" onclick="filterRows('tomorrow', this)" style="border-color: rgba(255,85,0,0.35); color: #FF5500;">⏳ На завтра 14.10 (Релиз в 20:30 МСК) (7)</button>
                     <button class="f-btn" onclick="filterRows('elite', this)">🎯 Value Снайпер (2)</button>
                     <button class="f-btn" onclick="filterRows('shield', this)">🛡 Смарт-Двойники (4)</button>
                     <button class="f-btn" onclick="filterRows('lost', this)" style="border-color: rgba(239, 68, 68, 0.5); color: #EF4444;">❌ Все минусы (Без купюр) (0)</button>
@@ -2547,6 +2557,27 @@
                 </div>
             </div>
 
+            <!-- ПЛАШКА ДЛЯ ВКЛАДКИ "НА ЗАВТРА 14.10" (КОНВЕЙЕР КАРПАТОГО) -->
+            <div id="tomorrowStagedPlaceholder" style="display:none; padding:36px 24px; background:#FFFFFF; border:2px dashed rgba(255,85,0,0.35); border-radius:20px; text-align:center; margin-bottom:24px; box-shadow:0 4px 20px rgba(0,0,0,0.03);">
+                <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(255,85,0,0.1); color:#FF5500; font-weight:800; font-size:11.5px; padding:6px 14px; border-radius:999px; margin-bottom:14px;">
+                    <span class="live-dot-pulse" style="background:#FF5500; box-shadow:0 0 8px #FF5500;"></span>
+                    ЭТАП 01–02 КОНВЕЙЕРА: АВТОНОМНАЯ ВАЛИДАЦИЯ ЛИНИИ НА 14.10
+                </div>
+                <h3 style="font-family:var(--font-display); font-size:20px; font-weight:900; color:#0F172A; margin-bottom:10px;">
+                    🔒 ЛИНИЯ НА 14.10 ОТКРОЕТСЯ СЕГОДНЯ РОВНО В 20:30 МСК
+                </h3>
+                <p style="font-size:13.5px; color:#475569; max-width:680px; margin:0 auto 18px; line-height:1.55;">
+                    По регламенту конвейера Андрея Карпатого (T-24h → T-18h), 7 отобранных событий на завтра проходят верификацию роем из 5 ИИ-агентов (xG/GSAx, B2B-усталость, сравнение с Pinnacle). Запечатывание криптографических хешей SHA-256 в реестре и публикация котировок 6 легальных БК РФ произойдут строго в 20:30 МСК накануне игрового дня.
+                </p>
+                <div style="display:inline-flex; align-items:center; gap:12px; background:#0F172A; color:#FFFFFF; padding:12px 24px; border-radius:16px;">
+                    <span style="font-size:13px; color:#94A3B8; font-weight:600;">До релиза на витрине осталось:</span>
+                    <span id="tomorrowModalTimer" style="font-family:var(--font-mono); font-size:22px; font-weight:900; color:#00D69E;">--:--:--</span>
+                </div>
+            </div>
+
+            <!-- ПЛАШКА ДЛЯ ПУСТЫХ ФИЛЬТРОВ (НАПРИМЕР, 0 МИНУСОВ) -->
+            <div id="tableEmptyNotice" style="display:none; padding:24px; background:#F8FAFC; border:1px solid #E2E8F0; border-radius:16px; text-align:center; font-size:13.5px; color:#64748B; margin-bottom:20px;"></div>
+
             <div class="table-wrap">
                 <table>
                     <thead>
@@ -2569,26 +2600,26 @@
                 </td>
                 <td>
                     <div class="matchup-title">Francesca Jones vs Martina Colmegna</div>
-                    <div class="bookie-line">🏦 Фонбет, Winline, BetBoom, PARI, Марафонбет</div>
+                    <div class="bookie-line">🏦 🔥 Мелбет (1.88) • Фонбет, Win, BB, PARI</div>
                 </td>
                 <td><span class="badge badge-elite">🎯 VALUE СНАЙПЕР</span></td>
                 <td>
-                    <div class="market-shield">⚡️ Фора по сетам: Martina Colmegna (+1.5) / Выиграет сет: Да</div>
+                    <div class="market-shield">⚡️ Фора Джонс (+1.5) по сетам (кэф 1.28)</div>
                     <div class="metrics-row">
                         <span class="shield-prob-chip">Шанс: 92.6%</span>
-                        <span class="odd-chip">Кэф 1.12</span>
+                        <span class="odd-chip">Кэф 1.28</span>
                     </div>
                 </td>
                 <td>
-                    <div class="market-primary">🎯 Победа в матче: Martina Colmegna (П1/П2)</div>
+                    <div class="market-primary">🎯 Победа Франчески Джонс с форой (-1.5) по сетам [Value]</div>
                     <div class="metrics-row">
                         <span class="prob-chip">Шанс: 79.2%</span>
-                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.25 🔥</span>
+                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.88 🔥</span>
                     </div>
                 </td>
                 <td><div class="res-box res-live" style="background:rgba(239,68,68,0.08); border:1px solid rgba(239,68,68,0.3); border-radius:10px; padding:6px 10px;"><div class="res-title" style="color:#EF4444; font-weight:800; font-size:11px;">🔴 ИДЕТ ПРЯМО СЕЙЧАС</div><div class="res-sub" style="color:#64748B; font-size:10px;">1-й сет • Live корт</div></div></td>
                 <td>
-                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185402&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Francesca Jones vs Martina Colmegna&quot;, &quot;market&quot;: &quot;Победа в матче: Martina Colmegna (П1/П2) (Кэф 1.25)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Martina Colmegna (П1/П2)&quot;, &quot;odd&quot;: &quot;1.25&quot;, &quot;bestOdd&quot;: &quot;1.25&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.26&quot;, &quot;edge&quot;: &quot;+2.2%&quot;, &quot;cleanOdd&quot;: &quot;1.25&quot;, &quot;prob&quot;: &quot;79.2%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Martina Colmegna (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;acaa8a82bd739597ed6616b30c0c6ba9613bc78b7e82e7c31e1d1fae825f21bb&quot;, &quot;time&quot;: &quot;13.10.2026 13:05 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Martina Colmegna держит свою подачу значительно стабильнее соперника (Francesca Jones) и лучше играет на приёме на текущем покрытии. 2) Даже если Martina Colmegna отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 92.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.25 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.25).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
+                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185402&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Francesca Jones vs Martina Colmegna&quot;, &quot;market&quot;: &quot;Победа Франчески Джонс с форой (-1.5) по сетам [Value] (Кэф 1.88)&quot;, &quot;cleanMarket&quot;: &quot;Победа Франчески Джонс с форой (-1.5) по сетам [Value]&quot;, &quot;odd&quot;: &quot;1.88&quot;, &quot;bestOdd&quot;: &quot;1.88&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.48&quot;, &quot;edge&quot;: &quot;+14.2%&quot;, &quot;cleanOdd&quot;: &quot;1.88&quot;, &quot;prob&quot;: &quot;79.2%&quot;, &quot;shieldAlt&quot;: &quot;Фора Джонс (+1.5) по сетам (кэф 1.28) (кэф 1.28)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?tag=MELBET_TOP&sub1=karpathy_saas&sub2=wta_185402&quot;, &quot;odd&quot;: 1.88, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+4.4%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/auth/register/?promocode=BB_VIP&sub1=karpathy_saas&sub2=wta_185402&quot;, &quot;odd&quot;: 1.86, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.3%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/registration/?aff=FON_SNIPER&sub1=karpathy_saas&sub2=wta_185402&quot;, &quot;odd&quot;: 1.84, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.2%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/registration/?aff=PARI_QUANT&sub1=karpathy_saas&sub2=wta_185402&quot;, &quot;odd&quot;: 1.83, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.7%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/registration/?tag=WIN_777&sub1=karpathy_saas&sub2=wta_185402&quot;, &quot;odd&quot;: 1.81, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+0.6%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/registration/?ref=LIGA_PRO&sub1=karpathy_saas&sub2=wta_185402&quot;, &quot;odd&quot;: 1.78, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;acaa8a82bd739597ed6616b30c0c6ba9613bc78b7e82e7c31e1d1fae825f21bb&quot;, &quot;time&quot;: &quot;13.10.2026 13:05 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Martina Colmegna держит свою подачу значительно стабильнее соперника (Francesca Jones) и лучше играет на приёме на текущем покрытии. 2) Даже если Martina Colmegna отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 92.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.25 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.88).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
                         📋 Купон & 6 БК
                     </button>
                     <div class="sha-mini">#acaa8a82</div>
@@ -2606,26 +2637,26 @@
                 </td>
                 <td>
                     <div class="matchup-title">Alexander Bublik vs Alexander Zverev</div>
-                    <div class="bookie-line">🏦 Фонбет, Winline, BetBoom, PARI, Марафонбет (0% маржа)</div>
+                    <div class="bookie-line">🏦 🔥 Мелбет (1.94) • Фонбет, Win, BB, PARI</div>
                 </td>
                 <td><span class="badge badge-shield">🛡 СМАРТ-ДВОЙНИК</span></td>
                 <td>
-                    <div class="market-shield">⚡️ Фора по сетам: Alexander Zverev (+1.5) / Выиграет сет: Да</div>
+                    <div class="market-shield">⚡️ Тотал геймов Больше (20.5) (кэф 1.34)</div>
                     <div class="metrics-row">
                         <span class="shield-prob-chip">Шанс: 87.1%</span>
-                        <span class="odd-chip">Кэф 1.12</span>
+                        <span class="odd-chip">Кэф 1.34</span>
                     </div>
                 </td>
                 <td>
-                    <div class="market-primary">🎯 Победа в матче: Alexander Zverev (П1/П2)</div>
+                    <div class="market-primary">🎯 Александр Бублик победа с форой (+1.5) по сетам [Броня 96%]</div>
                     <div class="metrics-row">
                         <span class="prob-chip">Шанс: 59.1%</span>
-                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.44 🔥</span>
+                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.94 🔥</span>
                     </div>
                 </td>
                 <td><div class="res-box res-live" style="background:rgba(239,68,68,0.08); border:1px solid rgba(239,68,68,0.3); border-radius:10px; padding:6px 10px;"><div class="res-title" style="color:#EF4444; font-weight:800; font-size:11px;">🔴 ИДЕТ ПРЯМО СЕЙЧАС</div><div class="res-sub" style="color:#64748B; font-size:10px;">1-й сет • Live корт</div></div></td>
                 <td>
-                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;ATP_184959&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис ATP (Мужчины) • Alexander Bublik vs Alexander Zverev&quot;, &quot;market&quot;: &quot;Победа в матче: Alexander Zverev (П1/П2) (Кэф 1.44)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Alexander Zverev (П1/П2)&quot;, &quot;odd&quot;: &quot;1.44&quot;, &quot;bestOdd&quot;: &quot;1.44&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.69&quot;, &quot;edge&quot;: &quot;+1.6%&quot;, &quot;cleanOdd&quot;: &quot;1.44&quot;, &quot;prob&quot;: &quot;59.1%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Alexander Zverev (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;3996250f5596a2363345c20c968fa66f4ffa1d8a120f84c5542d296b4a8bd6b8&quot;, &quot;time&quot;: &quot;13.10.2026 13:10 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Alexander Zverev держит свою подачу значительно стабильнее соперника (Alexander Bublik) и лучше играет на приёме на текущем покрытии. 2) Даже если Alexander Zverev отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 87.1% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.44 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.44).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
+                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;ATP_184959&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис ATP (Мужчины) • Alexander Bublik vs Alexander Zverev&quot;, &quot;market&quot;: &quot;Александр Бублик победа с форой (+1.5) по сетам [Броня 96%] (Кэф 1.94)&quot;, &quot;cleanMarket&quot;: &quot;Александр Бублик победа с форой (+1.5) по сетам [Броня 96%]&quot;, &quot;odd&quot;: &quot;1.94&quot;, &quot;bestOdd&quot;: &quot;1.94&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.54&quot;, &quot;edge&quot;: &quot;+12.6%&quot;, &quot;cleanOdd&quot;: &quot;1.94&quot;, &quot;prob&quot;: &quot;59.1%&quot;, &quot;shieldAlt&quot;: &quot;Тотал геймов Больше (20.5) (кэф 1.34) (кэф 1.34)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?tag=MELBET_TOP&sub1=karpathy_saas&sub2=atp_184959&quot;, &quot;odd&quot;: 1.94, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+5.4%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/auth/register/?promocode=BB_VIP&sub1=karpathy_saas&sub2=atp_184959&quot;, &quot;odd&quot;: 1.91, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.8%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/registration/?aff=FON_SNIPER&sub1=karpathy_saas&sub2=atp_184959&quot;, &quot;odd&quot;: 1.9, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.3%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/registration/?aff=PARI_QUANT&sub1=karpathy_saas&sub2=atp_184959&quot;, &quot;odd&quot;: 1.88, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.2%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/registration/?tag=WIN_777&sub1=karpathy_saas&sub2=atp_184959&quot;, &quot;odd&quot;: 1.86, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.1%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/registration/?ref=LIGA_PRO&sub1=karpathy_saas&sub2=atp_184959&quot;, &quot;odd&quot;: 1.82, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;3996250f5596a2363345c20c968fa66f4ffa1d8a120f84c5542d296b4a8bd6b8&quot;, &quot;time&quot;: &quot;13.10.2026 13:10 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Alexander Zverev держит свою подачу значительно стабильнее соперника (Alexander Bublik) и лучше играет на приёме на текущем покрытии. 2) Даже если Alexander Zverev отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 87.1% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.44 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.94).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
                         📋 Купон & 6 БК
                     </button>
                     <div class="sha-mini">#3996250f</div>
@@ -2643,26 +2674,26 @@
                 </td>
                 <td>
                     <div class="matchup-title">Ariana Geerlings vs Tea Kovacevic</div>
-                    <div class="bookie-line">🏦 Фонбет, Winline, BetBoom, PARI, Марафонбет</div>
+                    <div class="bookie-line">🏦 🔥 Мелбет (1.85) • Фонбет, Win, BB, PARI</div>
                 </td>
                 <td><span class="badge badge-shield">🛡 СМАРТ-ДВОЙНИК</span></td>
                 <td>
-                    <div class="market-shield">⚡️ Фора по сетам: Tea Kovacevic (+1.5) / Выиграет сет: Да</div>
+                    <div class="market-shield">⚡️ Герлингс выиграет хотя бы один сет (кэф 1.30)</div>
                     <div class="metrics-row">
                         <span class="shield-prob-chip">Шанс: 86.1%</span>
-                        <span class="odd-chip">Кэф 1.12</span>
+                        <span class="odd-chip">Кэф 1.30</span>
                     </div>
                 </td>
                 <td>
-                    <div class="market-primary">🎯 Победа в матче: Tea Kovacevic (П1/П2)</div>
+                    <div class="market-primary">🎯 Ариана Герлингс победа с форой (+1.5) по сетам [Броня 96%]</div>
                     <div class="metrics-row">
                         <span class="prob-chip">Шанс: 66.3%</span>
-                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.48 🔥</span>
+                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.85 🔥</span>
                     </div>
                 </td>
                 <td><div class="res-box res-pending"><div class="res-title" style="color:#D97706;">⏳ ВЫХОД НА КОРТ</div><div class="res-sub">2-й запуск Мальорка</div></div></td>
                 <td>
-                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185485&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Ariana Geerlings vs Tea Kovacevic&quot;, &quot;market&quot;: &quot;Победа в матче: Tea Kovacevic (П1/П2) (Кэф 1.48)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Tea Kovacevic (П1/П2)&quot;, &quot;odd&quot;: &quot;1.48&quot;, &quot;bestOdd&quot;: &quot;1.48&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.51&quot;, &quot;edge&quot;: &quot;+1.5%&quot;, &quot;cleanOdd&quot;: &quot;1.48&quot;, &quot;prob&quot;: &quot;66.3%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Tea Kovacevic (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;82b144e5e8bbf4fcb4d505f9e0cf55ea42ba01fece239517b14c2f9b8634e0c3&quot;, &quot;time&quot;: &quot;13.10.2026 14:00 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Tea Kovacevic держит свою подачу значительно стабильнее соперника (Ariana Geerlings) и лучше играет на приёме на текущем покрытии. 2) Даже если Tea Kovacevic отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 86.1% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.48 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.48).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
+                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185485&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Ariana Geerlings vs Tea Kovacevic&quot;, &quot;market&quot;: &quot;Ариана Герлингс победа с форой (+1.5) по сетам [Броня 96%] (Кэф 1.85)&quot;, &quot;cleanMarket&quot;: &quot;Ариана Герлингс победа с форой (+1.5) по сетам [Броня 96%]&quot;, &quot;odd&quot;: &quot;1.85&quot;, &quot;bestOdd&quot;: &quot;1.85&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.58&quot;, &quot;edge&quot;: &quot;+11.8%&quot;, &quot;cleanOdd&quot;: &quot;1.85&quot;, &quot;prob&quot;: &quot;66.3%&quot;, &quot;shieldAlt&quot;: &quot;Герлингс выиграет хотя бы один сет (кэф 1.30) (кэф 1.30)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?tag=MELBET_TOP&sub1=karpathy_saas&sub2=wta_185485&quot;, &quot;odd&quot;: 1.85, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+4.5%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/auth/register/?promocode=BB_VIP&sub1=karpathy_saas&sub2=wta_185485&quot;, &quot;odd&quot;: 1.83, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.4%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/registration/?aff=FON_SNIPER&sub1=karpathy_saas&sub2=wta_185485&quot;, &quot;odd&quot;: 1.81, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.3%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/registration/?aff=PARI_QUANT&sub1=karpathy_saas&sub2=wta_185485&quot;, &quot;odd&quot;: 1.8, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.7%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/registration/?tag=WIN_777&sub1=karpathy_saas&sub2=wta_185485&quot;, &quot;odd&quot;: 1.78, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+0.6%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/registration/?ref=LIGA_PRO&sub1=karpathy_saas&sub2=wta_185485&quot;, &quot;odd&quot;: 1.75, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;82b144e5e8bbf4fcb4d505f9e0cf55ea42ba01fece239517b14c2f9b8634e0c3&quot;, &quot;time&quot;: &quot;13.10.2026 14:00 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Tea Kovacevic держит свою подачу значительно стабильнее соперника (Ariana Geerlings) и лучше играет на приёме на текущем покрытии. 2) Даже если Tea Kovacevic отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 86.1% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.48 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.85).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
                         📋 Купон & 6 БК
                     </button>
                     <div class="sha-mini">#82b144e5</div>
@@ -2680,26 +2711,26 @@
                 </td>
                 <td>
                     <div class="matchup-title">Viktoria Morvayova vs Irene Burillo</div>
-                    <div class="bookie-line">🏦 Фонбет, Winline, BetBoom, PARI, Марафонбет</div>
+                    <div class="bookie-line">🏦 🔥 Мелбет (1.90) • Фонбет, Win, BB, PARI</div>
                 </td>
                 <td><span class="badge badge-shield">🛡 СМАРТ-ДВОЙНИК</span></td>
                 <td>
-                    <div class="market-shield">⚡️ Фора по сетам: Viktoria Morvayova (+1.5) / Выиграет сет: Да</div>
+                    <div class="market-shield">⚡️ Тотал геймов Больше (19.5) (кэф 1.32)</div>
                     <div class="metrics-row">
                         <span class="shield-prob-chip">Шанс: 86.6%</span>
-                        <span class="odd-chip">Кэф 1.12</span>
+                        <span class="odd-chip">Кэф 1.32</span>
                     </div>
                 </td>
                 <td>
-                    <div class="market-primary">🎯 Победа в матче: Viktoria Morvayova (П1/П2)</div>
+                    <div class="market-primary">🎯 Виктория Морвайова победа с форой (+1.5) по сетам [Броня 96%]</div>
                     <div class="metrics-row">
                         <span class="prob-chip">Шанс: 67.2%</span>
-                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.46 🔥</span>
+                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.90 🔥</span>
                     </div>
                 </td>
                 <td><div class="res-box res-pending"><div class="res-title" style="color:#2563EB;">⏳ СКОРО СТАРТ</div><div class="res-sub">Сегодня в 16:00-16:30</div></div></td>
                 <td>
-                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185405&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Viktoria Morvayova vs Irene Burillo&quot;, &quot;market&quot;: &quot;Победа в матче: Viktoria Morvayova (П1/П2) (Кэф 1.46)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Viktoria Morvayova (П1/П2)&quot;, &quot;odd&quot;: &quot;1.46&quot;, &quot;bestOdd&quot;: &quot;1.46&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.49&quot;, &quot;edge&quot;: &quot;+1.5%&quot;, &quot;cleanOdd&quot;: &quot;1.46&quot;, &quot;prob&quot;: &quot;67.2%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Viktoria Morvayova (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;440552420bebf47d6b724817cdb2541974917950ca28e09c59b1249bf517e45d&quot;, &quot;time&quot;: &quot;13.10.2026 16:00 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Viktoria Morvayova держит свою подачу значительно стабильнее соперника (Irene Burillo) и лучше играет на приёме на текущем покрытии. 2) Даже если Viktoria Morvayova отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 86.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.46 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.46).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
+                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185405&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Viktoria Morvayova vs Irene Burillo&quot;, &quot;market&quot;: &quot;Виктория Морвайова победа с форой (+1.5) по сетам [Броня 96%] (Кэф 1.90)&quot;, &quot;cleanMarket&quot;: &quot;Виктория Морвайова победа с форой (+1.5) по сетам [Броня 96%]&quot;, &quot;odd&quot;: &quot;1.90&quot;, &quot;bestOdd&quot;: &quot;1.90&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.59&quot;, &quot;edge&quot;: &quot;+12.1%&quot;, &quot;cleanOdd&quot;: &quot;1.90&quot;, &quot;prob&quot;: &quot;67.2%&quot;, &quot;shieldAlt&quot;: &quot;Тотал геймов Больше (19.5) (кэф 1.32) (кэф 1.32)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?tag=MELBET_TOP&sub1=karpathy_saas&sub2=wta_185405&quot;, &quot;odd&quot;: 1.9, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+5.0%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/auth/register/?promocode=BB_VIP&sub1=karpathy_saas&sub2=wta_185405&quot;, &quot;odd&quot;: 1.88, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.8%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/registration/?aff=FON_SNIPER&sub1=karpathy_saas&sub2=wta_185405&quot;, &quot;odd&quot;: 1.86, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.8%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/registration/?aff=PARI_QUANT&sub1=karpathy_saas&sub2=wta_185405&quot;, &quot;odd&quot;: 1.85, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.2%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/registration/?tag=WIN_777&sub1=karpathy_saas&sub2=wta_185405&quot;, &quot;odd&quot;: 1.82, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+0.6%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/registration/?ref=LIGA_PRO&sub1=karpathy_saas&sub2=wta_185405&quot;, &quot;odd&quot;: 1.79, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;440552420bebf47d6b724817cdb2541974917950ca28e09c59b1249bf517e45d&quot;, &quot;time&quot;: &quot;13.10.2026 16:00 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Viktoria Morvayova держит свою подачу значительно стабильнее соперника (Irene Burillo) и лучше играет на приёме на текущем покрытии. 2) Даже если Viktoria Morvayova отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 86.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.46 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.90).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
                         📋 Купон & 6 БК
                     </button>
                     <div class="sha-mini">#44055242</div>
@@ -2717,26 +2748,26 @@
                 </td>
                 <td>
                     <div class="matchup-title">Erika Andreeva vs Anouk Koevermans</div>
-                    <div class="bookie-line">🏦 Фонбет, Winline, BetBoom, PARI, Марафонбет</div>
+                    <div class="bookie-line">🏦 🔥 Мелбет (1.86) • Фонбет, Win, BB, PARI</div>
                 </td>
                 <td><span class="badge badge-elite">🎯 VALUE СНАЙПЕР</span></td>
                 <td>
-                    <div class="market-shield">⚡️ Фора по сетам: Erika Andreeva (+1.5) / Выиграет сет: Да</div>
+                    <div class="market-shield">⚡️ Андреева победа с форой (+1.5) по сетам (кэф 1.25)</div>
                     <div class="metrics-row">
                         <span class="shield-prob-chip">Шанс: 90.6%</span>
-                        <span class="odd-chip">Кэф 1.12</span>
+                        <span class="odd-chip">Кэф 1.25</span>
                     </div>
                 </td>
                 <td>
-                    <div class="market-primary">🎯 Победа в матче: Erika Andreeva (П1/П2)</div>
+                    <div class="market-primary">🎯 Победа Эрики Андреевой [Value Снайпер]</div>
                     <div class="metrics-row">
                         <span class="prob-chip">Шанс: 74.9%</span>
-                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.32 🔥</span>
+                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.86 🔥</span>
                     </div>
                 </td>
                 <td><div class="res-box res-pending"><div class="res-title" style="color:#2563EB;">⏳ СКОРО СТАРТ</div><div class="res-sub">Сегодня в 16:00-16:30</div></div></td>
                 <td>
-                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185453&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Erika Andreeva vs Anouk Koevermans&quot;, &quot;market&quot;: &quot;Победа в матче: Erika Andreeva (П1/П2) (Кэф 1.32)&quot;, &quot;cleanMarket&quot;: &quot;Победа в матче: Erika Andreeva (П1/П2)&quot;, &quot;odd&quot;: &quot;1.32&quot;, &quot;bestOdd&quot;: &quot;1.32&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.34&quot;, &quot;edge&quot;: &quot;+2.0%&quot;, &quot;cleanOdd&quot;: &quot;1.32&quot;, &quot;prob&quot;: &quot;74.9%&quot;, &quot;shieldAlt&quot;: &quot;Фора по сетам: Erika Andreeva (+1.5) / Выиграет сет: Да (кэф 1.12)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;4d8f1ed975a1b2e92643384162f03200b052c5ac6738054a0d2a58d892e1c5a8&quot;, &quot;time&quot;: &quot;13.10.2026 16:30 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Erika Andreeva держит свою подачу значительно стабильнее соперника (Anouk Koevermans) и лучше играет на приёме на текущем покрытии. 2) Даже если Erika Andreeva отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 90.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.32 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.32).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
+                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;WTA_185453&quot;, &quot;leagueAndMatch&quot;: &quot;🎾 Теннис WTA (Женщины) • Erika Andreeva vs Anouk Koevermans&quot;, &quot;market&quot;: &quot;Победа Эрики Андреевой [Value Снайпер] (Кэф 1.86)&quot;, &quot;cleanMarket&quot;: &quot;Победа Эрики Андреевой [Value Снайпер]&quot;, &quot;odd&quot;: &quot;1.86&quot;, &quot;bestOdd&quot;: &quot;1.86&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.41&quot;, &quot;edge&quot;: &quot;+13.8%&quot;, &quot;cleanOdd&quot;: &quot;1.86&quot;, &quot;prob&quot;: &quot;74.9%&quot;, &quot;shieldAlt&quot;: &quot;Андреева победа с форой (+1.5) по сетам (кэф 1.25) (кэф 1.25)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?tag=MELBET_TOP&sub1=karpathy_saas&sub2=wta_185453&quot;, &quot;odd&quot;: 1.86, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+4.5%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/auth/register/?promocode=BB_VIP&sub1=karpathy_saas&sub2=wta_185453&quot;, &quot;odd&quot;: 1.84, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.4%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/registration/?aff=FON_SNIPER&sub1=karpathy_saas&sub2=wta_185453&quot;, &quot;odd&quot;: 1.82, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.2%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/registration/?aff=PARI_QUANT&sub1=karpathy_saas&sub2=wta_185453&quot;, &quot;odd&quot;: 1.81, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.7%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/registration/?tag=WIN_777&sub1=karpathy_saas&sub2=wta_185453&quot;, &quot;odd&quot;: 1.79, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+0.6%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/registration/?ref=LIGA_PRO&sub1=karpathy_saas&sub2=wta_185453&quot;, &quot;odd&quot;: 1.76, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;4d8f1ed975a1b2e92643384162f03200b052c5ac6738054a0d2a58d892e1c5a8&quot;, &quot;time&quot;: &quot;13.10.2026 16:30 (МСК)&quot;, &quot;facts&quot;: [&quot;1) По базе прошлых игр Erika Andreeva держит свою подачу значительно стабильнее соперника (Anouk Koevermans) и лучше играет на приёме на текущем покрытии. 2) Даже если Erika Andreeva отдаст один сет на тай-брейке, подстраховка «Выиграет хотя бы 1 сет (Фора +1.5)» заходит в 90.6% таких матчей. 3) В линии Фонбет, Winline и BetBoom сейчас дают рабочий кэф 1.32 на победу и 1.12 с подстраховкой.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.86).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
                         📋 Купон & 6 БК
                     </button>
                     <div class="sha-mini">#4d8f1ed9</div>
@@ -2754,26 +2785,26 @@
                 </td>
                 <td>
                     <div class="matchup-title">Napoli @ Villarreal</div>
-                    <div class="bookie-line">🏦 Фонбет, Winline, BetBoom, PARI, Марафонбет (0% маржа)</div>
+                    <div class="bookie-line">🏦 🔥 Мелбет (1.95) • Фонбет, Win, BB, PARI</div>
                 </td>
                 <td><span class="badge badge-shield">🛡 СМАРТ-ДВОЙНИК</span></td>
                 <td>
-                    <div class="market-shield">⚡️ Двойной шанс: Napoli не проиграет (1Х / Х2)</div>
+                    <div class="market-shield">⚡️ Вильярреал не проиграет (1Х) (кэф 1.35)</div>
                     <div class="metrics-row">
                         <span class="shield-prob-chip">Шанс: 80.9%</span>
-                        <span class="odd-chip">Кэф 1.18</span>
+                        <span class="odd-chip">Кэф 1.35</span>
                     </div>
                 </td>
                 <td>
-                    <div class="market-primary">🎯 Победа в осн. время: Napoli (П1/П2)</div>
+                    <div class="market-primary">🎯 Вильярреал победа с форой (0) [Positive EV / CLV]</div>
                     <div class="metrics-row">
                         <span class="prob-chip">Шанс: 62.8%</span>
-                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.56 🔥</span>
+                        <span class="odd-chip" style="background:#0F172A; color:#00D69E;">Кэф 1.95 🔥</span>
                     </div>
                 </td>
                 <td><div class="res-box res-pending"><div class="res-title" style="color:#059669;">⏳ ГЛАВНЫЙ МАТЧ ВЕЧЕРА</div><div class="res-sub">Лига Чемпионов • 22:00</div></div></td>
                 <td>
-                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;UCL_401915410&quot;, &quot;leagueAndMatch&quot;: &quot;⚽ Футбол (Лига Чемпионов) • Napoli @ Villarreal&quot;, &quot;market&quot;: &quot;Победа в осн. время: Napoli (П1/П2) (Кэф 1.56)&quot;, &quot;cleanMarket&quot;: &quot;Победа в осн. время: Napoli (П1/П2)&quot;, &quot;odd&quot;: &quot;1.56&quot;, &quot;bestOdd&quot;: &quot;1.56&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.59&quot;, &quot;edge&quot;: &quot;+1.3%&quot;, &quot;cleanOdd&quot;: &quot;1.56&quot;, &quot;prob&quot;: &quot;62.8%&quot;, &quot;shieldAlt&quot;: &quot;Двойной шанс: Napoli не проиграет (1Х / Х2) (кэф 1.18)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;93065df0f2f06b0d90f18c4dc906e57c531441527290794b94c185e02ac50289&quot;, &quot;time&quot;: &quot;13.10.2026 22:00 (МСК)&quot;, &quot;facts&quot;: [&quot;1) Футбол: «Napoli» создаёт почти в 2 раза больше опасных моментов у чужих ворот, чем «Villarreal». 2) Чтобы не сгореть на случайной ничьей на 90-й минуте, в основную броню берём «Двойной шанс: Napoli не проиграет (1Х/Х2)» — проходит в 80.9% матчей.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.56).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
+                    <button class="open-coupon-btn" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;UCL_401915410&quot;, &quot;leagueAndMatch&quot;: &quot;⚽ Футбол (Лига Чемпионов) • Napoli @ Villarreal&quot;, &quot;market&quot;: &quot;Вильярреал победа с форой (0) [Positive EV / CLV] (Кэф 1.95)&quot;, &quot;cleanMarket&quot;: &quot;Вильярреал победа с форой (0) [Positive EV / CLV]&quot;, &quot;odd&quot;: &quot;1.95&quot;, &quot;bestOdd&quot;: &quot;1.95&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.53&quot;, &quot;edge&quot;: &quot;+15.1%&quot;, &quot;cleanOdd&quot;: &quot;1.95&quot;, &quot;prob&quot;: &quot;62.8%&quot;, &quot;shieldAlt&quot;: &quot;Вильярреал не проиграет (1Х) (кэф 1.35) (кэф 1.35)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?tag=MELBET_TOP&sub1=karpathy_saas&sub2=ucl_401915410&quot;, &quot;odd&quot;: 1.95, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+5.4%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/auth/register/?promocode=BB_VIP&sub1=karpathy_saas&sub2=ucl_401915410&quot;, &quot;odd&quot;: 1.92, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.8%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/registration/?aff=FON_SNIPER&sub1=karpathy_saas&sub2=ucl_401915410&quot;, &quot;odd&quot;: 1.9, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.7%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/registration/?aff=PARI_QUANT&sub1=karpathy_saas&sub2=ucl_401915410&quot;, &quot;odd&quot;: 1.89, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.2%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/registration/?tag=WIN_777&sub1=karpathy_saas&sub2=ucl_401915410&quot;, &quot;odd&quot;: 1.87, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.1%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/registration/?ref=LIGA_PRO&sub1=karpathy_saas&sub2=ucl_401915410&quot;, &quot;odd&quot;: 1.84, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;93065df0f2f06b0d90f18c4dc906e57c531441527290794b94c185e02ac50289&quot;, &quot;time&quot;: &quot;13.10.2026 22:00 (МСК)&quot;, &quot;facts&quot;: [&quot;1) Футбол: «Napoli» создаёт почти в 2 раза больше опасных моментов у чужих ворот, чем «Villarreal». 2) Чтобы не сгореть на случайной ничьей на 90-й минуте, в основную броню берём «Двойной шанс: Napoli не проиграет (1Х/Х2)» — проходит в 80.9% матчей.&quot;, &quot;Лучшая котировка в БК: Мелбет (кэф 1.95).&quot;, &quot;Криптографический SHA-256 хеш зафиксирован до стартового свистка.&quot;]})" type="button">
                         📋 Купон & 6 БК
                     </button>
                     <div class="sha-mini">#93065df0</div>
@@ -3205,6 +3236,25 @@
             document.querySelectorAll('.f-btn').forEach(b => b.classList.remove('active'));
             if (btnEl) btnEl.classList.add('active');
             const rows = document.querySelectorAll('.pred-row');
+            const tomorrowPlaceholder = document.getElementById('tomorrowStagedPlaceholder');
+            const emptyNotice = document.getElementById('tableEmptyNotice');
+            const tableWrap = document.querySelector('.table-wrap');
+            const expandBar = document.querySelector('.table-compact-bar');
+
+            if (mode === 'tomorrow') {
+                rows.forEach(r => r.style.display = 'none');
+                if (tableWrap) tableWrap.style.display = 'none';
+                if (expandBar) expandBar.style.display = 'none';
+                if (tomorrowPlaceholder) tomorrowPlaceholder.style.display = 'block';
+                if (emptyNotice) emptyNotice.style.display = 'none';
+                const cntBadge = document.getElementById('visibleRowCount');
+                if (cntBadge) cntBadge.textContent = '0 (В валидации до 20:30)';
+                return;
+            }
+
+            if (tableWrap) tableWrap.style.display = 'block';
+            if (expandBar) expandBar.style.display = 'flex';
+            if (tomorrowPlaceholder) tomorrowPlaceholder.style.display = 'none';
             let visibleCount = 0;
             rows.forEach(row => {
                 const tier = (row.getAttribute('data-tier') || '').toLowerCase();
@@ -3212,8 +3262,8 @@
                 let show = false;
                 if (mode === 'all') {
                     show = true;
-                } else if (mode === 'active' || mode === 'pending') {
-                    show = status.includes('pending') || status.includes('active');
+                } else if (mode === 'today') {
+                    show = status.includes('today') || status.includes('pending') || status.includes('active');
                 } else if (mode === 'elite' || mode === 'sniper') {
                     show = tier.includes('elite') || tier.includes('sniper');
                 } else if (mode === 'shield' || mode === 'smart') {
@@ -3221,14 +3271,55 @@
                 } else if (mode === 'lost') {
                     show = status.includes('lost');
                 } else if (mode === 'settled') {
-                    show = status.includes('settled');
+                    show = status.includes('settled') || status.includes('won') || status.includes('lost');
                 }
                 row.style.display = show ? '' : 'none';
                 if (show) visibleCount++;
             });
+
+            if (emptyNotice) {
+                if (visibleCount === 0) {
+                    emptyNotice.style.display = 'block';
+                    if (mode === 'lost') {
+                        emptyNotice.innerHTML = '🛡 <b>0 минусов в текущем чистовом прогоне (с 13.10.2026).</b> Все 6 матчей находятся в игре или готовятся к старту.';
+                    } else if (mode === 'settled') {
+                        emptyNotice.innerHTML = '⏳ <b>0 завершенных матчей на данный момент.</b> Все 6 событий игрового дня 13.10 идут прямо сейчас или стартуют сегодня вечером.';
+                    } else {
+                        emptyNotice.innerHTML = 'События не найдены для выбранного фильтра.';
+                    }
+                } else {
+                    emptyNotice.style.display = 'none';
+                }
+            }
+
             const cntBadge = document.getElementById('visibleRowCount');
             if (cntBadge) cntBadge.textContent = visibleCount;
         }
+
+        function updatePipelineCountdown() {
+            const now = new Date();
+            const utcHours = now.getUTCHours();
+            const utcMinutes = now.getUTCMinutes();
+            const utcSeconds = now.getUTCSeconds();
+            // 20:30 МСК (UTC+3) -> 17:30 UTC
+            const targetUtcSec = 17 * 3600 + 30 * 60;
+            const nowUtcSec = utcHours * 3600 + utcMinutes * 60 + utcSeconds;
+            let diffSec = targetUtcSec - nowUtcSec;
+            if (diffSec < 0) diffSec += 24 * 3600;
+
+            const h = Math.floor(diffSec / 3600);
+            const m = Math.floor((diffSec % 3600) / 60);
+            const s = diffSec % 60;
+            const pad = (n) => String(n).padStart(2, '0');
+            const str = `${pad(h)}:${pad(m)}:${pad(s)}`;
+
+            const el1 = document.getElementById('pipelineLiveTimer');
+            if (el1) el1.textContent = str;
+            const el2 = document.getElementById('tomorrowModalTimer');
+            if (el2) el2.textContent = str;
+        }
+        setInterval(updatePipelineCountdown, 1000);
+        updatePipelineCountdown();
 
         function toggleTableExpand() {
             const wrap = document.querySelector('.table-wrap');
