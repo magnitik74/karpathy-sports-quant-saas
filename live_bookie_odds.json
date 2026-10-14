@@ -81,7 +81,8 @@
         "is_best": false,
         "edge_diff_pct": "базовый"
       }
-    ]
+    ],
+    "sha256_proof": "956826c3d9d88377541714ec0969aaff28ece125bcd5cf0a93b1b7c4bcea15bb"
   },
   "RPL_20261016_ZEN_AKR": {
     "event_id": "RPL_20261016_ZEN_AKR",
@@ -165,7 +166,8 @@
         "is_best": false,
         "edge_diff_pct": "базовый"
       }
-    ]
+    ],
+    "sha256_proof": "8ad6ffdd2fab82d6aa57f3994f7bda1ff71e5aa426fad7cba43a50238d6ecaa8"
   },
   "DOTA2_20261015_SPIRIT_C9": {
     "event_id": "DOTA2_20261015_SPIRIT_C9",
@@ -249,7 +251,8 @@
         "is_best": false,
         "edge_diff_pct": "базовый"
       }
-    ]
+    ],
+    "sha256_proof": "908d0ec86b64ec63135222c7c424e6eaf9c3e3aa51ba9e16d58614e3559e45af"
   },
   "ATP_184949": {
     "event_id": "ATP_184949",
@@ -333,7 +336,8 @@
         "is_best": false,
         "edge_diff_pct": "базовый"
       }
-    ]
+    ],
+    "sha256_proof": "3c19e037b73c2d7ec2e923042e56e09f5b701831db48afa8a4bf30165537bb01"
   },
   "KHL_20261015_AKB_AMR": {
     "event_id": "KHL_20261015_AKB_AMR",
@@ -417,7 +421,8 @@
         "is_best": false,
         "edge_diff_pct": "базовый"
       }
-    ]
+    ],
+    "sha256_proof": "ac7ea3bba7144dda981d06de476add8571a247ec937441a546383c3c17ef3660"
   },
   "NBA_401898718": {
     "event_id": "NBA_401898718",
@@ -501,6 +506,7 @@
         "is_best": false,
         "edge_diff_pct": "базовый"
       }
-    ]
+    ],
+    "sha256_proof": "63c0721f11f8544cc429c0cd97cb5d19a120459f56e99a793282eb1e69e3aafd"
   }
 }
