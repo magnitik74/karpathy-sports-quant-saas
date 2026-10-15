@@ -1,0 +1,126 @@
+[
+  {
+    "card_id": "card-20261015-родина-спартак-москва",
+    "match": {
+      "home_team": "Родина",
+      "away_team": "Спартак Москва",
+      "tournament": "FONBET Кубок России",
+      "kickoff_utc": "2026-10-15T16:30:00+00:00",
+      "kickoff_msk": "19:30 МСК",
+      "match_status": "SCHEDULED"
+    },
+    "market": {
+      "readable_title": "Победа Спартак Москва (возврат при ничьей)",
+      "short_badge": "Спартак (0)",
+      "internal_code": "AH0_AWAY",
+      "market_type": "DRAW_NO_BET"
+    },
+    "odds": {
+      "value": 1.68,
+      "bookmaker": "Winline",
+      "fetched_at": "2026-10-15T12:59:03.732267+00:00",
+      "status": "ACTIVE",
+      "ttl_seconds": 900
+    },
+    "links": {
+      "deep_link": "https://winline.ru/event/1049281?market=ah0&ref=karpathy_saas&erid=2VtzquX1aBc",
+      "fallback_web_link": "https://winline.ru/match/родина-спартак-москва?ref=karpathy_saas&erid=2VtzquX1aBc"
+    },
+    "lineup_state": {
+      "status": "PENDING",
+      "verified_at": null,
+      "source": "Ожидание официального протокола (за 60 мин до свистка)"
+    },
+    "reasons": [
+      {
+        "icon": "🛡",
+        "tag": "Возврат",
+        "text": "При ничейном счёте сумма в полном объёме возвращается на баланс (без потери суммы)."
+      },
+      {
+        "icon": "📊",
+        "tag": "Форма",
+        "text": "Родина пропускает минимум 1 гол в 8 из 9 последних кубковых матчей."
+      },
+      {
+        "icon": "💰",
+        "tag": "Выгода",
+        "text": "В Winline кэф 1.68 против 1.58 в среднем (+6.3% к выплате)."
+      }
+    ],
+    "legal": {
+      "erid": "2VtzquX1aBc",
+      "advertiser": "Реклама. ООО «Управляющая компания НКС», ИНН 7714707735",
+      "age_limit": "18+",
+      "disclaimer": "18+. Сервис носит справочно-аналитический характер и не является рекомендацией для ставок. Статистика, котировки и рынки с возвратом при ничьей представлены для самостоятельного принятия решения. Ставки на спорт сопряжены с риском полной потери денежных средств. Участие в азартных играх может привести к формированию зависимости."
+    },
+    "version": "1.0",
+    "settlement": {
+      "status": "PENDING",
+      "final_score": null,
+      "payout_factor": null
+    }
+  },
+  {
+    "card_id": "card-20261017-брентфорд-ливерпуль",
+    "match": {
+      "home_team": "Брентфорд",
+      "away_team": "Ливерпуль",
+      "tournament": "Английская Премьер-лига",
+      "kickoff_utc": "2026-10-17T14:00:00+00:00",
+      "kickoff_msk": "17:00 МСК",
+      "match_status": "SCHEDULED"
+    },
+    "market": {
+      "readable_title": "Победа Ливерпуль (возврат при ничьей)",
+      "short_badge": "Ливерпуль (0)",
+      "internal_code": "AH0_AWAY",
+      "market_type": "DRAW_NO_BET"
+    },
+    "odds": {
+      "value": 1.62,
+      "bookmaker": "Fonbet",
+      "fetched_at": "2026-10-15T12:59:03.732267+00:00",
+      "status": "ACTIVE",
+      "ttl_seconds": 900
+    },
+    "links": {
+      "deep_link": "https://fonbet.ru/event/401879262?market=ah0&ref=karpathy_saas&erid=2VtzquFonbet01",
+      "fallback_web_link": "https://fonbet.ru/match/брентфорд-ливерпуль?ref=karpathy_saas&erid=2VtzquFonbet01"
+    },
+    "lineup_state": {
+      "status": "PENDING",
+      "verified_at": null,
+      "source": "Ожидание официального протокола (за 60 мин до свистка)"
+    },
+    "reasons": [
+      {
+        "icon": "🛡",
+        "tag": "Возврат",
+        "text": "При ничейном счёте сумма в полном объёме возвращается на баланс (без потери суммы)."
+      },
+      {
+        "icon": "📊",
+        "tag": "Форма",
+        "text": "Ливерпуль выиграл 6 из 7 последних очных встреч, забивая в среднем 2.4 гола за игру."
+      },
+      {
+        "icon": "💰",
+        "tag": "Выгода",
+        "text": "В Fonbet кэф 1.62 против 1.54 в среднем (+5.2% к выплате)."
+      }
+    ],
+    "legal": {
+      "erid": "2VtzquFonbet01",
+      "advertiser": "Реклама. ООО «ФОНКОР», ИНН 9715345005",
+      "age_limit": "18+",
+      "disclaimer": "18+. Сервис носит справочно-аналитический характер и не является рекомендацией для ставок. Статистика, котировки и рынки с возвратом при ничьей представлены для самостоятельного принятия решения. Ставки на спорт сопряжены с риском полной потери денежных средств. Участие в азартных играх может привести к формированию зависимости."
+    },
+    "version": "1.0",
+    "settlement": {
+      "status": "PENDING",
+      "final_score": null,
+      "payout_factor": null
+    }
+  }
+]
