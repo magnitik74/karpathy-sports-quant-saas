@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-10-15 06:47:46 UTC",
+  "timestamp": "2026-10-15 07:18:14 UTC",
   "engine_status": "RUNNING_24_7",
-  "cpu_speed_mps": 394,
-  "current_epoch": 24,
-  "total_db_matches": 282630,
-  "current_db_offset": 31910,
+  "cpu_speed_mps": 398,
+  "current_epoch": 9,
+  "total_db_matches": 282644,
+  "current_db_offset": 41248,
   "db_file": "C:\\Project\\Pravilo_Karpatogo\\sports_swarm\\karpathy_mega_sports.db",
   "db_size_mb": 26.13,
   "active_tables": [
@@ -13,14 +13,14 @@
     "real_nba_games",
     "real_dota2_pro_matches"
   ],
-  "sha256_current_block": "d2f1de33f4161f444470bccf03ee98e61a820d1353d186985f69ca2a3683a2f7",
-  "noise_rejected": 4593865,
+  "sha256_current_block": "ccbc256d776662b3a82a9189cd4adf2efeea054ecc4bc774bacedfd9338def81",
+  "noise_rejected": 1672297,
   "golden_invariants": 34,
-  "won_count": 1855828,
-  "push_count": 92807,
-  "lost_count": 71516,
-  "total_evaluated": 2020151,
-  "non_loss_rate_pct": 96.46,
+  "won_count": 651139,
+  "push_count": 32765,
+  "lost_count": 27815,
+  "total_evaluated": 711719,
+  "non_loss_rate_pct": 96.09,
   "trend": "РАСТЁТ ↗️",
   "active_weights": {
     "football_home_1x_min_ev": 5.8,
@@ -40,154 +40,154 @@
   ],
   "recent_stream": [
     {
-      "time": "06:47:46",
+      "time": "07:18:14",
       "sport": "Баскетбол NBA",
-      "match": "NYK vs ATL (113:114)",
-      "selection": "NYK (+14.5 очков)",
+      "match": "CIN vs DET (122:110)",
+      "selection": "CIN (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "428745a04db3b5a4..."
+      "sha_hash": "c56e1e16276b10f3..."
     },
     {
-      "time": "06:47:46",
-      "sport": "Теннис ATP",
-      "match": "Cliff Drysdale vs Mike Estep",
-      "selection": "Cliff Drysdale (+1.5 сета)",
-      "odds": 1.18,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "42c9c1f87145ab01..."
-    },
-    {
-      "time": "06:47:46",
-      "sport": "Теннис ATP",
-      "match": "Dick Dell vs Luis Felipe Tavares",
-      "selection": "Dick Dell (+1.5 сета)",
-      "odds": 2.1,
-      "outcome": "LOST",
-      "outcome_ru": "Мимо (проигрыш)",
-      "sha_hash": "6dfaa2d85ffbc895..."
-    },
-    {
-      "time": "06:47:46",
+      "time": "07:18:14",
       "sport": "Баскетбол NBA",
-      "match": "CLE vs DET (85:83)",
-      "selection": "CLE (+14.5 очков)",
+      "match": "CIN vs NYK (127:118)",
+      "selection": "CIN (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "1668c5aec70c48e1..."
+      "sha_hash": "df4672c49c899ba5..."
     },
     {
-      "time": "06:47:46",
-      "sport": "Теннис ATP",
-      "match": "Patricio Cornejo vs Kenneth McMillan",
-      "selection": "Patricio Cornejo (+1.5 сета)",
-      "odds": 1.18,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "b07edd80209f3d08..."
-    },
-    {
-      "time": "06:47:46",
-      "sport": "Теннис ATP",
-      "match": "Bob Carmichael vs Ramiro Benavides",
-      "selection": "Bob Carmichael (+1.5 сета)",
-      "odds": 1.45,
+      "time": "07:18:14",
+      "sport": "Футбол Топ-5",
+      "match": "Levante vs Ponferradina",
+      "selection": "Levante (1X Двойной шанс)",
+      "odds": 1.03,
       "outcome": "PUSH",
       "outcome_ru": "При своих (ничья, 0 потерь)",
-      "sha_hash": "aa1d5268b312a316..."
+      "sha_hash": "42db4a8f2562d196..."
     },
     {
-      "time": "06:47:46",
+      "time": "07:18:14",
       "sport": "Баскетбол NBA",
-      "match": "BUF vs NOJ (129:105)",
-      "selection": "BUF (+14.5 очков)",
+      "match": "BOS vs SFW (122:128)",
+      "selection": "BOS (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "564cacabfb44426d..."
+      "sha_hash": "81378491d1054365..."
     },
     {
-      "time": "06:47:46",
-      "sport": "Теннис ATP",
-      "match": "Paolo Bertolucci vs Trey Waltke",
-      "selection": "Paolo Bertolucci (+1.5 сета)",
-      "odds": 1.18,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "c5666d3f5c9448d7..."
-    },
-    {
-      "time": "06:47:46",
+      "time": "07:18:14",
       "sport": "Баскетбол NBA",
-      "match": "SSL vs VIR (121:100)",
-      "selection": "SSL (+14.5 очков)",
+      "match": "PHI vs CIN (131:123)",
+      "selection": "PHI (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "bd73558e35c30d74..."
+      "sha_hash": "8196348c384b4d2b..."
     },
     {
-      "time": "06:47:46",
-      "sport": "Теннис ATP",
-      "match": "Jaime Fillol Sr. vs Jim Delaney",
-      "selection": "Jaime Fillol Sr. (+1.5 сета)",
-      "odds": 1.18,
+      "time": "07:18:14",
+      "sport": "Баскетбол NBA",
+      "match": "STL vs CIN (118:115)",
+      "selection": "STL (+14.5 очков)",
+      "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "3ef01f1febaff98c..."
+      "sha_hash": "9fdef4e9e828eef0..."
     },
     {
-      "time": "06:47:46",
+      "time": "07:18:14",
       "sport": "Баскетбол NBA",
-      "match": "NYA vs SAA (104:128)",
-      "selection": "NYA (+14.5 очков)",
+      "match": "LAL vs CHI (129:121)",
+      "selection": "LAL (+14.5 очков)",
       "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "0dcbfd5e3f5c4248..."
+    },
+    {
+      "time": "07:18:14",
+      "sport": "Футбол Топ-5",
+      "match": "Cartagena vs Villarreal B",
+      "selection": "Cartagena (1X Двойной шанс)",
+      "odds": 1.63,
       "outcome": "LOST",
       "outcome_ru": "Мимо (проигрыш)",
-      "sha_hash": "0ce0c9b547cf15c3..."
+      "sha_hash": "5a21c17a431cd832..."
     },
     {
-      "time": "06:47:46",
-      "sport": "Теннис ATP",
-      "match": "Brian Teacher vs Cliff Richey",
-      "selection": "Brian Teacher (+1.5 сета)",
-      "odds": 1.18,
+      "time": "07:18:14",
+      "sport": "Футбол Топ-5",
+      "match": "Levante vs Malaga",
+      "selection": "Levante (1X Двойной шанс)",
+      "odds": 1.11,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "a6bd16419b3120c6..."
+      "sha_hash": "047caed2de982921..."
     },
     {
-      "time": "06:47:46",
+      "time": "07:18:14",
       "sport": "Баскетбол NBA",
-      "match": "KEN vs INA (117:114)",
-      "selection": "KEN (+14.5 очков)",
+      "match": "PHI vs LAL (148:131)",
+      "selection": "PHI (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "01f07163b74dfe8f..."
+      "sha_hash": "38a0941f2122b7d7..."
     },
     {
-      "time": "06:47:46",
-      "sport": "Теннис ATP",
-      "match": "Onny Parun vs Antonio Munoz",
-      "selection": "Onny Parun (+1.5 сета)",
-      "odds": 1.18,
+      "time": "07:18:14",
+      "sport": "Баскетбол NBA",
+      "match": "CIN vs DET (133:104)",
+      "selection": "CIN (+14.5 очков)",
+      "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "9c5e0c64bcc09e6d..."
+      "sha_hash": "3ebf9252316a4352..."
     },
     {
-      "time": "06:47:46",
-      "sport": "Теннис ATP",
-      "match": "Wojtek Fibak vs Brian Gottfried",
-      "selection": "Wojtek Fibak (+1.5 сета)",
-      "odds": 1.18,
+      "time": "07:18:14",
+      "sport": "Баскетбол NBA",
+      "match": "BOS vs SFW (137:136)",
+      "selection": "BOS (+14.5 очков)",
+      "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "59f976eb3f6de977..."
+      "sha_hash": "5d8329a4efca8236..."
+    },
+    {
+      "time": "07:18:14",
+      "sport": "Футбол Топ-5",
+      "match": "Zaragoza vs Ibiza",
+      "selection": "Zaragoza (1X Двойной шанс)",
+      "odds": 1.17,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "45760403ff97b45c..."
+    },
+    {
+      "time": "07:18:14",
+      "sport": "Баскетбол NBA",
+      "match": "PHI vs SFW (126:123)",
+      "selection": "PHI (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "45e5982920bd23c7..."
+    },
+    {
+      "time": "07:18:14",
+      "sport": "Баскетбол NBA",
+      "match": "BOS vs CIN (138:123)",
+      "selection": "BOS (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "d326b38cf4f35c07..."
     }
   ]
 }
