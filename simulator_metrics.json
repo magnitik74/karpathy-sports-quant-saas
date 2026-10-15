@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-10-15 09:17:45 UTC",
+  "timestamp": "2026-10-15 09:18:24 UTC",
   "engine_status": "RUNNING_24_7",
-  "cpu_speed_mps": 393,
+  "cpu_speed_mps": 394,
   "current_epoch": 41,
   "total_db_matches": 282644,
-  "current_db_offset": 116840,
+  "current_db_offset": 168640,
   "db_file": "C:\\Project\\Pravilo_Karpatogo\\sports_swarm\\karpathy_mega_sports.db",
   "db_size_mb": 26.13,
   "active_tables": [
@@ -13,14 +13,14 @@
     "real_nba_games",
     "real_dota2_pro_matches"
   ],
-  "sha256_current_block": "774cb25b68fc6f01a22218d45ba8cf6fd6b2a86fa265429eb417b75d90e9564c",
-  "noise_rejected": 7976100,
+  "sha256_current_block": "26ef8de690062c8542ed1481ad119bf93905755c0524e6de36b9fe430694df5d",
+  "noise_rejected": 8011025,
   "golden_invariants": 34,
-  "won_count": 3228462,
-  "push_count": 162177,
-  "lost_count": 137477,
-  "total_evaluated": 3528116,
-  "non_loss_rate_pct": 96.1,
+  "won_count": 3244092,
+  "push_count": 162955,
+  "lost_count": 137944,
+  "total_evaluated": 3544991,
+  "non_loss_rate_pct": 96.11,
   "trend": "РАСТЁТ ↗️",
   "active_weights": {
     "football_home_1x_min_ev": 5.8,
@@ -40,154 +40,154 @@
   ],
   "recent_stream": [
     {
-      "time": "09:17:45",
+      "time": "09:18:24",
       "sport": "Баскетбол NBA",
-      "match": "PHI vs DET (131:106)",
-      "selection": "PHI (+14.5 очков)",
+      "match": "MNL vs CIN (108:111)",
+      "selection": "MNL (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "ae7585531b31e146..."
+      "sha_hash": "2dd5c05b8e7789e4..."
     },
     {
-      "time": "09:17:45",
-      "sport": "Футбол Топ-5",
-      "match": "Las Palmas vs Lugo",
-      "selection": "Las Palmas (1X Двойной шанс)",
-      "odds": 1.04,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "00e13232b321c0ee..."
-    },
-    {
-      "time": "09:17:45",
+      "time": "09:18:24",
       "sport": "Баскетбол NBA",
-      "match": "BOS vs LAL (130:105)",
+      "match": "BOS vs DET (153:121)",
       "selection": "BOS (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "a2c6bb06eac866d1..."
+      "sha_hash": "23ef857875188bef..."
     },
     {
-      "time": "09:17:45",
+      "time": "09:18:24",
       "sport": "Баскетбол NBA",
-      "match": "STL vs CHI (122:125)",
+      "match": "STL vs NYK (114:104)",
       "selection": "STL (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "88bd5ee54e3bef5d..."
+      "sha_hash": "915f81b6960b74ad..."
     },
     {
-      "time": "09:17:45",
+      "time": "09:18:24",
       "sport": "Баскетбол NBA",
-      "match": "CIN vs BAL (109:102)",
-      "selection": "CIN (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "be0682886fd34dbc..."
-    },
-    {
-      "time": "09:17:45",
-      "sport": "Баскетбол NBA",
-      "match": "LAL vs NYK (138:132)",
-      "selection": "LAL (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "cd9ecbb4b1d8ba94..."
-    },
-    {
-      "time": "09:17:45",
-      "sport": "Баскетбол NBA",
-      "match": "BOS vs CIN (111:104)",
+      "match": "BOS vs MNL (129:90)",
       "selection": "BOS (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "2d681dd4505ce25d..."
+      "sha_hash": "791b1b19d7c1a55d..."
     },
     {
-      "time": "09:17:45",
+      "time": "09:18:24",
       "sport": "Баскетбол NBA",
-      "match": "PHI vs SFW (136:128)",
-      "selection": "PHI (+14.5 очков)",
+      "match": "SYR vs CIN (135:112)",
+      "selection": "SYR (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "842f8b6fabdbcfce..."
+      "sha_hash": "77837f351f0671eb..."
     },
     {
-      "time": "09:17:45",
+      "time": "09:18:24",
       "sport": "Баскетбол NBA",
-      "match": "BOS vs CHI (114:108)",
+      "match": "BOS vs NYK (135:142)",
       "selection": "BOS (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "d4ad068cb4f12fe1..."
+      "sha_hash": "5ae29423d3127b34..."
     },
     {
-      "time": "09:17:45",
+      "time": "09:18:24",
       "sport": "Баскетбол NBA",
-      "match": "BOS vs SFW (137:125)",
+      "match": "PHW vs SYR (129:126)",
+      "selection": "PHW (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "240aaf232032d13d..."
+    },
+    {
+      "time": "09:18:24",
+      "sport": "Баскетбол NBA",
+      "match": "DET vs MNL (116:101)",
+      "selection": "DET (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "06694bff69f36e32..."
+    },
+    {
+      "time": "09:18:24",
+      "sport": "Баскетбол NBA",
+      "match": "BOS vs SYR (124:100)",
       "selection": "BOS (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "9949ed7fb0a8ffd0..."
+      "sha_hash": "355a7b51c6226d44..."
     },
     {
-      "time": "09:17:45",
-      "sport": "Футбол Топ-5",
-      "match": "Albacete vs Lugo",
-      "selection": "Albacete (1X Двойной шанс)",
-      "odds": 1.12,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "db45259d12b2bce1..."
-    },
-    {
-      "time": "09:17:45",
-      "sport": "Футбол Топ-5",
-      "match": "Levante vs Burgos",
-      "selection": "Levante (1X Двойной шанс)",
-      "odds": 1.1,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "749ff0e92b6b3037..."
-    },
-    {
-      "time": "09:17:45",
-      "sport": "Футбол Топ-5",
-      "match": "Las Palmas vs Huesca",
-      "selection": "Las Palmas (1X Двойной шанс)",
-      "odds": 1.16,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "89c7dbb0dd342e31..."
-    },
-    {
-      "time": "09:17:45",
+      "time": "09:18:24",
       "sport": "Баскетбол NBA",
-      "match": "SFW vs CIN (116:129)",
-      "selection": "SFW (+14.5 очков)",
+      "match": "DET vs CIN (117:105)",
+      "selection": "DET (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "6a775b02f552d758..."
+      "sha_hash": "75416839091c03dd..."
     },
     {
-      "time": "09:17:45",
+      "time": "09:18:24",
       "sport": "Баскетбол NBA",
-      "match": "NYK vs BAL (116:114)",
-      "selection": "NYK (+14.5 очков)",
+      "match": "BOS vs MNL (128:108)",
+      "selection": "BOS (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "83453edf91efbf4e..."
+      "sha_hash": "21fc3b63ffa232c6..."
+    },
+    {
+      "time": "09:18:24",
+      "sport": "Баскетбол NBA",
+      "match": "PHW vs CIN (109:107)",
+      "selection": "PHW (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "0e2aa210e8a02b9e..."
+    },
+    {
+      "time": "09:18:24",
+      "sport": "Баскетбол NBA",
+      "match": "BOS vs STL (113:114)",
+      "selection": "BOS (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "84fa52af762db289..."
+    },
+    {
+      "time": "09:18:24",
+      "sport": "Баскетбол NBA",
+      "match": "BOS vs DET (146:128)",
+      "selection": "BOS (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "c6fd66cb4ada6ed2..."
+    },
+    {
+      "time": "09:18:24",
+      "sport": "Баскетбол NBA",
+      "match": "BOS vs CIN (129:107)",
+      "selection": "BOS (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "50053dee15ee552a..."
     }
   ]
 }
