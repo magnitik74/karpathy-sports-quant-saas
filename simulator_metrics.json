@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-10-15 05:22:43 UTC",
+  "timestamp": "2026-10-15 05:42:31 UTC",
   "engine_status": "RUNNING_24_7",
-  "cpu_speed_mps": 248,
-  "current_epoch": 1,
+  "cpu_speed_mps": 403,
+  "current_epoch": 6,
   "total_db_matches": 282630,
-  "current_db_offset": 19800,
+  "current_db_offset": 161650,
   "db_file": "C:\\Project\\Pravilo_Karpatogo\\sports_swarm\\karpathy_mega_sports.db",
   "db_size_mb": 26.13,
   "active_tables": [
@@ -13,14 +13,14 @@
     "real_nba_games",
     "real_dota2_pro_matches"
   ],
-  "sha256_current_block": "de6d1c50190da3a4928a0e05c0c9595d6c28000a92ebb40ed7171533bc84de8b",
-  "noise_rejected": 94497,
+  "sha256_current_block": "467b5e7668789847387c887323c90889e9303dcf614a464a9692444816532e92",
+  "noise_rejected": 1168518,
   "golden_invariants": 34,
-  "won_count": 6358,
-  "push_count": 308,
-  "lost_count": 253,
-  "total_evaluated": 6919,
-  "non_loss_rate_pct": 96.34,
+  "won_count": 448314,
+  "push_count": 22400,
+  "lost_count": 17184,
+  "total_evaluated": 487898,
+  "non_loss_rate_pct": 96.48,
   "trend": "РАСТЁТ ↗️",
   "active_weights": {
     "football_home_1x_min_ev": 5.8,
@@ -40,154 +40,154 @@
   ],
   "recent_stream": [
     {
-      "time": "05:22:43",
+      "time": "05:42:31",
       "sport": "Футбол Топ-5",
-      "match": "Cremonese vs Cittadella",
-      "selection": "Cremonese (1X Двойной шанс)",
-      "odds": 0.98,
+      "match": "Liverpool vs Aston Villa",
+      "selection": "Liverpool (1X Двойной шанс)",
+      "odds": 1.07,
       "outcome": "PUSH",
       "outcome_ru": "При своих (ничья, 0 потерь)",
-      "sha_hash": "497f67527a7302a7..."
+      "sha_hash": "31d8cb4190c5b52b..."
     },
     {
-      "time": "05:22:43",
+      "time": "05:42:31",
       "sport": "Баскетбол NBA",
-      "match": "DET vs NYK (99:106)",
+      "match": "PHW vs CIN (138:108)",
+      "selection": "PHW (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "2532c254c5f21acc..."
+    },
+    {
+      "time": "05:42:31",
+      "sport": "Баскетбол NBA",
+      "match": "DET vs NYK (119:127)",
       "selection": "DET (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "79cda3d7841ebc27..."
+      "sha_hash": "ae240cb4403daca0..."
     },
     {
-      "time": "05:22:43",
+      "time": "05:42:31",
       "sport": "Баскетбол NBA",
-      "match": "STL vs NYK (117:100)",
-      "selection": "STL (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "a49cd7b6a38e6320..."
-    },
-    {
-      "time": "05:22:43",
-      "sport": "Баскетбол NBA",
-      "match": "BOS vs PHI (115:98)",
+      "match": "BOS vs SYR (129:110)",
       "selection": "BOS (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "4e53863443c4a945..."
+      "sha_hash": "8c00984d6dc8a6d7..."
     },
     {
-      "time": "05:22:43",
+      "time": "05:42:31",
+      "sport": "Баскетбол NBA",
+      "match": "STL vs SYR (132:97)",
+      "selection": "STL (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "37fa19d950358b86..."
+    },
+    {
+      "time": "05:42:31",
       "sport": "Футбол Топ-5",
-      "match": "Pisa vs Mantova",
-      "selection": "Pisa (1X Двойной шанс)",
+      "match": "Man United vs Wolves",
+      "selection": "Man United (1X Двойной шанс)",
+      "odds": 1.0,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "fa25784bead6f1ed..."
+    },
+    {
+      "time": "05:42:31",
+      "sport": "Баскетбол NBA",
+      "match": "BOS vs NYK (122:105)",
+      "selection": "BOS (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "5b8772ed8e56b381..."
+    },
+    {
+      "time": "05:42:31",
+      "sport": "Футбол Топ-5",
+      "match": "Chelsea vs Nott'm Forest",
+      "selection": "Chelsea (1X Двойной шанс)",
       "odds": 1.13,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "4173ebf170a6d4d1..."
-    },
-    {
-      "time": "05:22:43",
-      "sport": "Баскетбол NBA",
-      "match": "CIN vs SFW (124:103)",
-      "selection": "CIN (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "5c643085c9f4615a..."
-    },
-    {
-      "time": "05:22:43",
-      "sport": "Баскетбол NBA",
-      "match": "BOS vs LAL (117:93)",
-      "selection": "BOS (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "57f7d8a2da27054b..."
-    },
-    {
-      "time": "05:22:43",
-      "sport": "Баскетбол NBA",
-      "match": "CIN vs DET (102:105)",
-      "selection": "CIN (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "97019b4c4c5abe02..."
-    },
-    {
-      "time": "05:22:43",
-      "sport": "Баскетбол NBA",
-      "match": "BOS vs PHI (100:104)",
-      "selection": "BOS (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "6858123d8d550fc7..."
-    },
-    {
-      "time": "05:22:43",
-      "sport": "Баскетбол NBA",
-      "match": "STL vs BAL (110:117)",
-      "selection": "STL (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "e1a3e04a2d8d1f41..."
-    },
-    {
-      "time": "05:22:43",
-      "sport": "Баскетбол NBA",
-      "match": "LAL vs NYK (117:107)",
-      "selection": "LAL (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "87443d61c8bdefcc..."
-    },
-    {
-      "time": "05:22:43",
-      "sport": "Футбол Топ-5",
-      "match": "Sassuolo vs Bari",
-      "selection": "Sassuolo (1X Двойной шанс)",
-      "odds": 1.17,
       "outcome": "PUSH",
       "outcome_ru": "При своих (ничья, 0 потерь)",
-      "sha_hash": "4741b3f014c1a69c..."
+      "sha_hash": "9376b7898346ba2d..."
     },
     {
-      "time": "05:22:43",
+      "time": "05:42:31",
+      "sport": "Футбол Топ-5",
+      "match": "Brighton vs Everton",
+      "selection": "Brighton (1X Двойной шанс)",
+      "odds": 1.37,
+      "outcome": "LOST",
+      "outcome_ru": "Мимо (проигрыш)",
+      "sha_hash": "da32428492122e36..."
+    },
+    {
+      "time": "05:42:31",
       "sport": "Баскетбол NBA",
-      "match": "BOS vs SFW (104:94)",
-      "selection": "BOS (+14.5 очков)",
+      "match": "STL vs CIN (121:120)",
+      "selection": "STL (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "163def98df375294..."
+      "sha_hash": "d0baf0878bcbe27f..."
     },
     {
-      "time": "05:22:43",
+      "time": "05:42:31",
       "sport": "Баскетбол NBA",
-      "match": "PHI vs SFW (111:102)",
-      "selection": "PHI (+14.5 очков)",
+      "match": "PHW vs NYK (121:111)",
+      "selection": "PHW (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "d9a1c269ae2c61b2..."
+      "sha_hash": "9fe8841bc90a2167..."
     },
     {
-      "time": "05:22:43",
+      "time": "05:42:31",
       "sport": "Баскетбол NBA",
-      "match": "LAL vs NYK (119:103)",
+      "match": "LAL vs DET (130:122)",
       "selection": "LAL (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "002a7fd5086e0589..."
+      "sha_hash": "88503759f0886747..."
+    },
+    {
+      "time": "05:42:31",
+      "sport": "Футбол Топ-5",
+      "match": "Liverpool vs Brentford",
+      "selection": "Liverpool (1X Двойной шанс)",
+      "odds": 1.03,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "efb1a14a93d7c16e..."
+    },
+    {
+      "time": "05:42:31",
+      "sport": "Баскетбол NBA",
+      "match": "PHW vs SYR (105:106)",
+      "selection": "PHW (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "15ed86a449636eb0..."
+    },
+    {
+      "time": "05:42:31",
+      "sport": "Футбол Топ-5",
+      "match": "Man City vs Leeds",
+      "selection": "Man City (1X Двойной шанс)",
+      "odds": 0.84,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "1553373f8486f023..."
     }
   ]
 }
