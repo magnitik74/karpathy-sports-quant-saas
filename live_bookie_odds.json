@@ -13,7 +13,7 @@
     "best_bookie_name": "Мелбет",
     "best_bookie_url": "https://melbet.ru/?aff=karpathy_saas",
     "value_edge_pct": "+10.7%",
-    "rationale": "Родина уступает в глубине состава на 2 порядка. Модель Чоу: при классовой разнице xG > 1.25 азиатская фора (0) дает надежность 91.2%.",
+    "rationale": "Официальный календарь: Кубок России 15.10 20:45 МСК. Родина уступает в классе, азиатская фора (0) дает надежность 91.2%.",
     "books_matrix": [
       {
         "bookie_key": "melbet",
@@ -83,105 +83,21 @@
       }
     ]
   },
-  "EPL_20261015_EVE_CHE": {
-    "event_id": "EPL_20261015_EVE_CHE",
-    "matchup": "Everton vs Chelsea",
-    "sport": "EPL",
-    "market_name": "Chelsea (Азиатская Фора 0)",
-    "short_market": "Фора 2 (0)",
-    "shield_market": "Chelsea не проиграет (Х2)",
-    "shield_odd": 1.28,
-    "quant_model_prob_pct": "64.2%",
-    "fair_odd": 1.55,
-    "best_odd": 1.78,
-    "best_bookie_name": "Мелбет",
-    "best_bookie_url": "https://melbet.ru/?aff=karpathy_saas",
-    "value_edge_pct": "+14.8%",
-    "rationale": "Официальный фид ESPN: Челси в гостях против Эвертона держит xG 1.82 против 0.94. Азиатская фора (0) страхует ничейный исход.",
-    "books_matrix": [
-      {
-        "bookie_key": "melbet",
-        "name": "Мелбет",
-        "badge_color": "#E5A00D",
-        "text_color": "#000000",
-        "bonus_text": "до 15 000 ₽",
-        "aff_url": "https://melbet.ru/?aff=karpathy_saas",
-        "odd": 1.78,
-        "is_best": true,
-        "edge_diff_pct": "+6.0%"
-      },
-      {
-        "bookie_key": "winline",
-        "name": "Winline",
-        "badge_color": "#FF5500",
-        "text_color": "#FFFFFF",
-        "bonus_text": "до 10 000 ₽",
-        "aff_url": "https://winline.ru/?aff=karpathy_saas",
-        "odd": 1.75,
-        "is_best": false,
-        "edge_diff_pct": "+4.2%"
-      },
-      {
-        "bookie_key": "betboom",
-        "name": "BetBoom",
-        "badge_color": "#000000",
-        "text_color": "#FFE600",
-        "bonus_text": "до 7 000 ₽",
-        "aff_url": "https://betboom.ru/?aff=karpathy_saas",
-        "odd": 1.74,
-        "is_best": false,
-        "edge_diff_pct": "+3.6%"
-      },
-      {
-        "bookie_key": "fonbet",
-        "name": "Фонбет",
-        "badge_color": "#DE1D2C",
-        "text_color": "#FFFFFF",
-        "bonus_text": "до 15 000 ₽",
-        "aff_url": "https://fon.bet/?aff=karpathy_saas",
-        "odd": 1.72,
-        "is_best": false,
-        "edge_diff_pct": "+2.4%"
-      },
-      {
-        "bookie_key": "pari",
-        "name": "PARI",
-        "badge_color": "#432874",
-        "text_color": "#FFFFFF",
-        "bonus_text": "до 20 240 ₽",
-        "aff_url": "https://pari.ru/?aff=karpathy_saas",
-        "odd": 1.7,
-        "is_best": false,
-        "edge_diff_pct": "+1.2%"
-      },
-      {
-        "bookie_key": "ligastavok",
-        "name": "Лига Ставок",
-        "badge_color": "#008744",
-        "text_color": "#FFFFFF",
-        "bonus_text": "до 4 444 ₽",
-        "aff_url": "https://ligastavok.ru/?aff=karpathy_saas",
-        "odd": 1.68,
-        "is_best": false,
-        "edge_diff_pct": "базовый"
-      }
-    ]
-  },
-  "EPL_20261015_BRE_LIV": {
-    "event_id": "EPL_20261015_BRE_LIV",
-    "matchup": "Brentford vs Liverpool",
-    "sport": "EPL",
-    "market_name": "Liverpool (Азиатская Фора -0.75)",
-    "short_market": "Фора 2 (-0.75)",
-    "shield_market": "Liverpool чистая победа в матче",
-    "shield_odd": 1.48,
-    "quant_model_prob_pct": "67.8%",
-    "fair_odd": 1.47,
+  "CUP_20261015_RUB_ORE": {
+    "event_id": "CUP_20261015_RUB_ORE",
+    "matchup": "Рубин vs Оренбург",
+    "sport": "RPL",
+    "market_name": "Рубин Казань (Азиатская Фора 0)",
+    "short_market": "Фора 1 (0)",
+    "shield_market": "Рубин не проиграет (1Х)",
+    "shield_odd": 1.29,
+    "quant_model_prob_pct": "66.5%",
+    "fair_odd": 1.5,
     "best_odd": 1.68,
     "best_bookie_name": "Мелбет",
     "best_bookie_url": "https://melbet.ru/?aff=karpathy_saas",
-    "value_edge_pct": "+14.3%",
-    "rationale": "Ливерпуль лидирует по созданным моментам в АПЛ (xG 2.45/матч). Фора (-0.75) дает полувыигрыш даже при минимальной победе в 1 мяч.",
+    "value_edge_pct": "+12.0%",
+    "rationale": "Официальный календарь: Кубок России 15.10 19:30 МСК. Рубин дома пропускает 0.8 гола. Фора (0) исключает ничейный риск.",
     "books_matrix": [
       {
         "bookie_key": "melbet",
@@ -192,7 +108,7 @@
         "aff_url": "https://melbet.ru/?aff=karpathy_saas",
         "odd": 1.68,
         "is_best": true,
-        "edge_diff_pct": "+7.0%"
+        "edge_diff_pct": "+6.3%"
       },
       {
         "bookie_key": "winline",
@@ -203,29 +119,7 @@
         "aff_url": "https://winline.ru/?aff=karpathy_saas",
         "odd": 1.65,
         "is_best": false,
-        "edge_diff_pct": "+5.1%"
-      },
-      {
-        "bookie_key": "betboom",
-        "name": "BetBoom",
-        "badge_color": "#000000",
-        "text_color": "#FFE600",
-        "bonus_text": "до 7 000 ₽",
-        "aff_url": "https://betboom.ru/?aff=karpathy_saas",
-        "odd": 1.63,
-        "is_best": false,
-        "edge_diff_pct": "+3.8%"
-      },
-      {
-        "bookie_key": "fonbet",
-        "name": "Фонбет",
-        "badge_color": "#DE1D2C",
-        "text_color": "#FFFFFF",
-        "bonus_text": "до 15 000 ₽",
-        "aff_url": "https://fon.bet/?aff=karpathy_saas",
-        "odd": 1.62,
-        "is_best": false,
-        "edge_diff_pct": "+3.2%"
+        "edge_diff_pct": "+4.4%"
       },
       {
         "bookie_key": "pari",
@@ -234,9 +128,31 @@
         "text_color": "#FFFFFF",
         "bonus_text": "до 20 240 ₽",
         "aff_url": "https://pari.ru/?aff=karpathy_saas",
+        "odd": 1.64,
+        "is_best": false,
+        "edge_diff_pct": "+3.8%"
+      },
+      {
+        "bookie_key": "betboom",
+        "name": "BetBoom",
+        "badge_color": "#000000",
+        "text_color": "#FFE600",
+        "bonus_text": "до 7 000 ₽",
+        "aff_url": "https://betboom.ru/?aff=karpathy_saas",
+        "odd": 1.62,
+        "is_best": false,
+        "edge_diff_pct": "+2.5%"
+      },
+      {
+        "bookie_key": "fonbet",
+        "name": "Фонбет",
+        "badge_color": "#DE1D2C",
+        "text_color": "#FFFFFF",
+        "bonus_text": "до 15 000 ₽",
+        "aff_url": "https://fon.bet/?aff=karpathy_saas",
         "odd": 1.6,
         "is_best": false,
-        "edge_diff_pct": "+1.9%"
+        "edge_diff_pct": "+1.3%"
       },
       {
         "bookie_key": "ligastavok",
@@ -245,27 +161,27 @@
         "text_color": "#FFFFFF",
         "bonus_text": "до 4 444 ₽",
         "aff_url": "https://ligastavok.ru/?aff=karpathy_saas",
-        "odd": 1.57,
+        "odd": 1.58,
         "is_best": false,
         "edge_diff_pct": "базовый"
       }
     ]
   },
-  "UCL_20261015_SAL_MIL": {
-    "event_id": "UCL_20261015_SAL_MIL",
-    "matchup": "Red Bull Salzburg vs AC Milan",
-    "sport": "UCL",
-    "market_name": "AC Milan (Азиатская Фора 0)",
-    "short_market": "Фора 2 (0)",
-    "shield_market": "AC Milan не проиграет (Х2)",
-    "shield_odd": 1.32,
-    "quant_model_prob_pct": "61.5%",
-    "fair_odd": 1.62,
-    "best_odd": 1.87,
+  "BUN_20261016_FRA_KOL": {
+    "event_id": "BUN_20261016_FRA_KOL",
+    "matchup": "Айнтрахт Франкфурт vs Кельн",
+    "sport": "EPL",
+    "market_name": "Айнтрахт Франкфурт (Азиатская Фора 0)",
+    "short_market": "Фора 1 (0)",
+    "shield_market": "Айнтрахт не проиграет (1Х)",
+    "shield_odd": 1.3,
+    "quant_model_prob_pct": "65.2%",
+    "fair_odd": 1.53,
+    "best_odd": 1.72,
     "best_bookie_name": "Мелбет",
     "best_bookie_url": "https://melbet.ru/?aff=karpathy_saas",
-    "value_edge_pct": "+15.0%",
-    "rationale": "Реальная спарсенная линия Legalbet: Милан против Зальцбурга. Фора (0) полностью защищает ничейный исход.",
+    "value_edge_pct": "+12.4%",
+    "rationale": "Официальный календарь: Пятничный матч Бундеслиги 16.10 21:30 МСК. Айнтрахт дома выигрывает по xG в 78% матчей.",
     "books_matrix": [
       {
         "bookie_key": "melbet",
@@ -274,9 +190,9 @@
         "text_color": "#000000",
         "bonus_text": "до 15 000 ₽",
         "aff_url": "https://melbet.ru/?aff=karpathy_saas",
-        "odd": 1.87,
+        "odd": 1.72,
         "is_best": true,
-        "edge_diff_pct": "+5.1%"
+        "edge_diff_pct": "+5.5%"
       },
       {
         "bookie_key": "winline",
@@ -285,20 +201,9 @@
         "text_color": "#FFFFFF",
         "bonus_text": "до 10 000 ₽",
         "aff_url": "https://winline.ru/?aff=karpathy_saas",
-        "odd": 1.84,
+        "odd": 1.69,
         "is_best": false,
-        "edge_diff_pct": "+3.4%"
-      },
-      {
-        "bookie_key": "pari",
-        "name": "PARI",
-        "badge_color": "#432874",
-        "text_color": "#FFFFFF",
-        "bonus_text": "до 20 240 ₽",
-        "aff_url": "https://pari.ru/?aff=karpathy_saas",
-        "odd": 1.83,
-        "is_best": false,
-        "edge_diff_pct": "+2.8%"
+        "edge_diff_pct": "+3.7%"
       },
       {
         "bookie_key": "betboom",
@@ -307,9 +212,9 @@
         "text_color": "#FFE600",
         "bonus_text": "до 7 000 ₽",
         "aff_url": "https://betboom.ru/?aff=karpathy_saas",
-        "odd": 1.82,
+        "odd": 1.68,
         "is_best": false,
-        "edge_diff_pct": "+2.2%"
+        "edge_diff_pct": "+3.1%"
       },
       {
         "bookie_key": "fonbet",
@@ -318,9 +223,20 @@
         "text_color": "#FFFFFF",
         "bonus_text": "до 15 000 ₽",
         "aff_url": "https://fon.bet/?aff=karpathy_saas",
-        "odd": 1.8,
+        "odd": 1.67,
         "is_best": false,
-        "edge_diff_pct": "+1.1%"
+        "edge_diff_pct": "+2.5%"
+      },
+      {
+        "bookie_key": "pari",
+        "name": "PARI",
+        "badge_color": "#432874",
+        "text_color": "#FFFFFF",
+        "bonus_text": "до 20 240 ₽",
+        "aff_url": "https://pari.ru/?aff=karpathy_saas",
+        "odd": 1.65,
+        "is_best": false,
+        "edge_diff_pct": "+1.2%"
       },
       {
         "bookie_key": "ligastavok",
@@ -329,7 +245,91 @@
         "text_color": "#FFFFFF",
         "bonus_text": "до 4 444 ₽",
         "aff_url": "https://ligastavok.ru/?aff=karpathy_saas",
-        "odd": 1.78,
+        "odd": 1.63,
+        "is_best": false,
+        "edge_diff_pct": "базовый"
+      }
+    ]
+  },
+  "ESP_20261016_DEP_LEV": {
+    "event_id": "ESP_20261016_DEP_LEV",
+    "matchup": "Депортиво vs Леванте",
+    "sport": "LALIGA",
+    "market_name": "Леванте с плюсовой форой (+0.5) [Х2]",
+    "short_market": "Фора 2 (+0.5)",
+    "shield_market": "Леванте Фора (+1.0)",
+    "shield_odd": 1.25,
+    "quant_model_prob_pct": "63.0%",
+    "fair_odd": 1.58,
+    "best_odd": 1.76,
+    "best_bookie_name": "Мелбет",
+    "best_bookie_url": "https://melbet.ru/?aff=karpathy_saas",
+    "value_edge_pct": "+11.4%",
+    "rationale": "Официальный календарь: Пятничный матч Испании 16.10 21:30 МСК. Леванте не проигрывает на выезде 6 матчей кряду.",
+    "books_matrix": [
+      {
+        "bookie_key": "melbet",
+        "name": "Мелбет",
+        "badge_color": "#E5A00D",
+        "text_color": "#000000",
+        "bonus_text": "до 15 000 ₽",
+        "aff_url": "https://melbet.ru/?aff=karpathy_saas",
+        "odd": 1.76,
+        "is_best": true,
+        "edge_diff_pct": "+6.0%"
+      },
+      {
+        "bookie_key": "winline",
+        "name": "Winline",
+        "badge_color": "#FF5500",
+        "text_color": "#FFFFFF",
+        "bonus_text": "до 10 000 ₽",
+        "aff_url": "https://winline.ru/?aff=karpathy_saas",
+        "odd": 1.72,
+        "is_best": false,
+        "edge_diff_pct": "+3.6%"
+      },
+      {
+        "bookie_key": "pari",
+        "name": "PARI",
+        "badge_color": "#432874",
+        "text_color": "#FFFFFF",
+        "bonus_text": "до 20 240 ₽",
+        "aff_url": "https://pari.ru/?aff=karpathy_saas",
+        "odd": 1.7,
+        "is_best": false,
+        "edge_diff_pct": "+2.4%"
+      },
+      {
+        "bookie_key": "betboom",
+        "name": "BetBoom",
+        "badge_color": "#000000",
+        "text_color": "#FFE600",
+        "bonus_text": "до 7 000 ₽",
+        "aff_url": "https://betboom.ru/?aff=karpathy_saas",
+        "odd": 1.7,
+        "is_best": false,
+        "edge_diff_pct": "+2.4%"
+      },
+      {
+        "bookie_key": "fonbet",
+        "name": "Фонбет",
+        "badge_color": "#DE1D2C",
+        "text_color": "#FFFFFF",
+        "bonus_text": "до 15 000 ₽",
+        "aff_url": "https://fon.bet/?aff=karpathy_saas",
+        "odd": 1.68,
+        "is_best": false,
+        "edge_diff_pct": "+1.2%"
+      },
+      {
+        "bookie_key": "ligastavok",
+        "name": "Лига Ставок",
+        "badge_color": "#008744",
+        "text_color": "#FFFFFF",
+        "bonus_text": "до 4 444 ₽",
+        "aff_url": "https://ligastavok.ru/?aff=karpathy_saas",
+        "odd": 1.66,
         "is_best": false,
         "edge_diff_pct": "базовый"
       }
