@@ -9,33 +9,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --canvas: #F8FAFC;
+            --canvas: #FFFFFF;
             --surface: #FFFFFF;
-            --surface-muted: #F1F5F9;
-            --border: #E2E8F0;
-            --border-subtle: #F1F5F9;
+            --surface-muted: #F8FAFC;
+            --border: #E5E7EB;
+            --border-subtle: #F3F4F6;
             
-            --text-primary: #0F172A;
-            --text-secondary: #475569;
-            --text-muted: #64748B;
+            --text-primary: #111827;
+            --text-secondary: #4B5563;
+            --text-muted: #7B7B7B;
             
-            --accent-positive: #00C48C;
-            --accent-positive-soft: rgba(0, 196, 140, 0.08);
-            --accent-negative: #EF4444;
-            --accent-negative-soft: rgba(239, 68, 68, 0.08);
+            --accent-positive: #059669;
+            --accent-positive-soft: rgba(5, 150, 105, 0.08);
+            --accent-negative: #DC2626;
+            --accent-negative-soft: rgba(220, 38, 38, 0.08);
             --accent-brand: #2563EB;
             --accent-brand-soft: rgba(37, 99, 235, 0.08);
 
-            --radius-card: 16px;
-            --radius-btn: 10px;
+            --radius-card: 10px;
+            --radius-btn: 8px;
             --radius-pill: 9999px;
 
             --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
-            --shadow-card: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 6px 16px -4px rgba(0, 0, 0, 0.03);
-            --shadow-hover: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
+            --shadow-card: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+            --shadow-hover: 0 8px 24px -4px rgba(17, 24, 39, 0.08);
 
-            --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-mono: 'JetBrains Mono', monospace;
+            --font-ui: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --font-mono: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -45,10 +45,12 @@
             font-family: var(--font-ui);
             line-height: 1.5;
             -webkit-font-smoothing: antialiased;
-            padding-bottom: 80px;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            padding-bottom: 0;
         }
         .font-mono { font-family: var(--font-mono); }
-        .container { max-width: 1320px; margin: 0 auto; padding: 0 24px; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
 
         /* 1. ВЕРХНЯЯ ПОЛОСА АУДИТА */
         .trust-bar {
@@ -249,18 +251,21 @@
             font-weight: 500;
         }
 
-        /* 4. ВИТРИНА КАРТОЧЕК ДНЯ (REVOLUT ASSETS) */
+        /* 4. ВИТРИНА КАРТОЧЕК ДНЯ (РИА СПОРТ H2H) */
         .section-header {
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
             margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #111827;
+            gap: 16px;
         }
         .section-title {
             font-size: 22px;
-            font-weight: 700;
+            font-weight: 800;
             letter-spacing: -0.01em;
-            color: var(--text-primary);
+            color: #111827;
         }
         .section-desc {
             font-size: 13px;
@@ -550,20 +555,21 @@
         .status-wait { background: var(--surface-muted); color: var(--text-secondary); }
         .status-staged { background: var(--accent-brand-soft); color: var(--accent-brand); }
 
-        /* 5. РЕЕСТР CHECKSUM (REVOLUT STATEMENT) */
+        /* 5. РЕЕСТР CHECKSUM (РИА СПОРТ СТАНДАРТ) */
+        .statement-section-wrap {
+            background: #FFFFFF;
+            padding: 48px 0 64px;
+        }
         .statement-section {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-card);
-            padding: 32px 28px;
-            box-shadow: var(--shadow-card);
-            margin-bottom: 64px;
+            background: #FFFFFF;
         }
         .statement-head {
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             justify-content: space-between;
             margin-bottom: 24px;
+            padding-bottom: 14px;
+            border-bottom: 2px solid #111827;
             flex-wrap: wrap;
             gap: 16px;
         }
@@ -573,98 +579,102 @@
             flex-wrap: wrap;
         }
         .f-tab {
-            background: var(--surface-muted);
-            border: 1px solid transparent;
+            background: #FFFFFF;
+            border: 1px solid #E5E7EB;
             padding: 6px 14px;
-            border-radius: var(--radius-pill);
+            border-radius: 6px;
             font-size: 12.5px;
             font-weight: 500;
-            color: var(--text-secondary);
+            color: #4B5563;
             cursor: pointer;
             transition: all 0.15s;
         }
-        .f-tab:hover { background: #E2E8F0; color: var(--text-primary); }
+        .f-tab:hover { border-color: #111827; color: #111827; }
         .f-tab.active {
-            background: #0F172A;
+            background: #111827;
+            border-color: #111827;
             color: #FFFFFF;
             font-weight: 600;
         }
 
         .table-wrap {
             overflow-x: auto;
-            border-radius: 10px;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            background: #FFFFFF;
         }
         .statement-table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 13px;
+            font-size: 13.5px;
             text-align: left;
+            background: #FFFFFF;
         }
         .statement-table th {
-            background: var(--surface-muted);
-            color: var(--text-muted);
+            background: #FFFFFF;
+            color: #7B7B7B;
             font-weight: 600;
             font-size: 11px;
             text-transform: uppercase;
-            letter-spacing: 0.04em;
-            padding: 12px 14px;
-            border-bottom: 1px solid var(--border);
+            letter-spacing: 0.05em;
+            padding: 14px 16px;
+            border-bottom: 2px solid #111827;
         }
         .statement-table td {
-            padding: 14px;
-            border-bottom: 1px solid var(--border-subtle);
-            color: var(--text-primary);
+            padding: 18px 16px;
+            border-bottom: 1px solid #EAEAEA;
+            color: #111827;
             vertical-align: middle;
         }
         .statement-table tr:hover td {
-            background: #F8FAFC;
+            background: #F9FAFB;
             cursor: pointer;
         }
-        .td-time { font-size: 12px; color: var(--text-muted); white-space: nowrap; }
+        .statement-table tr.m-winner td {
+            background: #F4FBF6;
+        }
+        .statement-table tr.m-winner:hover td {
+            background: #EAF7EE;
+        }
+        .td-time { font-size: 12.5px; color: #7B7B7B; white-space: nowrap; font-weight: 500; }
         .tbl-sport-badge {
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
             font-size: 11px;
-            color: var(--text-muted);
-            margin-bottom: 2px;
+            color: #7B7B7B;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
         }
-        .tbl-mup-title { font-weight: 600; font-size: 13.5px; }
-        .tbl-tier-badge {
-            font-size: 10.5px;
-            font-weight: 600;
-            padding: 2px 8px;
-            border-radius: 4px;
-        }
-        .tbl-tier-badge.elite { background: #0F172A; color: #FFFFFF; }
-        .tbl-tier-badge.shield { background: var(--surface-muted); color: var(--text-secondary); border: 1px solid var(--border); }
-        .tbl-market-name { font-weight: 500; }
-        .tbl-market-edge { font-size: 11px; color: var(--accent-positive); font-weight: 700; font-family: var(--font-mono); }
-        .odd-val { font-weight: 700; font-size: 14px; }
-        .book-name { font-size: 10.5px; color: var(--text-muted); }
-        .score-won { color: var(--accent-positive); font-weight: 600; font-size: 12px; }
-        .score-lost { color: var(--text-secondary); font-size: 12px; }
-        .score-pending { color: var(--text-muted); font-size: 11.5px; font-style: italic; }
-
-        .status-pill {
-            display: inline-flex;
-            align-items: center;
-            font-size: 11px;
-            font-weight: 600;
-            padding: 3px 8px;
-            border-radius: 4px;
-            white-space: nowrap;
-        }
-        .pill-won { background: var(--accent-positive-soft); color: var(--accent-positive); }
-        .pill-lost { background: var(--accent-negative-soft); color: var(--accent-negative); }
-        .pill-wait { background: var(--surface-muted); color: var(--text-secondary); }
-        .pill-staged { background: var(--accent-brand-soft); color: var(--accent-brand); }
-        .sha-code {
-            color: var(--text-muted);
-            font-size: 11px;
-            background: var(--surface-muted);
+        .tbl-mup-title { font-weight: 600; font-size: 14px; color: #111827; }
+        .tbl-market-name { font-weight: 600; font-size: 13.5px; color: #111827; line-height: 1.35; }
+        .tbl-market-edge { font-size: 11.5px; color: #059669; font-weight: 700; font-family: var(--font-mono); margin-top: 2px; }
+        .odd-val { font-weight: 700; font-size: 15px; color: #111827; }
+        .book-name { font-size: 11px; color: #7B7B7B; }
+        
+        .score-pending { color: #7B7B7B; font-size: 13px; font-weight: 500; }
+        .score-won { color: #059669; font-size: 13.5px; font-weight: 700; display: inline-flex; align-items: baseline; gap: 6px; }
+        .score-won b { font-size: 16px; }
+        .score-push { color: #2563EB; font-size: 13px; font-weight: 600; display: inline-flex; align-items: baseline; gap: 6px; }
+        .score-lost { color: #6B7280; font-size: 13px; display: inline-flex; align-items: baseline; gap: 6px; }
+        .score-badge {
+            font-size: 10px;
             padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        .score-badge.win { background: rgba(5, 150, 105, 0.1); color: #059669; }
+        .score-badge.push { background: rgba(37, 99, 235, 0.1); color: #2563EB; }
+        .score-badge.loss { background: rgba(107, 114, 128, 0.1); color: #6B7280; }
+
+        .sha-code {
+            color: #7B7B7B;
+            font-size: 11px;
+            background: #F3F4F6;
+            padding: 3px 7px;
             border-radius: 4px;
+            border: 1px solid #E5E7EB;
         }
 
         /* 6. КАЛЬКУЛЯТОР ДИСТАНЦИИ */
@@ -1056,19 +1066,157 @@
             word-break: break-all;
         }
 
-        /* ФУТЕР */
-        .footer {
-            border-top: 1px solid var(--border);
-            padding: 36px 0;
-            color: var(--text-muted);
-            font-size: 12.5px;
+        /* 8. ИНСТИТУЦИОНАЛЬНЫЙ ГРАНИТНЫЙ ПОДВАЛ */
+        .footer-monolith {
+            background: #090D14;
+            color: #94A3B8;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 64px 0 36px;
+            font-size: 13px;
+            line-height: 1.6;
         }
-        .footer-inner {
+        .footer-top {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding-bottom: 36px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: 40px;
             flex-wrap: wrap;
-            gap: 16px;
+            gap: 20px;
+        }
+        .footer-brand-wrap {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .f-brand-logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: #1E293B;
+            color: #FFFFFF;
+            font-family: var(--font-mono);
+            font-weight: 700;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .f-brand-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #FFFFFF;
+            letter-spacing: -0.01em;
+        }
+        .f-brand-desc {
+            font-size: 12px;
+            color: #64748B;
+        }
+        .footer-badges {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .f-badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #CBD5E1;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-family: var(--font-mono);
+        }
+        .f-badge.f-age {
+            background: #DC2626;
+            color: #FFFFFF;
+            border-color: #EF4444;
+            font-weight: 800;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
+            gap: 40px;
+            padding-bottom: 48px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: 32px;
+        }
+        @media (max-width: 960px) {
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 600px) {
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+        .f-col-title {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #FFFFFF;
+            margin-bottom: 16px;
+        }
+        .f-col-text {
+            font-size: 12.5px;
+            color: #94A3B8;
+            line-height: 1.65;
+            margin-bottom: 14px;
+        }
+        .f-col-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 11.5px;
+            color: #6EE7B7;
+            font-family: var(--font-mono);
+        }
+        .f-dot-active {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #10B981;
+            box-shadow: 0 0 8px #10B981;
+        }
+        .f-links {
+            list-style: none;
+        }
+        .f-links li {
+            margin-bottom: 10px;
+            font-size: 12.5px;
+        }
+        .f-links a {
+            color: #94A3B8;
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+        .f-links a:hover {
+            color: #FFFFFF;
+        }
+        .f-links span {
+            color: #64748B;
+        }
+        .f-legal-note {
+            font-size: 11.5px;
+            color: #64748B;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 10px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .footer-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 11.5px;
+            color: #64748B;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .f-sha-notice {
+            font-family: var(--font-mono);
+            color: #475569;
         }
     </style>
 </head>
@@ -1453,14 +1601,12 @@
                     <table class="statement-table">
                         <thead>
                             <tr>
-                                <th>Время (МСК)</th>
-                                <th>Турнир и событие</th>
-                                <th>Тариф</th>
-                                <th>Рынок (+EV)</th>
-                                <th>Котировка</th>
-                                <th>Итоговый счёт</th>
-                                <th>Статус</th>
-                                <th>SHA-256</th>
+                                <th style="width: 14%;">Время (МСК)</th>
+                                <th style="width: 32%;">Событие (Матч-центр)</th>
+                                <th style="width: 26%;">Квантовая позиция (+EV)</th>
+                                <th style="width: 12%;">Котировка</th>
+                                <th style="width: 16%;">Итог матча</th>
+                                <th style="width: 10%;">SHA-256</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1475,7 +1621,6 @@
                     <span class="tbl-team-pill"><img src="https://cdnn21.imgria.ru/images/07e9/07/1e/2032356624_0:0:0:0_100x0_80_0_0_e1caa403355fba1d07127f196266abac.png" class="tbl-mini-logo" alt="ХК Сочи" onerror="this.style.display='none'"/> <b>ХК Сочи</b></span>
                 </div>
             </td>
-            <td class="td-tier"><span class="tbl-tier-badge elite">Ординар +EV</span></td>
             <td class="td-market">
                 <div class="tbl-market-name">Индивидуальный тотал ХК Сочи Меньше (1.5) [GSAx +0.70]</div>
                 <div class="tbl-market-edge">+28.0% EV</div>
@@ -1484,8 +1629,7 @@
                 <div class="odd-val">1.88</div>
                 <div class="book-name">Мелбет</div>
             </td>
-            <td class="td-score font-mono"><div class="score-pending">В игре сегодня</div></td>
-            <td class="td-status"><span class="status-pill pill-wait"><span class="dot dot-wait"></span>Ожидает свистка</span></td>
+            <td class="td-score font-mono"><div class="score-pending">Матч не начался</div></td>
             <td class="td-sha">
                 <span class="sha-code font-mono" title="956826c3d9d88377541714ec0969aaff28ece125bcd5cf0a93b1b7c4bcea15bb">956826c3…</span>
             </td>
@@ -1501,7 +1645,6 @@
                     <span class="tbl-team-pill"><img src="https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/teams/1333179.png" class="tbl-mini-logo" alt="Cloud9" onerror="this.style.display='none'"/> <b>Cloud9</b></span>
                 </div>
             </td>
-            <td class="td-tier"><span class="tbl-tier-badge elite">Ординар +EV</span></td>
             <td class="td-market">
                 <div class="tbl-market-name">Team Spirit Фора по картам (-1.5) [Точный счёт 2:0]</div>
                 <div class="tbl-market-edge">+12.9% EV</div>
@@ -1510,8 +1653,7 @@
                 <div class="odd-val">2.06</div>
                 <div class="book-name">Мелбет</div>
             </td>
-            <td class="td-score font-mono"><div class="score-pending">В игре сегодня, 18:00 МСК</div></td>
-            <td class="td-status"><span class="status-pill pill-wait"><span class="dot dot-wait"></span>Ожидает свистка</span></td>
+            <td class="td-score font-mono"><div class="score-pending">Матч не начался</div></td>
             <td class="td-sha">
                 <span class="sha-code font-mono" title="a51974267499c7a021eb8f7dfa44c5bfbb2189670019965d50f94855bcbc092d">a5197426…</span>
             </td>
@@ -1527,7 +1669,6 @@
                     <span class="tbl-team-pill"><img src="https://cdnn21.imgria.ru/images/07e9/07/1e/2032384993_0:0:0:0_100x0_80_0_0_c5284fe7515f1e094604a71e8bc20e24.png" class="tbl-mini-logo" alt="Амур Хабаровск" onerror="this.style.display='none'"/> <b>Амур Хабаровск</b></span>
                 </div>
             </td>
-            <td class="td-tier"><span class="tbl-tier-badge elite">Ординар +EV</span></td>
             <td class="td-market">
                 <div class="tbl-market-name">Ак Барс победа в основное время с форой (-1.0)</div>
                 <div class="tbl-market-edge">+16.3% EV</div>
@@ -1536,8 +1677,7 @@
                 <div class="odd-val">1.86</div>
                 <div class="book-name">Мелбет</div>
             </td>
-            <td class="td-score font-mono"><div class="score-pending">В игре сегодня, 19:00 МСК</div></td>
-            <td class="td-status"><span class="status-pill pill-wait"><span class="dot dot-wait"></span>Ожидает свистка</span></td>
+            <td class="td-score font-mono"><div class="score-pending">Матч не начался</div></td>
             <td class="td-sha">
                 <span class="sha-code font-mono" title="17f287329658f6e23665fac0547b4185d28631581ea96b4174714e0d8103108b">17f28732…</span>
             </td>
@@ -1553,7 +1693,6 @@
                     <span class="tbl-team-pill"><img src="https://a.espncdn.com/i/teamlogos/nhl/500/buf.png" class="tbl-mini-logo" alt="Buffalo Sabres" onerror="this.style.display='none'"/> <b>Buffalo Sabres</b></span>
                 </div>
             </td>
-            <td class="td-tier"><span class="tbl-tier-badge elite">Ординар +EV</span></td>
             <td class="td-market">
                 <div class="tbl-market-name">Toronto Maple Leafs (Фора 0)</div>
                 <div class="tbl-market-edge">+7.6% EV</div>
@@ -1562,8 +1701,7 @@
                 <div class="odd-val">1.55</div>
                 <div class="book-name">Мелбет</div>
             </td>
-            <td class="td-score font-mono"><div class="score-pending">Ночной ординар 03:00 МСК</div></td>
-            <td class="td-status"><span class="status-pill pill-wait"><span class="dot dot-wait"></span>Ожидает свистка</span></td>
+            <td class="td-score font-mono"><div class="score-pending">Матч не начался</div></td>
             <td class="td-sha">
                 <span class="sha-code font-mono" title="267a1c4728520f01661d9e5e593394aa08414e70f345b2e36f44e16cedb5e2d1">267a1c47…</span>
             </td>
@@ -1784,14 +1922,78 @@
         </div>
     </div>
 
-    <!-- ФУТЕР -->
-    <footer class="footer">
-        <div class="container footer-inner">
-            <div>
-                © 2026 Метод Карпатого. Количественные алгоритмы анализа спортивных котировок.
+    <!-- 8. ИНСТИТУЦИОНАЛЬНЫЙ ГРАНИТНЫЙ ПОДВАЛ (РИА / РБК МОНОЛИТ) -->
+    <footer class="footer-monolith">
+        <div class="container">
+            <!-- ВЕРХНИЙ БАР ПОДВАЛА -->
+            <div class="footer-top">
+                <div class="footer-brand-wrap">
+                    <div class="f-brand-logo">AK</div>
+                    <div>
+                        <div class="f-brand-title">Метод Карпатого • Квантовая лаборатория</div>
+                        <div class="f-brand-desc">Математический поиск положительного ожидания (+EV) с криптографической фиксацией SHA-256</div>
+                    </div>
+                </div>
+                <div class="footer-badges">
+                    <span class="f-badge f-age">18+</span>
+                    <span class="f-badge">SHA-256 Verified</span>
+                    <span class="f-badge">Chow's Rule: 95% Cutoff</span>
+                    <span class="f-badge">Zero-Parlay Compliance</span>
+                </div>
             </div>
-            <div style="font-size: 11px;">
-                Сервис носит аналитический и информационный характер. Играйте ответственно (18+).
+
+            <!-- СЕТКА ИЗ 4 СЕРЬЕЗНЫХ КОЛОНОК -->
+            <div class="footer-grid">
+                <div class="f-col">
+                    <h4 class="f-col-title">Квантовая лаборатория</h4>
+                    <p class="f-col-text">
+                        Терминал количественного анализа спортивных рынков на архитектурных принципах Андрея Карпатого: 
+                        селективная классификация, Test-Time Compute и алгоритмический отсев рыночной энтропии.
+                    </p>
+                    <div class="f-col-status">
+                        <span class="f-dot-active"></span> Конвейер активен 24/7 (база 282 644 матча)
+                    </div>
+                </div>
+
+                <div class="f-col">
+                    <h4 class="f-col-title">Реестр верификации</h4>
+                    <ul class="f-links">
+                        <li><a href="#statement">Публичный реестр ординаров</a></li>
+                        <li><a href="#picks">Аналитические позиции дня</a></li>
+                        <li><a href="#calculator">Калькулятор дистанции и ROI</a></li>
+                        <li><a href="#tariffs">Тарифные планы (Снайпер 1-3)</a></li>
+                        <li><a href="https://t.me/karpathy_quant_bot" target="_blank" rel="noopener">Телеграм-бот телеметрии</a></li>
+                    </ul>
+                </div>
+
+                <div class="f-col">
+                    <h4 class="f-col-title">Мониторинг котировок БК РФ</h4>
+                    <ul class="f-links">
+                        <li><span>Сравнение 6 легальных букмекеров ЕРАИ</span></li>
+                        <li><span>Анализ спреда: Мелбет, Winline, Фонбет</span></li>
+                        <li><span>Опережение линии закрытия (CLV &gt; 0)</span></li>
+                        <li><span>Категорический запрет экспрессов</span></li>
+                        <li><span>Контроль стартовых составов за 60 минут</span></li>
+                    </ul>
+                </div>
+
+                <div class="f-col">
+                    <h4 class="f-col-title">Правовая информация</h4>
+                    <p class="f-col-text">
+                        Сервис носит исключительно научно-исследовательский и математический характер. 
+                        Не является организатором азартных игр, не принимает ставки и не выплачивает выигрыши. 
+                        Информация предназначена строго для лиц старше 18 лет.
+                    </p>
+                    <div class="f-legal-note">
+                        Соблюдайте принципы ответственной игры. Банкролл-менеджмент: консервативный флэт 1.0–1.5% от депозита.
+                    </div>
+                </div>
+            </div>
+
+            <!-- НИЖНЯЯ СТРОКА -->
+            <div class="footer-bottom">
+                <div>© 2026 Метод Карпатого. Все права защищены. Независимый квантовый аудит спортивных рынков.</div>
+                <div class="f-sha-notice">Криптографический протокол SHA-256 исключает возможность редактирования истории задним числом.</div>
             </div>
         </div>
     </footer>
