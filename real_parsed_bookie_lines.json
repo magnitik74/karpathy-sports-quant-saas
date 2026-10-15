@@ -1,0 +1,77 @@
+[
+  {
+    "slug": "red-bull-salzburg-milan-17-09-2026",
+    "title": "Зальцбург",
+    "url": "https://legalbet.ru/match-center/red-bull-salzburg-milan-17-09-2026/",
+    "detected_bookies_count": 6,
+    "odds_sample": {
+      "fonbet": 2.02,
+      "winline": 1.6,
+      "melbet": 15.1,
+      "pari": 1.87,
+      "betboom": 1.6,
+      "ligastavok": 3.6
+    },
+    "parsed_at": "2026-10-15 11:41:41 UTC"
+  },
+  {
+    "slug": "rodina-spartak-moscow-15-10-2026",
+    "title": "Родина",
+    "url": "https://legalbet.ru/match-center/rodina-spartak-moscow-15-10-2026/",
+    "detected_bookies_count": 6,
+    "odds_sample": {
+      "fonbet": 1.45,
+      "winline": 5.2,
+      "melbet": 15.1,
+      "pari": 7.5,
+      "betboom": 1.45,
+      "ligastavok": 2.7
+    },
+    "parsed_at": "2026-10-15 11:41:43 UTC"
+  },
+  {
+    "slug": "lech-bayer-04-17-09-2026",
+    "title": "Лех",
+    "url": "https://legalbet.ru/match-center/lech-bayer-04-17-09-2026/",
+    "detected_bookies_count": 6,
+    "odds_sample": {
+      "fonbet": 1.45,
+      "winline": 1.45,
+      "melbet": 15.1,
+      "pari": 1.87,
+      "betboom": 1.45,
+      "ligastavok": 5.0
+    },
+    "parsed_at": "2026-10-15 11:41:45 UTC"
+  },
+  {
+    "slug": "lyon-crystal-palace-17-09-2026",
+    "title": "Лион",
+    "url": "https://legalbet.ru/match-center/lyon-crystal-palace-17-09-2026/",
+    "detected_bookies_count": 6,
+    "odds_sample": {
+      "fonbet": 1.5,
+      "winline": 1.5,
+      "melbet": 15.1,
+      "pari": 1.87,
+      "betboom": 1.5,
+      "ligastavok": 3.8
+    },
+    "parsed_at": "2026-10-15 11:41:50 UTC"
+  },
+  {
+    "slug": "az-alkmaar-hapoel-beer-sheva-17-09-2026",
+    "title": "АЗ Алкмаар",
+    "url": "https://legalbet.ru/match-center/az-alkmaar-hapoel-beer-sheva-17-09-2026/",
+    "detected_bookies_count": 6,
+    "odds_sample": {
+      "fonbet": 1.63,
+      "winline": 1.63,
+      "melbet": 15.1,
+      "pari": 1.87,
+      "betboom": 1.63,
+      "ligastavok": 5.8
+    },
+    "parsed_at": "2026-10-15 11:41:52 UTC"
+  }
+]
