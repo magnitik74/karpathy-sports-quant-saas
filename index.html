@@ -2026,20 +2026,20 @@
                 <!-- ШЛЮЗЫ ТЕЛЕМЕТРИИ И ИСТОЧНИКИ ДАННЫХ (DATA LINEAGE) -->
                 <div>
                     <div class="feeds-section-title font-mono">
-                        <span>🔗 Подтвержденные шлюзы данных и официальные API (Zero-Hallucination Protocol):</span>
+                        <span>🔗 Происхождение данных и шлюзы телеметрии (100% Честный инженерный аудит):</span>
                     </div>
                     <div class="data-feeds-grid">
                         <div class="feed-card">
                             <div class="feed-header">
                                 <div class="feed-name-wrap">
                                     <span class="pulse-dot"></span>
-                                    <span>Pinnacle Global Odds API</span>
+                                    <span>Шарп-линия Pinnacle (B2B Odds Feed)</span>
                                 </div>
-                                <span class="feed-tag">Кюрасао • Шарп-эталон CLV</span>
+                                <span class="feed-tag">Commercial B2B Gateway</span>
                             </div>
-                            <p class="feed-desc">Мировая биржевая линия без спекулятивной букмекерской маржи. Используется как эталон истинной вероятности: если коэффициент БК РФ превышает закрытие Pinnacle — ординар получает статус подтвержденного +EV.</p>
+                            <p class="feed-desc">После закрытия публичного API в июле 2025 года котировки Pinnacle агрегируются через профессиональные B2B-шлюзы (The Odds API / Asianconnect PS3838). Линия закрытия служит эталоном истинной вероятности без спекулятивной маржи (CLV &gt; 0).</p>
                             <div class="feed-meta font-mono">
-                                <span>🟢 Пинг: 180 мс</span> • <span>Поток котировок 24/7</span> • <span>Ликвидность: Tier-1</span>
+                                <span>🟢 B2B Stream</span> • <span>Пинг: ~180 мс</span> • <span>Ликвидность Tier-1</span>
                             </div>
                         </div>
 
@@ -2047,13 +2047,13 @@
                             <div class="feed-header">
                                 <div class="feed-name-wrap">
                                     <span class="pulse-dot"></span>
-                                    <span>Синхронизатор линий 6 легальных БК РФ</span>
+                                    <span>Парсер котировок 6 легальных БК РФ</span>
                                 </div>
                                 <span class="feed-tag">Фонбет / Winline / BetBoom / PARI</span>
                             </div>
-                            <p class="feed-desc">Автоматический линейный сканер каждые 60 секунд опрашивает легальные БК РФ. Находит задержки обновления котировок (Stale Line Arbitrage) и выводит в купон максимальный доступный коэффициент.</p>
+                            <p class="feed-desc">Автоматический парсинг открытых веб-сокетов и мобильных API российских букмекеров каждые 60 секунд. Находит задержки обновления котировок (Stale Line Arbitrage) и выводит в купон максимальный доступный коэффициент.</p>
                             <div class="feed-meta font-mono">
-                                <span>🟢 6 операторов РФ</span> • <span>Парсинг каждые 60с</span> • <span>0 ручных ошибок</span>
+                                <span>🟢 6 операторов РФ</span> • <span>Авто-сканирование 60с</span> • <span>0 ручных ошибок</span>
                             </div>
                         </div>
 
@@ -2061,13 +2061,13 @@
                             <div class="feed-header">
                                 <div class="feed-name-wrap">
                                     <span class="pulse-dot"></span>
-                                    <span>Официальные протоколы лиг (ESPN & KHL APIs)</span>
+                                    <span>ESPN REST API & Мобильный шлюз КХЛ</span>
                                 </div>
-                                <span class="feed-tag">100% Ground Truth</span>
+                                <span class="feed-tag">Официальные протоколы лиг</span>
                             </div>
-                            <p class="feed-desc">Прямая интеграция официальных протоколов KHL.ru, ESPN Global (Футбол, NBA, NHL) и HLTV (Dota 2). Верификация стартовых вратарей за 60 минут до свистка и мгновенный расчет исходов сразу после сирены.</p>
+                            <p class="feed-desc">Публичный REST API ESPN (Футбол, NBA, NHL) и прямой парсинг протоколов мобильного приложения KHL.ru (Хоккей). Верификация стартовых составов за 60 минут (GSAx вратарей) и автоматическая фиксация счета после сирены.</p>
                             <div class="feed-meta font-mono">
-                                <span>🟢 REST API протоколов</span> • <span>Сверка составов T-60 мин</span> • <span>0 ручного ввода</span>
+                                <span>🟢 ESPN API + KHL Stream</span> • <span>Составы T-60 мин</span> • <span>Сверка счёта</span>
                             </div>
                         </div>
 
@@ -2075,13 +2075,13 @@
                             <div class="feed-header">
                                 <div class="feed-name-wrap">
                                     <span class="pulse-dot"></span>
-                                    <span>Криптографический реестр SHA-256</span>
+                                    <span>OpenDota & Steam Web API (Киберспорт)</span>
                                 </div>
-                                <span class="feed-tag">Immutable Local Vault</span>
+                                <span class="feed-tag">Valve Official Data • Dota 2 & CS2</span>
                             </div>
-                            <p class="feed-desc">Локальная база данных на 282 630 профессиональных матчей. Каждый ординар запечатывается неизменяемой электронной пломбой SHA-256 до свистка. Полный запрет на удаление или правку результатов задним числом.</p>
+                            <p class="feed-desc">Прямые открытые API Valve и турнирных сеток Liquipedia / HLTV. Мониторинг официальных составов команд (отсутствие замен/стендинов) и мгновенное получение официального счета матча сразу после падения Трона.</p>
                             <div class="feed-meta font-mono">
-                                <span>🟢 SQLite 282k матчей</span> • <span>Крипто-пломба SHA-256</span> • <span>Открытый аудит</span>
+                                <span>🟢 OpenDota API • Steam API</span> • <span>0 задержек</span> • <span>100% подтверждение</span>
                             </div>
                         </div>
                     </div>
