@@ -316,20 +316,110 @@
             align-items: center;
             color: var(--text-secondary);
         }
-        .matchup-block {
-            margin-bottom: 18px;
+        /* РИА НОВОСТИ СПОРТ H2H КАРТОЧКА */
+        .card-ria-hero {
+            background: #000000;
+            border-radius: 12px;
+            padding: 16px 14px;
+            margin-bottom: 16px;
+            color: #FFFFFF;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
         }
-        .team-name {
-            font-size: 16px;
+        .card-team-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .card-team-side {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 44%;
+        }
+        .card-team-side.right {
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+        .card-team-logo-wrap {
+            width: 36px;
+            height: 36px;
+            min-width: 36px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            padding: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+        .card-team-logo {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .card-team-name {
+            font-size: 14px;
             font-weight: 700;
-            color: var(--text-primary);
-            line-height: 1.3;
+            line-height: 1.2;
+            color: #FFFFFF;
         }
-        .vs-divider {
+        .card-vs-box {
+            text-align: center;
+        }
+        .card-vs-text {
+            font-size: 11px;
+            color: #D0D0D0;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        .card-ria-bar-wrap {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            margin-top: 14px;
+        }
+        .card-ria-seg {
+            height: 12px;
+            border-radius: 2px;
+        }
+        .card-ria-seg.win { background: #4CAD6C; }
+        .card-ria-seg.push { background: #D0D0D0; }
+        .card-ria-seg.loss { background: #FF4545; }
+        .card-ria-legend {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            font-weight: 600;
+            margin-top: 6px;
+            color: #D0D0D0;
+            font-family: var(--font-mono);
+        }
+        .leg-win b { color: #6EE7B7; }
+        .leg-push b { color: #FFFFFF; }
+        .leg-loss b { color: #FCA5A5; }
+
+        /* Таблица - логотипы команд */
+        .tbl-team-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .tbl-mini-logo {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            object-fit: contain;
+            background: #FFFFFF;
+            padding: 1px;
+            border: 1px solid #E2E8F0;
+        }
+        .tbl-vs-sub {
             font-size: 11px;
             color: var(--text-muted);
-            margin: 2px 0;
-            text-transform: lowercase;
+            font-weight: 500;
+            margin: 0 4px;
         }
         .decision-panel {
             background: var(--surface-muted);
@@ -766,32 +856,172 @@
         .modal-card {
             background: var(--surface);
             border-radius: var(--radius-card);
-            max-width: 540px;
+            max-width: 580px;
             width: 100%;
-            padding: 32px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            padding: 28px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
             position: relative;
         }
         .modal-close {
             position: absolute;
-            top: 20px;
-            right: 20px;
-            background: none;
+            top: 18px;
+            right: 18px;
+            background: rgba(0, 0, 0, 0.05);
             border: none;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 20px;
             cursor: pointer;
             color: var(--text-muted);
+            transition: background 0.15s;
+            z-index: 10;
         }
+        .modal-close:hover { background: rgba(0, 0, 0, 0.1); color: var(--text-primary); }
         .modal-title {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 2px;
         }
         .modal-sub {
-            font-size: 12.5px;
+            font-size: 12px;
             color: var(--text-muted);
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
+        /* РИА НОВОСТИ СПОРТ H2H ЭТАЛОН В МОДАЛКЕ */
+        .ria-h2h-hero {
+            background-color: #000000;
+            border-radius: 12px;
+            padding: 22px 20px;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+        .ria-h2h-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+        .ria-team-col {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: 42%;
+        }
+        .ria-team-col.right {
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+        .ria-team-logo-circle {
+            width: 44px;
+            height: 44px;
+            min-width: 44px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            padding: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+        }
+        .ria-team-logo-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .ria-team-name-text {
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.25;
+            color: #FFFFFF;
+        }
+        .ria-h2h-center-badge {
+            text-align: center;
+            min-width: 80px;
+        }
+        .ria-badge-count {
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 1;
+            color: #FFFFFF;
+            font-family: var(--font-mono);
+        }
+        .ria-badge-label {
+            font-size: 12px;
+            color: #D0D0D0;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-weight: 600;
+        }
+        .ria-h2h-percent-bar {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 22px;
+        }
+        .ria-bar-mini-logo {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            padding: 2px;
+            object-fit: contain;
+        }
+        .ria-bar-seg {
+            height: 20px;
+            border-radius: 3px;
+            position: relative;
+            transition: width 0.3s ease;
+        }
+        .ria-bar-seg.seg-win { background-color: #4CAD6C; }
+        .ria-bar-seg.seg-push { background-color: #D0D0D0; }
+        .ria-bar-seg.seg-loss { background-color: #FF4545; }
+        .ria-bar-pct-text {
+            font-size: 12px;
+            font-weight: 700;
+            color: #FFFFFF;
+            line-height: 20px;
+            text-align: center;
+            font-family: var(--font-mono);
+            display: block;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+        }
+        .ria-bar-seg.seg-push .ria-bar-pct-text {
+            color: #1E293B;
+            text-shadow: none;
+        }
+        .ria-h2h-counters {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 14px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #D0D0D0;
+        }
+        .ria-count-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .ria-count-item.win-text { color: #6EE7B7; }
+        .ria-count-item.loss-text { color: #FCA5A5; }
+        .ria-mini-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .ria-mini-dot.d-win { background-color: #4CAD6C; }
+        .ria-mini-dot.d-push { background-color: #D0D0D0; }
+        .ria-mini-dot.d-loss { background-color: #FF4545; }
         .modal-market-box {
             background: var(--surface-muted);
             border-radius: 10px;
@@ -897,7 +1127,7 @@
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-label">Отобрано роем моделей</div>
-                    <div class="stat-val font-mono">3 ординара</div>
+                    <div class="stat-val font-mono">4 ординара</div>
                     <div class="stat-sub">Только Tier-1 рынки (Gate 0)</div>
                 </div>
                 <div class="stat-card">
@@ -931,7 +1161,74 @@
 
             <div class="cards-grid">
                 
-        <div class="asset-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;DOTA2_20261015_SPIRIT_C9&quot;, &quot;leagueAndMatch&quot;: &quot;Dota 2 • Pro Circuit • Team Spirit vs Cloud9&quot;, &quot;market&quot;: &quot;Team Spirit Фора по картам (-1.5) [Точный счёт 2:0] (кэф 2.06)&quot;, &quot;cleanMarket&quot;: &quot;Team Spirit Фора по картам (-1.5) [Точный счёт 2:0]&quot;, &quot;odd&quot;: &quot;2.06&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.82&quot;, &quot;edge&quot;: &quot;+12.9%&quot;, &quot;prob&quot;: &quot;54.8%&quot;, &quot;shieldAlt&quot;: &quot;Team Spirit победа в серии BO3&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.06, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+7.3%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.04, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+6.3%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.01, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+4.7%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.0, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+4.2%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.98, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.1%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.92, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;a51974267499c7a021eb8f7dfa44c5bfbb2189670019965d50f94855bcbc092d&quot;, &quot;time&quot;: &quot;15.10.2026 18:00&quot;, &quot;facts&quot;: [&quot;Математический перевес над линией букмекера: +12.9% (Positive EV).&quot;, &quot;Факторный квант-анализ: Winrate Spirit на сигнатурном пуле героев в патче 78.4%. У C9 зафиксирована нестабильность на ранней стадии лайнинга.&quot;, &quot;Синтетическая подстраховка для контроля просадки: Team Spirit победа в серии BO3.&quot;]})">
+        <div class="asset-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;KHL_20261014_LOK_SKA&quot;, &quot;leagueAndMatch&quot;: &quot;КХЛ • Хоккей РФ • Локомотив Ярославль vs ХК Сочи&quot;, &quot;market&quot;: &quot;Индивидуальный тотал ХК Сочи Меньше (1.5) [GSAx +0.70] (кэф 1.88)&quot;, &quot;cleanMarket&quot;: &quot;Индивидуальный тотал ХК Сочи Меньше (1.5) [GSAx +0.70]&quot;, &quot;odd&quot;: &quot;1.88&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.47&quot;, &quot;edge&quot;: &quot;+28.0%&quot;, &quot;prob&quot;: &quot;68.1%&quot;, &quot;shieldAlt&quot;: &quot;Локомотив победа в матче с ОТ (1.28)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?tag=MELBET_TOP&sub1=karpathy_saas&sub2=khl_20261014_lok_ska&quot;, &quot;odd&quot;: 1.88, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+5.6%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/auth/register/?promocode=BB_VIP&sub1=karpathy_saas&sub2=khl_20261014_lok_ska&quot;, &quot;odd&quot;: 1.86, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+4.5%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/registration/?aff=FON_SNIPER&sub1=karpathy_saas&sub2=khl_20261014_lok_ska&quot;, &quot;odd&quot;: 1.84, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.4%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/registration/?aff=PARI_QUANT&sub1=karpathy_saas&sub2=khl_20261014_lok_ska&quot;, &quot;odd&quot;: 1.83, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.8%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/registration/?tag=WIN_777&sub1=karpathy_saas&sub2=khl_20261014_lok_ska&quot;, &quot;odd&quot;: 1.81, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.7%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/registration/?ref=LIGA_PRO&sub1=karpathy_saas&sub2=khl_20261014_lok_ska&quot;, &quot;odd&quot;: 1.78, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;956826c3d9d88377541714ec0969aaff28ece125bcd5cf0a93b1b7c4bcea15bb&quot;, &quot;time&quot;: &quot;Сегодня, 19:30 МСК&quot;, &quot;t1&quot;: &quot;Локомотив Ярославль&quot;, &quot;t2&quot;: &quot;ХК Сочи&quot;, &quot;t1Logo&quot;: &quot;https://cdnn21.imgria.ru/images/155771/14/1557711496_0:0:0:0_100x0_80_0_0_30336b8f17b40ac8ca7ed3cd446b39dc.png&quot;, &quot;t2Logo&quot;: &quot;https://cdnn21.imgria.ru/images/07e9/07/1e/2032356624_0:0:0:0_100x0_80_0_0_e1caa403355fba1d07127f196266abac.png&quot;, &quot;probWin&quot;: 80, &quot;probPush&quot;: 0, &quot;probLoss&quot;: 20, &quot;badgeVal&quot;: &quot;35&quot;, &quot;badgeLbl&quot;: &quot;матчей&quot;, &quot;facts&quot;: [&quot;Математический перевес над линией букмекера: +28.0% (Positive EV).&quot;, &quot;Факторный квант-анализ: Вратарь Локомотива Исаев (топ-1 КХЛ, GSAx +0.52) пропускает дома 1.48 шайбы. Сочи на 3-м выезде за 5 дней имеет CPR 89.0%.&quot;, &quot;Синтетическая подстраховка для контроля просадки: Локомотив победа в матче с ОТ (1.28).&quot;]})">
+            <div class="card-meta">
+                <div class="league-box">
+                    <span class="sport-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3v10a4 4 0 1 1-8 0V3"/><line x1="9" y1="3" x2="17" y2="3"/></svg></span>
+                    <span class="league-name">КХЛ • Хоккей РФ</span>
+                </div>
+                <span class="rev-status status-live"><span class="dot dot-live"></span>В игре • Сегодня, 19:30 МСК</span>
+            </div>
+
+            <!-- РИА НОВОСТИ СПОРТ H2H КАРТОЧКА -->
+            <div class="card-ria-hero">
+                <div class="card-team-row">
+                    <div class="card-team-side">
+                        <div class="card-team-logo-wrap">
+                            <img src="https://cdnn21.imgria.ru/images/155771/14/1557711496_0:0:0:0_100x0_80_0_0_30336b8f17b40ac8ca7ed3cd446b39dc.png" class="card-team-logo" alt="Локомотив Ярославль" onerror="this.style.display='none'"/>
+                        </div>
+                        <div class="card-team-name">Локомотив Ярославль</div>
+                    </div>
+                    <div class="card-vs-box">
+                        <span class="card-vs-text">VS</span>
+                    </div>
+                    <div class="card-team-side right">
+                        <div class="card-team-logo-wrap">
+                            <img src="https://cdnn21.imgria.ru/images/07e9/07/1e/2032356624_0:0:0:0_100x0_80_0_0_e1caa403355fba1d07127f196266abac.png" class="card-team-logo" alt="ХК Сочи" onerror="this.style.display='none'"/>
+                        </div>
+                        <div class="card-team-name">ХК Сочи</div>
+                    </div>
+                </div>
+
+                <div class="card-ria-bar-wrap">
+                    <div class="card-ria-seg win" style="width:80%;" title="Чистый плюс: 80%"></div>
+                    <div class="card-ria-seg push" style="width:0%;" title="При своих (ничья, 0 потерь): 0%"></div>
+                    <div class="card-ria-seg loss" style="width:20%;" title="Мимо: 20%"></div>
+                </div>
+
+                <div class="card-ria-legend">
+                    <span class="leg-win"><b>80%</b> Плюс</span>
+                    <span class="leg-push"><b>0%</b> Ничья</span>
+                    <span class="leg-loss"><b>20%</b> Риск</span>
+                </div>
+            </div>
+
+            <div class="decision-panel">
+                <div class="decision-header">
+                    <span class="tier-label">Ординар Топ-1</span>
+                    <span class="ev-badge">+28.0% EV</span>
+                </div>
+                <div class="market-name">Индивидуальный тотал ХК Сочи Меньше (1.5) [GSAx +0.70]</div>
+                <div class="metrics-grid">
+                    <div class="m-item">Модель: <b>68.1%</b></div>
+                    <div class="m-item">Справедливый кэф: <b>1.47</b></div>
+                </div>
+            </div>
+
+            <div class="spread-box">
+                <div class="spread-label">Сравнение котировок в БК РФ:</div>
+                <div class="spread-chips"><span class="book-chip best">Мелбет <b>1.88</b></span><span class="book-chip">BetBoom 1.86</span><span class="book-chip">Фонбет 1.84</span><span class="book-chip">PARI 1.83</span></div>
+            </div>
+
+            <div class="card-action">
+                <button class="btn-coupon" type="button">
+                    <span>Аналитический купон</span>
+                    <span class="btn-odd">Кэф 1.88</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="asset-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;DOTA2_20261015_SPIRIT_C9&quot;, &quot;leagueAndMatch&quot;: &quot;Dota 2 • Pro Circuit • Team Spirit vs Cloud9&quot;, &quot;market&quot;: &quot;Team Spirit Фора по картам (-1.5) [Точный счёт 2:0] (кэф 2.06)&quot;, &quot;cleanMarket&quot;: &quot;Team Spirit Фора по картам (-1.5) [Точный счёт 2:0]&quot;, &quot;odd&quot;: &quot;2.06&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.82&quot;, &quot;edge&quot;: &quot;+12.9%&quot;, &quot;prob&quot;: &quot;54.8%&quot;, &quot;shieldAlt&quot;: &quot;Team Spirit победа в серии BO3&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.06, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+7.3%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.04, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+6.3%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.01, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+4.7%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.0, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+4.2%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.98, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.1%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.92, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;a51974267499c7a021eb8f7dfa44c5bfbb2189670019965d50f94855bcbc092d&quot;, &quot;time&quot;: &quot;15.10.2026 18:00&quot;, &quot;t1&quot;: &quot;Team Spirit&quot;, &quot;t2&quot;: &quot;Cloud9&quot;, &quot;t1Logo&quot;: &quot;https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/teams/7119388.png&quot;, &quot;t2Logo&quot;: &quot;https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/teams/1333179.png&quot;, &quot;probWin&quot;: 54, &quot;probPush&quot;: 32, &quot;probLoss&quot;: 14, &quot;badgeVal&quot;: &quot;96.4%&quot;, &quot;badgeLbl&quot;: &quot;Броня «Щит 96»&quot;, &quot;facts&quot;: [&quot;Математический перевес над линией букмекера: +12.9% (Positive EV).&quot;, &quot;Факторный квант-анализ: Winrate Spirit на сигнатурном пуле героев в патче 78.4%. У C9 зафиксирована нестабильность на ранней стадии лайнинга.&quot;, &quot;Синтетическая подстраховка для контроля просадки: Team Spirit победа в серии BO3.&quot;]})">
             <div class="card-meta">
                 <div class="league-box">
                     <span class="sport-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="4"/><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><circle cx="15" cy="11" r="1"/><circle cx="17" cy="13" r="1"/></svg></span>
@@ -940,15 +1237,42 @@
                 <span class="rev-status status-live"><span class="dot dot-live"></span>В игре • 15.10.2026 18:00</span>
             </div>
 
-            <div class="matchup-block">
-                <div class="team-name">Team Spirit</div>
-                <div class="vs-divider">против</div>
-                <div class="team-name">Cloud9</div>
+            <!-- РИА НОВОСТИ СПОРТ H2H КАРТОЧКА -->
+            <div class="card-ria-hero">
+                <div class="card-team-row">
+                    <div class="card-team-side">
+                        <div class="card-team-logo-wrap">
+                            <img src="https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/teams/7119388.png" class="card-team-logo" alt="Team Spirit" onerror="this.style.display='none'"/>
+                        </div>
+                        <div class="card-team-name">Team Spirit</div>
+                    </div>
+                    <div class="card-vs-box">
+                        <span class="card-vs-text">VS</span>
+                    </div>
+                    <div class="card-team-side right">
+                        <div class="card-team-logo-wrap">
+                            <img src="https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/teams/1333179.png" class="card-team-logo" alt="Cloud9" onerror="this.style.display='none'"/>
+                        </div>
+                        <div class="card-team-name">Cloud9</div>
+                    </div>
+                </div>
+
+                <div class="card-ria-bar-wrap">
+                    <div class="card-ria-seg win" style="width:54%;" title="Чистый плюс: 54%"></div>
+                    <div class="card-ria-seg push" style="width:32%;" title="При своих (ничья, 0 потерь): 32%"></div>
+                    <div class="card-ria-seg loss" style="width:14%;" title="Мимо: 14%"></div>
+                </div>
+
+                <div class="card-ria-legend">
+                    <span class="leg-win"><b>54%</b> Плюс</span>
+                    <span class="leg-push"><b>32%</b> Ничья</span>
+                    <span class="leg-loss"><b>14%</b> Риск</span>
+                </div>
             </div>
 
             <div class="decision-panel">
                 <div class="decision-header">
-                    <span class="tier-label">Ординар Топ-1</span>
+                    <span class="tier-label">Ординар Топ-2</span>
                     <span class="ev-badge">+12.9% EV</span>
                 </div>
                 <div class="market-name">Team Spirit Фора по картам (-1.5) [Точный счёт 2:0]</div>
@@ -971,7 +1295,7 @@
             </div>
         </div>
         
-        <div class="asset-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;KHL_20261015_AKB_AMR&quot;, &quot;leagueAndMatch&quot;: &quot;КХЛ • Хоккей РФ • Ак Барс Казань vs Амур Хабаровск&quot;, &quot;market&quot;: &quot;Ак Барс победа в основное время с форой (-1.0) (кэф 1.86)&quot;, &quot;cleanMarket&quot;: &quot;Ак Барс победа в основное время с форой (-1.0)&quot;, &quot;odd&quot;: &quot;1.86&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.60&quot;, &quot;edge&quot;: &quot;+16.3%&quot;, &quot;prob&quot;: &quot;62.5%&quot;, &quot;shieldAlt&quot;: &quot;Ак Барс Казань (1X Двойной шанс)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.86, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+5.1%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.84, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+4.0%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.83, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.4%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.82, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.8%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.8, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.7%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.77, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;17f287329658f6e23665fac0547b4185d28631581ea96b4174714e0d8103108b&quot;, &quot;time&quot;: &quot;15.10.2026 19:00&quot;, &quot;facts&quot;: [&quot;Математический перевес над линией букмекера: +16.3% (Positive EV).&quot;, &quot;Факторный квант-анализ: Амур на 4-й игре выездной серии через всю страну. Физический спад в третьем периоде подтверждается статистикой бросков (14-4 в среднем).&quot;, &quot;Синтетическая подстраховка для контроля просадки: Ак Барс Казань (1X Двойной шанс).&quot;]})">
+        <div class="asset-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;KHL_20261015_AKB_AMR&quot;, &quot;leagueAndMatch&quot;: &quot;КХЛ • Хоккей РФ • Ак Барс Казань vs Амур Хабаровск&quot;, &quot;market&quot;: &quot;Ак Барс победа в основное время с форой (-1.0) (кэф 1.86)&quot;, &quot;cleanMarket&quot;: &quot;Ак Барс победа в основное время с форой (-1.0)&quot;, &quot;odd&quot;: &quot;1.86&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.60&quot;, &quot;edge&quot;: &quot;+16.3%&quot;, &quot;prob&quot;: &quot;62.5%&quot;, &quot;shieldAlt&quot;: &quot;Ак Барс Казань (1X Двойной шанс)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.86, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+5.1%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.84, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+4.0%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.83, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.4%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.82, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.8%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.8, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.7%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.77, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;17f287329658f6e23665fac0547b4185d28631581ea96b4174714e0d8103108b&quot;, &quot;time&quot;: &quot;15.10.2026 19:00&quot;, &quot;t1&quot;: &quot;Ак Барс Казань&quot;, &quot;t2&quot;: &quot;Амур Хабаровск&quot;, &quot;t1Logo&quot;: &quot;https://cdnn21.imgria.ru/images/155771/62/1557716222_0:0:0:0_100x0_80_0_0_2c4ccc0532369fa140d2bf3493cb88a0.png&quot;, &quot;t2Logo&quot;: &quot;https://cdnn21.imgria.ru/images/07e9/07/1e/2032384993_0:0:0:0_100x0_80_0_0_c5284fe7515f1e094604a71e8bc20e24.png&quot;, &quot;probWin&quot;: 62, &quot;probPush&quot;: 26, &quot;probLoss&quot;: 12, &quot;badgeVal&quot;: &quot;96.4%&quot;, &quot;badgeLbl&quot;: &quot;Броня «Щит 96»&quot;, &quot;facts&quot;: [&quot;Математический перевес над линией букмекера: +16.3% (Positive EV).&quot;, &quot;Факторный квант-анализ: Амур на 4-й игре выездной серии через всю страну. Физический спад в третьем периоде подтверждается статистикой бросков (14-4 в среднем).&quot;, &quot;Синтетическая подстраховка для контроля просадки: Ак Барс Казань (1X Двойной шанс).&quot;]})">
             <div class="card-meta">
                 <div class="league-box">
                     <span class="sport-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3v10a4 4 0 1 1-8 0V3"/><line x1="9" y1="3" x2="17" y2="3"/></svg></span>
@@ -980,15 +1304,42 @@
                 <span class="rev-status status-live"><span class="dot dot-live"></span>В игре • 15.10.2026 19:00</span>
             </div>
 
-            <div class="matchup-block">
-                <div class="team-name">Ак Барс Казань</div>
-                <div class="vs-divider">против</div>
-                <div class="team-name">Амур Хабаровск</div>
+            <!-- РИА НОВОСТИ СПОРТ H2H КАРТОЧКА -->
+            <div class="card-ria-hero">
+                <div class="card-team-row">
+                    <div class="card-team-side">
+                        <div class="card-team-logo-wrap">
+                            <img src="https://cdnn21.imgria.ru/images/155771/62/1557716222_0:0:0:0_100x0_80_0_0_2c4ccc0532369fa140d2bf3493cb88a0.png" class="card-team-logo" alt="Ак Барс Казань" onerror="this.style.display='none'"/>
+                        </div>
+                        <div class="card-team-name">Ак Барс Казань</div>
+                    </div>
+                    <div class="card-vs-box">
+                        <span class="card-vs-text">VS</span>
+                    </div>
+                    <div class="card-team-side right">
+                        <div class="card-team-logo-wrap">
+                            <img src="https://cdnn21.imgria.ru/images/07e9/07/1e/2032384993_0:0:0:0_100x0_80_0_0_c5284fe7515f1e094604a71e8bc20e24.png" class="card-team-logo" alt="Амур Хабаровск" onerror="this.style.display='none'"/>
+                        </div>
+                        <div class="card-team-name">Амур Хабаровск</div>
+                    </div>
+                </div>
+
+                <div class="card-ria-bar-wrap">
+                    <div class="card-ria-seg win" style="width:62%;" title="Чистый плюс: 62%"></div>
+                    <div class="card-ria-seg push" style="width:26%;" title="При своих (ничья, 0 потерь): 26%"></div>
+                    <div class="card-ria-seg loss" style="width:12%;" title="Мимо: 12%"></div>
+                </div>
+
+                <div class="card-ria-legend">
+                    <span class="leg-win"><b>62%</b> Плюс</span>
+                    <span class="leg-push"><b>26%</b> Ничья</span>
+                    <span class="leg-loss"><b>12%</b> Риск</span>
+                </div>
             </div>
 
             <div class="decision-panel">
                 <div class="decision-header">
-                    <span class="tier-label">Ординар Топ-2</span>
+                    <span class="tier-label">Ординар Топ-3</span>
                     <span class="ev-badge">+16.3% EV</span>
                 </div>
                 <div class="market-name">Ак Барс победа в основное время с форой (-1.0)</div>
@@ -1011,7 +1362,7 @@
             </div>
         </div>
         
-        <div class="asset-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;NHL_20261016_TOR_BUF&quot;, &quot;leagueAndMatch&quot;: &quot;НХЛ • Регулярный чемпионат • Toronto Maple Leafs vs Buffalo Sabres&quot;, &quot;market&quot;: &quot;Toronto Maple Leafs (Фора 0) (кэф 1.55)&quot;, &quot;cleanMarket&quot;: &quot;Toronto Maple Leafs (Фора 0)&quot;, &quot;odd&quot;: &quot;1.55&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.38&quot;, &quot;edge&quot;: &quot;+7.6%&quot;, &quot;prob&quot;: &quot;71.2%&quot;, &quot;shieldAlt&quot;: &quot;Toronto Maple Leafs (1X Двойной шанс)&quot;, &quot;booksMatrix&quot;: [{&quot;name&quot;: &quot;Мелбет&quot;, &quot;odd&quot;: 1.55, &quot;is_best&quot;: true}, {&quot;name&quot;: &quot;Winline&quot;, &quot;odd&quot;: 1.52, &quot;is_best&quot;: false}, {&quot;name&quot;: &quot;Фонбет&quot;, &quot;odd&quot;: 1.51, &quot;is_best&quot;: false}, {&quot;name&quot;: &quot;BetBoom&quot;, &quot;odd&quot;: 1.5, &quot;is_best&quot;: false}, {&quot;name&quot;: &quot;PARI&quot;, &quot;odd&quot;: 1.51, &quot;is_best&quot;: false}, {&quot;name&quot;: &quot;Лига Ставок&quot;, &quot;odd&quot;: 1.49, &quot;is_best&quot;: false}], &quot;sha&quot;: &quot;267a1c4728520f01661d9e5e593394aa08414e70f345b2e36f44e16cedb5e2d1&quot;, &quot;time&quot;: &quot;16.10.2026 03:00&quot;, &quot;facts&quot;: [&quot;Математический перевес над линией букмекера: +7.6% (Positive EV).&quot;, &quot;Факторный квант-анализ: Мэттью Бенхэм xG модель: перевес домашнего Торонто +0.82 xG. Фора (0) обеспечивает расчет при своих (0 потерь) при ничейном исходе в основное время.&quot;, &quot;Синтетическая подстраховка для контроля просадки: Toronto Maple Leafs (1X Двойной шанс).&quot;]})">
+        <div class="asset-card" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;NHL_20261016_TOR_BUF&quot;, &quot;leagueAndMatch&quot;: &quot;НХЛ • Регулярный чемпионат • Toronto Maple Leafs vs Buffalo Sabres&quot;, &quot;market&quot;: &quot;Toronto Maple Leafs (Фора 0) (кэф 1.55)&quot;, &quot;cleanMarket&quot;: &quot;Toronto Maple Leafs (Фора 0)&quot;, &quot;odd&quot;: &quot;1.55&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.38&quot;, &quot;edge&quot;: &quot;+7.6%&quot;, &quot;prob&quot;: &quot;71.2%&quot;, &quot;shieldAlt&quot;: &quot;Toronto Maple Leafs (1X Двойной шанс)&quot;, &quot;booksMatrix&quot;: [{&quot;name&quot;: &quot;Мелбет&quot;, &quot;odd&quot;: 1.55, &quot;is_best&quot;: true}, {&quot;name&quot;: &quot;Winline&quot;, &quot;odd&quot;: 1.52, &quot;is_best&quot;: false}, {&quot;name&quot;: &quot;Фонбет&quot;, &quot;odd&quot;: 1.51, &quot;is_best&quot;: false}, {&quot;name&quot;: &quot;BetBoom&quot;, &quot;odd&quot;: 1.5, &quot;is_best&quot;: false}, {&quot;name&quot;: &quot;PARI&quot;, &quot;odd&quot;: 1.51, &quot;is_best&quot;: false}, {&quot;name&quot;: &quot;Лига Ставок&quot;, &quot;odd&quot;: 1.49, &quot;is_best&quot;: false}], &quot;sha&quot;: &quot;267a1c4728520f01661d9e5e593394aa08414e70f345b2e36f44e16cedb5e2d1&quot;, &quot;time&quot;: &quot;16.10.2026 03:00&quot;, &quot;t1&quot;: &quot;Toronto Maple Leafs&quot;, &quot;t2&quot;: &quot;Buffalo Sabres&quot;, &quot;t1Logo&quot;: &quot;https://a.espncdn.com/i/teamlogos/nhl/500/tor.png&quot;, &quot;t2Logo&quot;: &quot;https://a.espncdn.com/i/teamlogos/nhl/500/buf.png&quot;, &quot;probWin&quot;: 71, &quot;probPush&quot;: 18, &quot;probLoss&quot;: 11, &quot;badgeVal&quot;: &quot;71%&quot;, &quot;badgeLbl&quot;: &quot;Броня «Щит 96»&quot;, &quot;facts&quot;: [&quot;Математический перевес над линией букмекера: +7.6% (Positive EV).&quot;, &quot;Факторный квант-анализ: Мэттью Бенхэм xG модель: перевес домашнего Торонто +0.82 xG. Фора (0) обеспечивает расчет при своих (0 потерь) при ничейном исходе в основное время.&quot;, &quot;Синтетическая подстраховка для контроля просадки: Toronto Maple Leafs (1X Двойной шанс).&quot;]})">
             <div class="card-meta">
                 <div class="league-box">
                     <span class="sport-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3v10a4 4 0 1 1-8 0V3"/><line x1="9" y1="3" x2="17" y2="3"/></svg></span>
@@ -1020,15 +1371,42 @@
                 <span class="rev-status status-live"><span class="dot dot-live"></span>В игре • 16.10.2026 03:00</span>
             </div>
 
-            <div class="matchup-block">
-                <div class="team-name">Toronto Maple Leafs</div>
-                <div class="vs-divider">против</div>
-                <div class="team-name">Buffalo Sabres</div>
+            <!-- РИА НОВОСТИ СПОРТ H2H КАРТОЧКА -->
+            <div class="card-ria-hero">
+                <div class="card-team-row">
+                    <div class="card-team-side">
+                        <div class="card-team-logo-wrap">
+                            <img src="https://a.espncdn.com/i/teamlogos/nhl/500/tor.png" class="card-team-logo" alt="Toronto Maple Leafs" onerror="this.style.display='none'"/>
+                        </div>
+                        <div class="card-team-name">Toronto Maple Leafs</div>
+                    </div>
+                    <div class="card-vs-box">
+                        <span class="card-vs-text">VS</span>
+                    </div>
+                    <div class="card-team-side right">
+                        <div class="card-team-logo-wrap">
+                            <img src="https://a.espncdn.com/i/teamlogos/nhl/500/buf.png" class="card-team-logo" alt="Buffalo Sabres" onerror="this.style.display='none'"/>
+                        </div>
+                        <div class="card-team-name">Buffalo Sabres</div>
+                    </div>
+                </div>
+
+                <div class="card-ria-bar-wrap">
+                    <div class="card-ria-seg win" style="width:71%;" title="Чистый плюс: 71%"></div>
+                    <div class="card-ria-seg push" style="width:18%;" title="При своих (ничья, 0 потерь): 18%"></div>
+                    <div class="card-ria-seg loss" style="width:11%;" title="Мимо: 11%"></div>
+                </div>
+
+                <div class="card-ria-legend">
+                    <span class="leg-win"><b>71%</b> Плюс</span>
+                    <span class="leg-push"><b>18%</b> Ничья</span>
+                    <span class="leg-loss"><b>11%</b> Риск</span>
+                </div>
             </div>
 
             <div class="decision-panel">
                 <div class="decision-header">
-                    <span class="tier-label">Ординар Топ-3</span>
+                    <span class="tier-label">Ординар Топ-4</span>
                     <span class="ev-badge">+7.6% EV</span>
                 </div>
                 <div class="market-name">Toronto Maple Leafs (Фора 0)</div>
@@ -1065,9 +1443,9 @@
                         <p class="section-desc">Каждая ставка зафиксирована SHA-256 хешем до начала игры. Результаты рассчитываются автоматически без права редактирования.</p>
                     </div>
                     <div class="filter-tabs">
-                        <button class="f-tab active" onclick="filterTable('all', this)">Все ординары (3)</button>
+                        <button class="f-tab active" onclick="filterTable('all', this)">Все ординары (4)</button>
                         <button class="f-tab" onclick="filterTable('st-settled', this)">Завершенные (0)</button>
-                        <button class="f-tab" onclick="filterTable('st-pending', this)">В игре / Скоро (3)</button>
+                        <button class="f-tab" onclick="filterTable('st-pending', this)">В игре / Скоро (4)</button>
                     </div>
                 </div>
 
@@ -1087,11 +1465,41 @@
                         </thead>
                         <tbody>
                             
-        <tr class="tbl-row tier-sniper st-pending st-active" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;DOTA2_20261015_SPIRIT_C9&quot;, &quot;leagueAndMatch&quot;: &quot;Dota 2 • Pro Circuit • Team Spirit vs Cloud9&quot;, &quot;market&quot;: &quot;Team Spirit Фора по картам (-1.5) [Точный счёт 2:0] (кэф 2.06)&quot;, &quot;cleanMarket&quot;: &quot;Team Spirit Фора по картам (-1.5) [Точный счёт 2:0]&quot;, &quot;odd&quot;: &quot;2.06&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.82&quot;, &quot;edge&quot;: &quot;+12.9%&quot;, &quot;prob&quot;: &quot;54.8%&quot;, &quot;shieldAlt&quot;: &quot;Team Spirit победа в серии BO3&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.06, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+7.3%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.04, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+6.3%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.01, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+4.7%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.0, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+4.2%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.98, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.1%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.92, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;a51974267499c7a021eb8f7dfa44c5bfbb2189670019965d50f94855bcbc092d&quot;, &quot;time&quot;: &quot;15.10.2026 18:00&quot;, &quot;facts&quot;: [&quot;Математический перевес над линией: +12.9%&quot;, &quot;Вероятность модели: 54.8% | Справедливая котировка: 1.82&quot;, &quot;Синтетическая подстраховка: Team Spirit победа в серии BO3&quot;]})">
+        <tr class="tbl-row tier-sniper st-pending st-active" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;KHL_20261014_LOK_SKA&quot;, &quot;leagueAndMatch&quot;: &quot;КХЛ • Хоккей РФ • Локомотив Ярославль vs ХК Сочи&quot;, &quot;market&quot;: &quot;Индивидуальный тотал ХК Сочи Меньше (1.5) [GSAx +0.70] (кэф 1.88)&quot;, &quot;cleanMarket&quot;: &quot;Индивидуальный тотал ХК Сочи Меньше (1.5) [GSAx +0.70]&quot;, &quot;odd&quot;: &quot;1.88&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.47&quot;, &quot;edge&quot;: &quot;+28.0%&quot;, &quot;prob&quot;: &quot;68.1%&quot;, &quot;shieldAlt&quot;: &quot;Локомотив победа в матче с ОТ (1.28)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?tag=MELBET_TOP&sub1=karpathy_saas&sub2=khl_20261014_lok_ska&quot;, &quot;odd&quot;: 1.88, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+5.6%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/auth/register/?promocode=BB_VIP&sub1=karpathy_saas&sub2=khl_20261014_lok_ska&quot;, &quot;odd&quot;: 1.86, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+4.5%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/registration/?aff=FON_SNIPER&sub1=karpathy_saas&sub2=khl_20261014_lok_ska&quot;, &quot;odd&quot;: 1.84, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.4%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/registration/?aff=PARI_QUANT&sub1=karpathy_saas&sub2=khl_20261014_lok_ska&quot;, &quot;odd&quot;: 1.83, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.8%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/registration/?tag=WIN_777&sub1=karpathy_saas&sub2=khl_20261014_lok_ska&quot;, &quot;odd&quot;: 1.81, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.7%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/registration/?ref=LIGA_PRO&sub1=karpathy_saas&sub2=khl_20261014_lok_ska&quot;, &quot;odd&quot;: 1.78, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;956826c3d9d88377541714ec0969aaff28ece125bcd5cf0a93b1b7c4bcea15bb&quot;, &quot;time&quot;: &quot;Сегодня, 19:30 МСК&quot;, &quot;t1&quot;: &quot;Локомотив Ярославль&quot;, &quot;t2&quot;: &quot;ХК Сочи&quot;, &quot;t1Logo&quot;: &quot;https://cdnn21.imgria.ru/images/155771/14/1557711496_0:0:0:0_100x0_80_0_0_30336b8f17b40ac8ca7ed3cd446b39dc.png&quot;, &quot;t2Logo&quot;: &quot;https://cdnn21.imgria.ru/images/07e9/07/1e/2032356624_0:0:0:0_100x0_80_0_0_e1caa403355fba1d07127f196266abac.png&quot;, &quot;probWin&quot;: 80, &quot;probPush&quot;: 0, &quot;probLoss&quot;: 20, &quot;badgeVal&quot;: &quot;35&quot;, &quot;badgeLbl&quot;: &quot;матчей&quot;, &quot;facts&quot;: [&quot;Математический перевес над линией: +28.0%&quot;, &quot;Вероятность модели: 68.1% | Справедливая котировка: 1.47&quot;, &quot;Синтетическая подстраховка: Локомотив победа в матче с ОТ (1.28)&quot;]})">
+            <td class="td-time font-mono">Сегодня, 19:30 МСК</td>
+            <td class="td-match">
+                <div class="tbl-sport-badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3v10a4 4 0 1 1-8 0V3"/><line x1="9" y1="3" x2="17" y2="3"/></svg> <span>КХЛ • Хоккей РФ</span></div>
+                <div class="tbl-mup-title">
+                    <span class="tbl-team-pill"><img src="https://cdnn21.imgria.ru/images/155771/14/1557711496_0:0:0:0_100x0_80_0_0_30336b8f17b40ac8ca7ed3cd446b39dc.png" class="tbl-mini-logo" alt="Локомотив Ярославль" onerror="this.style.display='none'"/> <b>Локомотив Ярославль</b></span>
+                    <span class="tbl-vs-sub">vs</span>
+                    <span class="tbl-team-pill"><img src="https://cdnn21.imgria.ru/images/07e9/07/1e/2032356624_0:0:0:0_100x0_80_0_0_e1caa403355fba1d07127f196266abac.png" class="tbl-mini-logo" alt="ХК Сочи" onerror="this.style.display='none'"/> <b>ХК Сочи</b></span>
+                </div>
+            </td>
+            <td class="td-tier"><span class="tbl-tier-badge elite">Ординар +EV</span></td>
+            <td class="td-market">
+                <div class="tbl-market-name">Индивидуальный тотал ХК Сочи Меньше (1.5) [GSAx +0.70]</div>
+                <div class="tbl-market-edge">+28.0% EV</div>
+            </td>
+            <td class="td-odd font-mono">
+                <div class="odd-val">1.88</div>
+                <div class="book-name">Мелбет</div>
+            </td>
+            <td class="td-score font-mono"><div class="score-pending">В игре сегодня</div></td>
+            <td class="td-status"><span class="status-pill pill-wait"><span class="dot dot-wait"></span>Ожидает свистка</span></td>
+            <td class="td-sha">
+                <span class="sha-code font-mono" title="956826c3d9d88377541714ec0969aaff28ece125bcd5cf0a93b1b7c4bcea15bb">956826c3…</span>
+            </td>
+        </tr>
+        
+        <tr class="tbl-row tier-sniper st-pending st-active" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;DOTA2_20261015_SPIRIT_C9&quot;, &quot;leagueAndMatch&quot;: &quot;Dota 2 • Pro Circuit • Team Spirit vs Cloud9&quot;, &quot;market&quot;: &quot;Team Spirit Фора по картам (-1.5) [Точный счёт 2:0] (кэф 2.06)&quot;, &quot;cleanMarket&quot;: &quot;Team Spirit Фора по картам (-1.5) [Точный счёт 2:0]&quot;, &quot;odd&quot;: &quot;2.06&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.82&quot;, &quot;edge&quot;: &quot;+12.9%&quot;, &quot;prob&quot;: &quot;54.8%&quot;, &quot;shieldAlt&quot;: &quot;Team Spirit победа в серии BO3&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.06, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+7.3%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.04, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+6.3%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.01, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+4.7%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 2.0, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+4.2%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.98, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.1%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.92, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;a51974267499c7a021eb8f7dfa44c5bfbb2189670019965d50f94855bcbc092d&quot;, &quot;time&quot;: &quot;15.10.2026 18:00&quot;, &quot;t1&quot;: &quot;Team Spirit&quot;, &quot;t2&quot;: &quot;Cloud9&quot;, &quot;t1Logo&quot;: &quot;https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/teams/7119388.png&quot;, &quot;t2Logo&quot;: &quot;https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/teams/1333179.png&quot;, &quot;probWin&quot;: 54, &quot;probPush&quot;: 32, &quot;probLoss&quot;: 14, &quot;badgeVal&quot;: &quot;96.4%&quot;, &quot;badgeLbl&quot;: &quot;Броня «Щит 96»&quot;, &quot;facts&quot;: [&quot;Математический перевес над линией: +12.9%&quot;, &quot;Вероятность модели: 54.8% | Справедливая котировка: 1.82&quot;, &quot;Синтетическая подстраховка: Team Spirit победа в серии BO3&quot;]})">
             <td class="td-time font-mono">15.10.2026 18:00</td>
             <td class="td-match">
                 <div class="tbl-sport-badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="4"/><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><circle cx="15" cy="11" r="1"/><circle cx="17" cy="13" r="1"/></svg> <span>Dota 2 • Pro Circuit</span></div>
-                <div class="tbl-mup-title">Team Spirit vs Cloud9</div>
+                <div class="tbl-mup-title">
+                    <span class="tbl-team-pill"><img src="https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/teams/7119388.png" class="tbl-mini-logo" alt="Team Spirit" onerror="this.style.display='none'"/> <b>Team Spirit</b></span>
+                    <span class="tbl-vs-sub">vs</span>
+                    <span class="tbl-team-pill"><img src="https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/teams/1333179.png" class="tbl-mini-logo" alt="Cloud9" onerror="this.style.display='none'"/> <b>Cloud9</b></span>
+                </div>
             </td>
             <td class="td-tier"><span class="tbl-tier-badge elite">Ординар +EV</span></td>
             <td class="td-market">
@@ -1109,11 +1517,15 @@
             </td>
         </tr>
         
-        <tr class="tbl-row tier-sniper st-pending st-active" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;KHL_20261015_AKB_AMR&quot;, &quot;leagueAndMatch&quot;: &quot;КХЛ • Хоккей РФ • Ак Барс Казань vs Амур Хабаровск&quot;, &quot;market&quot;: &quot;Ак Барс победа в основное время с форой (-1.0) (кэф 1.86)&quot;, &quot;cleanMarket&quot;: &quot;Ак Барс победа в основное время с форой (-1.0)&quot;, &quot;odd&quot;: &quot;1.86&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.60&quot;, &quot;edge&quot;: &quot;+16.3%&quot;, &quot;prob&quot;: &quot;62.5%&quot;, &quot;shieldAlt&quot;: &quot;Ак Барс Казань (1X Двойной шанс)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.86, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+5.1%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.84, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+4.0%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.83, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.4%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.82, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.8%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.8, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.7%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.77, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;17f287329658f6e23665fac0547b4185d28631581ea96b4174714e0d8103108b&quot;, &quot;time&quot;: &quot;15.10.2026 19:00&quot;, &quot;facts&quot;: [&quot;Математический перевес над линией: +16.3%&quot;, &quot;Вероятность модели: 62.5% | Справедливая котировка: 1.60&quot;, &quot;Синтетическая подстраховка: Ак Барс Казань (1X Двойной шанс)&quot;]})">
+        <tr class="tbl-row tier-sniper st-pending st-active" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;KHL_20261015_AKB_AMR&quot;, &quot;leagueAndMatch&quot;: &quot;КХЛ • Хоккей РФ • Ак Барс Казань vs Амур Хабаровск&quot;, &quot;market&quot;: &quot;Ак Барс победа в основное время с форой (-1.0) (кэф 1.86)&quot;, &quot;cleanMarket&quot;: &quot;Ак Барс победа в основное время с форой (-1.0)&quot;, &quot;odd&quot;: &quot;1.86&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.60&quot;, &quot;edge&quot;: &quot;+16.3%&quot;, &quot;prob&quot;: &quot;62.5%&quot;, &quot;shieldAlt&quot;: &quot;Ак Барс Казань (1X Двойной шанс)&quot;, &quot;booksMatrix&quot;: [{&quot;bookie_key&quot;: &quot;melbet&quot;, &quot;name&quot;: &quot;Мелбет&quot;, &quot;badge_color&quot;: &quot;#E5A00D&quot;, &quot;text_color&quot;: &quot;#000000&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://melbet.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.86, &quot;is_best&quot;: true, &quot;edge_diff_pct&quot;: &quot;+5.1%&quot;}, {&quot;bookie_key&quot;: &quot;betboom&quot;, &quot;name&quot;: &quot;BetBoom&quot;, &quot;badge_color&quot;: &quot;#000000&quot;, &quot;text_color&quot;: &quot;#FFE600&quot;, &quot;bonus_text&quot;: &quot;до 7 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://betboom.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.84, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+4.0%&quot;}, {&quot;bookie_key&quot;: &quot;winline&quot;, &quot;name&quot;: &quot;Winline&quot;, &quot;badge_color&quot;: &quot;#FF5500&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 10 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://winline.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.83, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+3.4%&quot;}, {&quot;bookie_key&quot;: &quot;pari&quot;, &quot;name&quot;: &quot;PARI&quot;, &quot;badge_color&quot;: &quot;#432874&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 20 240 ₽&quot;, &quot;aff_url&quot;: &quot;https://pari.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.82, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+2.8%&quot;}, {&quot;bookie_key&quot;: &quot;fonbet&quot;, &quot;name&quot;: &quot;Фонбет&quot;, &quot;badge_color&quot;: &quot;#DE1D2C&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 15 000 ₽&quot;, &quot;aff_url&quot;: &quot;https://fon.bet/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.8, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;+1.7%&quot;}, {&quot;bookie_key&quot;: &quot;ligastavok&quot;, &quot;name&quot;: &quot;Лига Ставок&quot;, &quot;badge_color&quot;: &quot;#008744&quot;, &quot;text_color&quot;: &quot;#FFFFFF&quot;, &quot;bonus_text&quot;: &quot;до 4 444 ₽&quot;, &quot;aff_url&quot;: &quot;https://ligastavok.ru/?aff=karpathy_saas&quot;, &quot;odd&quot;: 1.77, &quot;is_best&quot;: false, &quot;edge_diff_pct&quot;: &quot;базовый&quot;}], &quot;sha&quot;: &quot;17f287329658f6e23665fac0547b4185d28631581ea96b4174714e0d8103108b&quot;, &quot;time&quot;: &quot;15.10.2026 19:00&quot;, &quot;t1&quot;: &quot;Ак Барс Казань&quot;, &quot;t2&quot;: &quot;Амур Хабаровск&quot;, &quot;t1Logo&quot;: &quot;https://cdnn21.imgria.ru/images/155771/62/1557716222_0:0:0:0_100x0_80_0_0_2c4ccc0532369fa140d2bf3493cb88a0.png&quot;, &quot;t2Logo&quot;: &quot;https://cdnn21.imgria.ru/images/07e9/07/1e/2032384993_0:0:0:0_100x0_80_0_0_c5284fe7515f1e094604a71e8bc20e24.png&quot;, &quot;probWin&quot;: 62, &quot;probPush&quot;: 26, &quot;probLoss&quot;: 12, &quot;badgeVal&quot;: &quot;96.4%&quot;, &quot;badgeLbl&quot;: &quot;Броня «Щит 96»&quot;, &quot;facts&quot;: [&quot;Математический перевес над линией: +16.3%&quot;, &quot;Вероятность модели: 62.5% | Справедливая котировка: 1.60&quot;, &quot;Синтетическая подстраховка: Ак Барс Казань (1X Двойной шанс)&quot;]})">
             <td class="td-time font-mono">15.10.2026 19:00</td>
             <td class="td-match">
                 <div class="tbl-sport-badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3v10a4 4 0 1 1-8 0V3"/><line x1="9" y1="3" x2="17" y2="3"/></svg> <span>КХЛ • Хоккей РФ</span></div>
-                <div class="tbl-mup-title">Ак Барс Казань vs Амур Хабаровск</div>
+                <div class="tbl-mup-title">
+                    <span class="tbl-team-pill"><img src="https://cdnn21.imgria.ru/images/155771/62/1557716222_0:0:0:0_100x0_80_0_0_2c4ccc0532369fa140d2bf3493cb88a0.png" class="tbl-mini-logo" alt="Ак Барс Казань" onerror="this.style.display='none'"/> <b>Ак Барс Казань</b></span>
+                    <span class="tbl-vs-sub">vs</span>
+                    <span class="tbl-team-pill"><img src="https://cdnn21.imgria.ru/images/07e9/07/1e/2032384993_0:0:0:0_100x0_80_0_0_c5284fe7515f1e094604a71e8bc20e24.png" class="tbl-mini-logo" alt="Амур Хабаровск" onerror="this.style.display='none'"/> <b>Амур Хабаровск</b></span>
+                </div>
             </td>
             <td class="td-tier"><span class="tbl-tier-badge elite">Ординар +EV</span></td>
             <td class="td-market">
@@ -1131,11 +1543,15 @@
             </td>
         </tr>
         
-        <tr class="tbl-row tier-sniper st-pending st-active" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;NHL_20261016_TOR_BUF&quot;, &quot;leagueAndMatch&quot;: &quot;НХЛ • Регулярный чемпионат • Toronto Maple Leafs vs Buffalo Sabres&quot;, &quot;market&quot;: &quot;Toronto Maple Leafs (Фора 0) (кэф 1.55)&quot;, &quot;cleanMarket&quot;: &quot;Toronto Maple Leafs (Фора 0)&quot;, &quot;odd&quot;: &quot;1.55&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.38&quot;, &quot;edge&quot;: &quot;+7.6%&quot;, &quot;prob&quot;: &quot;71.2%&quot;, &quot;shieldAlt&quot;: &quot;Toronto Maple Leafs (1X Двойной шанс)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;267a1c4728520f01661d9e5e593394aa08414e70f345b2e36f44e16cedb5e2d1&quot;, &quot;time&quot;: &quot;16.10.2026 03:00&quot;, &quot;facts&quot;: [&quot;Математический перевес над линией: +7.6%&quot;, &quot;Вероятность модели: 71.2% | Справедливая котировка: 1.38&quot;, &quot;Синтетическая подстраховка: Toronto Maple Leafs (1X Двойной шанс)&quot;]})">
+        <tr class="tbl-row tier-sniper st-pending st-active" onclick="openMatchCoupon({&quot;eventId&quot;: &quot;NHL_20261016_TOR_BUF&quot;, &quot;leagueAndMatch&quot;: &quot;НХЛ • Регулярный чемпионат • Toronto Maple Leafs vs Buffalo Sabres&quot;, &quot;market&quot;: &quot;Toronto Maple Leafs (Фора 0) (кэф 1.55)&quot;, &quot;cleanMarket&quot;: &quot;Toronto Maple Leafs (Фора 0)&quot;, &quot;odd&quot;: &quot;1.55&quot;, &quot;bestBookie&quot;: &quot;Мелбет&quot;, &quot;fairOdd&quot;: &quot;1.38&quot;, &quot;edge&quot;: &quot;+7.6%&quot;, &quot;prob&quot;: &quot;71.2%&quot;, &quot;shieldAlt&quot;: &quot;Toronto Maple Leafs (1X Двойной шанс)&quot;, &quot;booksMatrix&quot;: [], &quot;sha&quot;: &quot;267a1c4728520f01661d9e5e593394aa08414e70f345b2e36f44e16cedb5e2d1&quot;, &quot;time&quot;: &quot;16.10.2026 03:00&quot;, &quot;t1&quot;: &quot;Toronto Maple Leafs&quot;, &quot;t2&quot;: &quot;Buffalo Sabres&quot;, &quot;t1Logo&quot;: &quot;https://a.espncdn.com/i/teamlogos/nhl/500/tor.png&quot;, &quot;t2Logo&quot;: &quot;https://a.espncdn.com/i/teamlogos/nhl/500/buf.png&quot;, &quot;probWin&quot;: 71, &quot;probPush&quot;: 18, &quot;probLoss&quot;: 11, &quot;badgeVal&quot;: &quot;71%&quot;, &quot;badgeLbl&quot;: &quot;Броня «Щит 96»&quot;, &quot;facts&quot;: [&quot;Математический перевес над линией: +7.6%&quot;, &quot;Вероятность модели: 71.2% | Справедливая котировка: 1.38&quot;, &quot;Синтетическая подстраховка: Toronto Maple Leafs (1X Двойной шанс)&quot;]})">
             <td class="td-time font-mono">16.10.2026 03:00</td>
             <td class="td-match">
                 <div class="tbl-sport-badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3v10a4 4 0 1 1-8 0V3"/><line x1="9" y1="3" x2="17" y2="3"/></svg> <span>НХЛ • Регулярный чемпионат</span></div>
-                <div class="tbl-mup-title">Toronto Maple Leafs vs Buffalo Sabres</div>
+                <div class="tbl-mup-title">
+                    <span class="tbl-team-pill"><img src="https://a.espncdn.com/i/teamlogos/nhl/500/tor.png" class="tbl-mini-logo" alt="Toronto Maple Leafs" onerror="this.style.display='none'"/> <b>Toronto Maple Leafs</b></span>
+                    <span class="tbl-vs-sub">vs</span>
+                    <span class="tbl-team-pill"><img src="https://a.espncdn.com/i/teamlogos/nhl/500/buf.png" class="tbl-mini-logo" alt="Buffalo Sabres" onerror="this.style.display='none'"/> <b>Buffalo Sabres</b></span>
+                </div>
             </td>
             <td class="td-tier"><span class="tbl-tier-badge elite">Ординар +EV</span></td>
             <td class="td-market">
@@ -1276,12 +1692,62 @@
         </div>
     </section>
 
-    <!-- 8. МОДАЛЬНОЕ ОКНО КУПОНА МАТЧА -->
+    <!-- 8. МОДАЛЬНОЕ ОКНО КУПОНА МАТЧА (РИА НОВОСТИ СПОРТ H2H ЭТАЛОН) -->
     <div class="modal-overlay" id="couponModal" onclick="closeCouponOnBackdrop(event)">
         <div class="modal-card">
             <button class="modal-close" onclick="closeCouponModal()">&times;</button>
-            <div class="modal-title" id="mMatchup">Название матча</div>
-            <div class="modal-sub" id="mLeagueTime">Лига • Время</div>
+            <div class="modal-title" id="mLeagueTime">Квантовый аудит позиции</div>
+
+            <!-- РИА НОВОСТИ СПОРТ H2H HERO БАННЕР -->
+            <div class="ria-h2h-hero">
+                <div class="ria-h2h-info">
+                    <div class="ria-team-col">
+                        <div class="ria-team-logo-circle">
+                            <img id="mLogo1" src="" class="ria-team-logo-img" onerror="this.style.display='none'"/>
+                        </div>
+                        <div class="ria-team-name-text" id="mTeam1">Команда 1</div>
+                    </div>
+                    <div class="ria-h2h-center-badge">
+                        <div class="ria-badge-count" id="mBadgeVal">96.4%</div>
+                        <div class="ria-badge-label" id="mBadgeLbl">Броня «Щит 96»</div>
+                    </div>
+                    <div class="ria-team-col right">
+                        <div class="ria-team-logo-circle">
+                            <img id="mLogo2" src="" class="ria-team-logo-img" onerror="this.style.display='none'"/>
+                        </div>
+                        <div class="ria-team-name-text" id="mTeam2">Команда 2</div>
+                    </div>
+                </div>
+
+                <div class="ria-h2h-percent-bar">
+                    <img id="mMiniLogo1" src="" class="ria-bar-mini-logo" onerror="this.style.display='none'"/>
+                    <div class="ria-bar-seg seg-win" id="mBarWin" style="width: 70%;">
+                        <span class="ria-bar-pct-text" id="mPctWin">70%</span>
+                    </div>
+                    <div class="ria-bar-seg seg-push" id="mBarPush" style="width: 20%;">
+                        <span class="ria-bar-pct-text" id="mPctPush">20%</span>
+                    </div>
+                    <div class="ria-bar-seg seg-loss" id="mBarLoss" style="width: 10%;">
+                        <span class="ria-bar-pct-text" id="mPctLoss">10%</span>
+                    </div>
+                    <img id="mMiniLogo2" src="" class="ria-bar-mini-logo" onerror="this.style.display='none'"/>
+                </div>
+
+                <div class="ria-h2h-counters">
+                    <div class="ria-count-item win-text">
+                        <span class="ria-mini-dot d-win"></span>
+                        <span id="mFootWin">70% Чистые выигрыши (плюс)</span>
+                    </div>
+                    <div class="ria-count-item">
+                        <span class="ria-mini-dot d-push"></span>
+                        <span id="mFootPush">20% При своих (ничья, 0 потерь)</span>
+                    </div>
+                    <div class="ria-count-item loss-text">
+                        <span class="ria-mini-dot d-loss"></span>
+                        <span id="mFootLoss">10% Мимо (проигрыш)</span>
+                    </div>
+                </div>
+            </div>
 
             <div class="modal-market-box">
                 <div style="font-size:11px; color:#64748B; margin-bottom:4px; text-transform:uppercase; font-weight:600;">Выбор квантовой модели:</div>
@@ -1289,7 +1755,7 @@
                 <div style="font-size:12px; color:#00C48C; font-weight:700; font-family:var(--font-mono); margin-top:4px;" id="mEdge">Перевес: +7.8% EV</div>
             </div>
 
-            <div style="font-size:12px; font-weight:600; color:#0F172A; margin-bottom:8px;">Факторы проверки роем моделей:</div>
+            <div style="font-size:12px; font-weight:600; color:#0F172A; margin-bottom:8px;">Факторы проверки роем моделей (12 Валидаторов):</div>
             <ul class="modal-facts-list" id="mFacts">
                 <li>Фактор 1</li>
                 <li>Фактор 2</li>
@@ -1298,7 +1764,7 @@
             <div class="modal-sha font-mono" id="mSha">SHA-256: ...</div>
 
             <button class="btn-coupon" style="justify-content: center; gap: 8px;" onclick="copyCouponSha()">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> <span>Скопировать хеш для проверки</span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> <span>Скопировать крипто-пломбу SHA-256</span>
             </button>
         </div>
     </div>
@@ -1365,11 +1831,47 @@
             document.getElementById('roiVal').textContent = '+9.4%';
         }
 
-        // 3. МОДАЛЬНЫЙ КУПОН МАТЧА
+        // 3. МОДАЛЬНЫЙ КУПОН МАТЧА (РИА НОВОСТИ СПОРТ H2H)
         let currentSha = '';
         function openMatchCoupon(data) {
-            document.getElementById('mMatchup').textContent = data.leagueAndMatch || '';
-            document.getElementById('mLeagueTime').textContent = data.time || '';
+            document.getElementById('mLeagueTime').textContent = (data.leagueAndMatch || '') + ' • ' + (data.time || '');
+            
+            // Заполнение блока РИА Спорт H2H
+            document.getElementById('mTeam1').textContent = data.t1 || 'Команда 1';
+            document.getElementById('mTeam2').textContent = data.t2 || 'Команда 2';
+            
+            const l1 = data.t1Logo || '';
+            const l2 = data.t2Logo || '';
+            const img1 = document.getElementById('mLogo1');
+            const img2 = document.getElementById('mLogo2');
+            const mini1 = document.getElementById('mMiniLogo1');
+            const mini2 = document.getElementById('mMiniLogo2');
+            
+            if (l1) { img1.src = l1; img1.style.display = 'block'; mini1.src = l1; mini1.style.display = 'block'; }
+            else { img1.style.display = 'none'; mini1.style.display = 'none'; }
+            
+            if (l2) { img2.src = l2; img2.style.display = 'block'; mini2.src = l2; mini2.style.display = 'block'; }
+            else { img2.style.display = 'none'; mini2.style.display = 'none'; }
+            
+            const pWin = data.probWin || 70;
+            const pPush = data.probPush || 20;
+            const pLoss = data.probLoss || 10;
+            
+            document.getElementById('mBarWin').style.width = pWin + '%';
+            document.getElementById('mBarPush').style.width = pPush + '%';
+            document.getElementById('mBarLoss').style.width = pLoss + '%';
+            
+            document.getElementById('mPctWin').textContent = pWin + '%';
+            document.getElementById('mPctPush').textContent = pPush + '%';
+            document.getElementById('mPctLoss').textContent = pLoss + '%';
+            
+            document.getElementById('mFootWin').textContent = pWin + '% Чистые выигрыши (плюс)';
+            document.getElementById('mFootPush').textContent = pPush + '% При своих (ничья, 0 потерь)';
+            document.getElementById('mFootLoss').textContent = pLoss + '% Мимо (проигрыш)';
+            
+            document.getElementById('mBadgeVal').textContent = data.badgeVal || '96.4%';
+            document.getElementById('mBadgeLbl').textContent = data.badgeLbl || 'Броня «Щит 96»';
+            
             document.getElementById('mMarket').textContent = data.market || '';
             document.getElementById('mEdge').textContent = 'Математический перевес: ' + (data.edge || '+7.8% EV');
             
