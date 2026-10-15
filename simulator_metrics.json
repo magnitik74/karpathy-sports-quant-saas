@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-10-15 10:13:02 UTC",
+  "timestamp": "2026-10-15 10:13:37 UTC",
   "engine_status": "RUNNING_24_7",
   "cpu_speed_mps": 395,
   "current_epoch": 56,
   "total_db_matches": 282644,
-  "current_db_offset": 181580,
+  "current_db_offset": 223780,
   "db_file": "C:\\Project\\Pravilo_Karpatogo\\sports_swarm\\karpathy_mega_sports.db",
   "db_size_mb": 26.13,
   "active_tables": [
@@ -13,13 +13,13 @@
     "real_nba_games",
     "real_dota2_pro_matches"
   ],
-  "sha256_current_block": "62d59d36f60481e9b73090c200b9bcd21bbe396d499383c2a8728ac5d951eb65",
-  "noise_rejected": 10949531,
+  "sha256_current_block": "fea85e684767996f258baf02baabba57cd57073972ca283346cdd84eeba8d02e",
+  "noise_rejected": 10978722,
   "golden_invariants": 34,
-  "won_count": 4446123,
-  "push_count": 223311,
-  "lost_count": 189651,
-  "total_evaluated": 4859085,
+  "won_count": 4457983,
+  "push_count": 223905,
+  "lost_count": 190206,
+  "total_evaluated": 4872094,
   "non_loss_rate_pct": 96.1,
   "trend": "РАСТЁТ ↗️",
   "active_weights": {
@@ -40,154 +40,154 @@
   ],
   "recent_stream": [
     {
-      "time": "10:13:02",
+      "time": "10:13:37",
       "sport": "Баскетбол NBA",
-      "match": "INO vs FTW (78:63)",
-      "selection": "INO (+14.5 очков)",
+      "match": "BUF vs PHI (105:111)",
+      "selection": "BUF (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "1b223e0cb7c71817..."
+      "sha_hash": "1abb753964e337b6..."
     },
     {
-      "time": "10:13:02",
-      "sport": "Футбол Топ-5",
-      "match": "Coventry vs Cardiff",
-      "selection": "Coventry (1X Двойной шанс)",
-      "odds": 1.48,
-      "outcome": "LOST",
-      "outcome_ru": "Мимо (проигрыш)",
-      "sha_hash": "fd88019535554c56..."
-    },
-    {
-      "time": "10:13:02",
-      "sport": "Футбол Топ-5",
-      "match": "Leicester vs Norwich",
-      "selection": "Leicester (1X Двойной шанс)",
-      "odds": 1.16,
+      "time": "10:13:37",
+      "sport": "Теннис ATP",
+      "match": "Roger Taylor vs Gerard Wimmer",
+      "selection": "Roger Taylor (+1.5 сета)",
+      "odds": 1.18,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "4d560c88eecfa3a7..."
+      "sha_hash": "51c97948a9a9d773..."
     },
     {
-      "time": "10:13:02",
+      "time": "10:13:37",
+      "sport": "Теннис ATP",
+      "match": "Buster C. Mottram vs Gerard Wimmer",
+      "selection": "Buster C. Mottram (+1.5 сета)",
+      "odds": 1.18,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "3fff61943369cce1..."
+    },
+    {
+      "time": "10:13:37",
+      "sport": "Теннис ATP",
+      "match": "Roger Taylor vs Hans Kary",
+      "selection": "Roger Taylor (+1.5 сета)",
+      "odds": 1.18,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "f8106eb53bd83fdf..."
+    },
+    {
+      "time": "10:13:37",
+      "sport": "Теннис ATP",
+      "match": "Dick Crealy vs Ivan Molina",
+      "selection": "Dick Crealy (+1.5 сета)",
+      "odds": 1.18,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "555ae4a3a0e339ac..."
+    },
+    {
+      "time": "10:13:37",
       "sport": "Баскетбол NBA",
-      "match": "ROC vs INO (99:96)",
-      "selection": "ROC (+14.5 очков)",
+      "match": "KCO vs PHI (100:87)",
+      "selection": "KCO (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "7299a13a180d7357..."
+      "sha_hash": "c30a140864b680cc..."
     },
     {
-      "time": "10:13:02",
+      "time": "10:13:37",
       "sport": "Футбол Топ-5",
-      "match": "Southampton vs Middlesbrough",
-      "selection": "Southampton (1X Двойной шанс)",
-      "odds": 1.12,
+      "match": "Feyenoord vs Nijmegen",
+      "selection": "Feyenoord (1X Двойной шанс)",
+      "odds": 1.05,
       "outcome": "PUSH",
       "outcome_ru": "При своих (ничья, 0 потерь)",
-      "sha_hash": "51c7b5931b767d54..."
+      "sha_hash": "f0c7287a67e09714..."
     },
     {
-      "time": "10:13:02",
+      "time": "10:13:37",
+      "sport": "Теннис ATP",
+      "match": "Ivan Molina vs Jean-Francois Caujolle",
+      "selection": "Ivan Molina (+1.5 сета)",
+      "odds": 1.18,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "b70ad5a7de395be5..."
+    },
+    {
+      "time": "10:13:37",
+      "sport": "Баскетбол NBA",
+      "match": "SSL vs VIR (101:109)",
+      "selection": "SSL (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "6b9c0650ebe1da60..."
+    },
+    {
+      "time": "10:13:37",
+      "sport": "Баскетбол NBA",
+      "match": "NYA vs SDA (126:90)",
+      "selection": "NYA (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "bd8dc4407bd16d00..."
+    },
+    {
+      "time": "10:13:37",
       "sport": "Футбол Топ-5",
-      "match": "Preston vs Rotherham",
-      "selection": "Preston (1X Двойной шанс)",
-      "odds": 1.09,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "0a7c5dfe771b8875..."
-    },
-    {
-      "time": "10:13:02",
-      "sport": "Футбол Топ-5",
-      "match": "Norwich vs Plymouth",
-      "selection": "Norwich (1X Двойной шанс)",
-      "odds": 1.07,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "ba0aaa8d8a2bf5bc..."
-    },
-    {
-      "time": "10:13:02",
-      "sport": "Баскетбол NBA",
-      "match": "SYR vs PHW (117:91)",
-      "selection": "SYR (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "11cafac804f13c83..."
-    },
-    {
-      "time": "10:13:02",
-      "sport": "Баскетбол NBA",
-      "match": "ROC vs FTW (94:82)",
-      "selection": "ROC (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "65677784c73f5b91..."
-    },
-    {
-      "time": "10:13:02",
-      "sport": "Футбол Топ-5",
-      "match": "Leeds vs Millwall",
-      "selection": "Leeds (1X Двойной шанс)",
-      "odds": 0.93,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "703c15ff46026610..."
-    },
-    {
-      "time": "10:13:02",
-      "sport": "Баскетбол NBA",
-      "match": "NYK vs BLB (69:53)",
-      "selection": "NYK (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "e9a7ebbd48e6427e..."
-    },
-    {
-      "time": "10:13:02",
-      "sport": "Баскетбол NBA",
-      "match": "MNL vs BOS (94:91)",
-      "selection": "MNL (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "a992c99d10b2c461..."
-    },
-    {
-      "time": "10:13:02",
-      "sport": "Баскетбол NBA",
-      "match": "MNL vs NYK (82:65)",
-      "selection": "MNL (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "ec232f1dd1524a8d..."
-    },
-    {
-      "time": "10:13:02",
-      "sport": "Баскетбол NBA",
-      "match": "MNL vs NYK (102:89)",
-      "selection": "MNL (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "07971df8edf359c2..."
-    },
-    {
-      "time": "10:13:02",
-      "sport": "Футбол Топ-5",
-      "match": "Ipswich vs Sheffield Weds",
-      "selection": "Ipswich (1X Двойной шанс)",
+      "match": "Utrecht vs NAC Breda",
+      "selection": "Utrecht (1X Двойной шанс)",
       "odds": 1.14,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "52acfabb232f8842..."
+      "sha_hash": "f4081fd9c450113a..."
+    },
+    {
+      "time": "10:13:37",
+      "sport": "Теннис ATP",
+      "match": "Patrice Dominguez vs Colin Dowdeswell",
+      "selection": "Patrice Dominguez (+1.5 сета)",
+      "odds": 1.18,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "daea465b1b960c24..."
+    },
+    {
+      "time": "10:13:37",
+      "sport": "Баскетбол NBA",
+      "match": "KEN vs UTS (96:86)",
+      "selection": "KEN (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "cca7bd0d845132a9..."
+    },
+    {
+      "time": "10:13:37",
+      "sport": "Футбол Топ-5",
+      "match": "AZ Alkmaar vs For Sittard",
+      "selection": "AZ Alkmaar (1X Двойной шанс)",
+      "odds": 0.92,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "45d35ef3914915db..."
+    },
+    {
+      "time": "10:13:37",
+      "sport": "Теннис ATP",
+      "match": "Jean-Francois Caujolle vs Francois Jauffret",
+      "selection": "Jean-Francois Caujolle (+1.5 сета)",
+      "odds": 1.18,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "8b86dfd77efe0dd7..."
     }
   ]
 }
