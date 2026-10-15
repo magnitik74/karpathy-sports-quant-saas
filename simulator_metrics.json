@@ -1,0 +1,191 @@
+{
+  "timestamp": "2026-10-15 04:57:21 UTC",
+  "engine_status": "RUNNING_24_7",
+  "cpu_speed_mps": 376,
+  "current_epoch": 1,
+  "total_db_matches": 282630,
+  "current_db_offset": 400,
+  "db_file": "C:\\Project\\Pravilo_Karpatogo\\sports_swarm\\karpathy_mega_sports.db",
+  "db_size_mb": 26.13,
+  "active_tables": [
+    "real_tennis_matches",
+    "real_football_odds",
+    "real_nba_games",
+    "real_dota2_pro_matches"
+  ],
+  "sha256_current_block": "c0c14619612482b514f053d00a49d2e17458d6cb6193de49f207a0d9c33fa726",
+  "won_count": 2933,
+  "push_count": 155,
+  "lost_count": 275,
+  "total_evaluated": 3363,
+  "non_loss_rate_pct": 91.82,
+  "trend": "КАЛИБРОВКА ⚖️",
+  "active_weights": {
+    "football_home_1x_min_ev": 5.8,
+    "tennis_set_handicap_min_rank_diff": 25,
+    "basketball_dog_spread_cushion": 14.5,
+    "hockey_gsax_threshold": 0.4,
+    "esports_min_team_rating": 1250
+  },
+  "quarantined_patterns_count": 6,
+  "quarantined_patterns": [
+    "WTA_125_Unseeded_Small_Market",
+    "NBA_BackToBack_Spread_Under_8.5",
+    "Football_Heavy_Rain_Total_Over",
+    "Tennis_RankDiff_Under_15_Clay",
+    "Esports_Roster_Change_T2",
+    "ITF_Qualifying_Low_Liquidity"
+  ],
+  "recent_stream": [
+    {
+      "time": "04:57:21",
+      "sport": "Футбол",
+      "match": "Arsenal vs Brentford",
+      "selection": "Arsenal (1X Двойной шанс)",
+      "odds": 1.08,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "318438ff1e469531..."
+    },
+    {
+      "time": "04:57:21",
+      "sport": "Теннис",
+      "match": "Wilhelm Bungert vs Hans-Jurgen Pohmann",
+      "selection": "Hans-Jurgen Pohmann (Фора +1.5)",
+      "odds": 2.1,
+      "outcome": "LOST",
+      "outcome_ru": "Мимо (проигрыш)",
+      "sha_hash": "5d2ddafb0e4a91cd..."
+    },
+    {
+      "time": "04:57:21",
+      "sport": "Баскетбол NBA",
+      "match": "STB vs WSC (66:57)",
+      "selection": "STB (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "b7e7863562877019..."
+    },
+    {
+      "time": "04:57:21",
+      "sport": "Футбол",
+      "match": "Newcastle vs Tottenham",
+      "selection": "Newcastle (Фора 0)",
+      "odds": 1.85,
+      "outcome": "PUSH",
+      "outcome_ru": "При своих (ничья, 0 потерь)",
+      "sha_hash": "f11b2251cb251ac4..."
+    },
+    {
+      "time": "04:57:21",
+      "sport": "Теннис",
+      "match": "Torben Ulrich vs Clive Brebnor",
+      "selection": "Clive Brebnor (Фора +1.5)",
+      "odds": 2.1,
+      "outcome": "LOST",
+      "outcome_ru": "Мимо (проигрыш)",
+      "sha_hash": "6447c40d8084b1ac..."
+    },
+    {
+      "time": "04:57:21",
+      "sport": "Баскетбол NBA",
+      "match": "PHW vs PRO (84:72)",
+      "selection": "PHW (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "8e46077554aa6a1d..."
+    },
+    {
+      "time": "04:57:21",
+      "sport": "Футбол",
+      "match": "Fulham vs Man City",
+      "selection": "Fulham (Фора 0)",
+      "odds": 5.3,
+      "outcome": "LOST",
+      "outcome_ru": "Мимо (проигрыш)",
+      "sha_hash": "b1f844c72de9b027..."
+    },
+    {
+      "time": "04:57:21",
+      "sport": "Теннис",
+      "match": "Jackie Saul vs Paul Hutchins",
+      "selection": "Paul Hutchins (Фора +1.5)",
+      "odds": 2.1,
+      "outcome": "LOST",
+      "outcome_ru": "Мимо (проигрыш)",
+      "sha_hash": "43b88ba2b08126aa..."
+    },
+    {
+      "time": "04:57:21",
+      "sport": "Баскетбол NBA",
+      "match": "PIT vs CLR (48:61)",
+      "selection": "PIT (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "fd67194e7ff916e5..."
+    },
+    {
+      "time": "04:57:21",
+      "sport": "Футбол",
+      "match": "Bournemouth vs Everton",
+      "selection": "Bournemouth (Фора 0)",
+      "odds": 2.23,
+      "outcome": "LOST",
+      "outcome_ru": "Мимо (проигрыш)",
+      "sha_hash": "9e0276f9fd95cc7f..."
+    },
+    {
+      "time": "04:57:21",
+      "sport": "Теннис",
+      "match": "Marty Riessen vs Sidney Gordon",
+      "selection": "Sidney Gordon (Фора +1.5)",
+      "odds": 2.1,
+      "outcome": "LOST",
+      "outcome_ru": "Мимо (проигрыш)",
+      "sha_hash": "6699230c89f7e124..."
+    },
+    {
+      "time": "04:57:21",
+      "sport": "Баскетбол NBA",
+      "match": "DTF vs WSC (62:57)",
+      "selection": "DTF (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "84846a7d788766c1..."
+    },
+    {
+      "time": "04:57:21",
+      "sport": "Футбол",
+      "match": "Chelsea vs Arsenal",
+      "selection": "Chelsea (Фора 0)",
+      "odds": 3.19,
+      "outcome": "PUSH",
+      "outcome_ru": "При своих (ничья, 0 потерь)",
+      "sha_hash": "f57499c5c23c1eb5..."
+    },
+    {
+      "time": "04:57:21",
+      "sport": "Теннис",
+      "match": "Hans-Jurgen Pohmann vs Graydon Garner",
+      "selection": "Graydon Garner (Фора +1.5)",
+      "odds": 2.1,
+      "outcome": "LOST",
+      "outcome_ru": "Мимо (проигрыш)",
+      "sha_hash": "2fb96255ba1af5ff..."
+    },
+    {
+      "time": "04:57:21",
+      "sport": "Баскетбол NBA",
+      "match": "CHS vs STB (90:103)",
+      "selection": "CHS (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "01a9bc5a9abf43a4..."
+    }
+  ]
+}
