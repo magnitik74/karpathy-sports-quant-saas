@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-10-15 09:19:36 UTC",
+  "timestamp": "2026-10-15 09:23:59 UTC",
   "engine_status": "RUNNING_24_7",
   "cpu_speed_mps": 394,
-  "current_epoch": 41,
+  "current_epoch": 43,
   "total_db_matches": 282644,
-  "current_db_offset": 262240,
+  "current_db_offset": 39352,
   "db_file": "C:\\Project\\Pravilo_Karpatogo\\sports_swarm\\karpathy_mega_sports.db",
   "db_size_mb": 26.13,
   "active_tables": [
@@ -13,14 +13,14 @@
     "real_nba_games",
     "real_dota2_pro_matches"
   ],
-  "sha256_current_block": "3acd07b3e6b0488a6ad3d299542ce9c5062509433b226232f19803c0a694b1dd",
-  "noise_rejected": 8074969,
+  "sha256_current_block": "ff56cf85c33a282c56c5866b7e14d49afa56a1f04626d933c4f5ad23e01fcfe9",
+  "noise_rejected": 8314150,
   "golden_invariants": 34,
-  "won_count": 3271540,
-  "push_count": 164307,
-  "lost_count": 138800,
-  "total_evaluated": 3574647,
-  "non_loss_rate_pct": 96.12,
+  "won_count": 3365707,
+  "push_count": 169037,
+  "lost_count": 143122,
+  "total_evaluated": 3677866,
+  "non_loss_rate_pct": 96.11,
   "trend": "РАСТЁТ ↗️",
   "active_weights": {
     "football_home_1x_min_ev": 5.8,
@@ -40,154 +40,154 @@
   ],
   "recent_stream": [
     {
-      "time": "09:19:36",
-      "sport": "Теннис ATP",
-      "match": "Raul Ramirez vs Colin Dibley",
-      "selection": "Raul Ramirez (+1.5 сета)",
-      "odds": 1.18,
+      "time": "09:23:59",
+      "sport": "Футбол Топ-5",
+      "match": "Aston Villa vs Southampton",
+      "selection": "Aston Villa (1X Двойной шанс)",
+      "odds": 0.96,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "9d4536f191a8b0f2..."
+      "sha_hash": "b9dbe6bcbad31c1d..."
     },
     {
-      "time": "09:19:36",
+      "time": "09:23:59",
+      "sport": "Баскетбол NBA",
+      "match": "DNR vs KEN (135:112)",
+      "selection": "DNR (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "1a32bfc64d921ac1..."
+    },
+    {
+      "time": "09:23:59",
+      "sport": "Баскетбол NBA",
+      "match": "PHI vs SFW (138:112)",
+      "selection": "PHI (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "77c195e896570324..."
+    },
+    {
+      "time": "09:23:59",
       "sport": "Футбол Топ-5",
-      "match": "Man City vs Tottenham",
+      "match": "Arsenal vs Man United",
+      "selection": "Arsenal (1X Двойной шанс)",
+      "odds": 1.07,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "24450b1ffc775044..."
+    },
+    {
+      "time": "09:23:59",
+      "sport": "Баскетбол NBA",
+      "match": "LAL vs BOS (109:99)",
+      "selection": "LAL (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "64f2f1da72f6d7fd..."
+    },
+    {
+      "time": "09:23:59",
+      "sport": "Баскетбол NBA",
+      "match": "LAS vs PTP (113:105)",
+      "selection": "LAS (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "83e0f3838bbcf1af..."
+    },
+    {
+      "time": "09:23:59",
+      "sport": "Футбол Топ-5",
+      "match": "Man City vs Nott'm Forest",
       "selection": "Man City (1X Двойной шанс)",
-      "odds": 1.51,
-      "outcome": "LOST",
-      "outcome_ru": "Мимо (проигрыш)",
-      "sha_hash": "d26517caa265904d..."
-    },
-    {
-      "time": "09:19:36",
-      "sport": "Теннис ATP",
-      "match": "Roscoe Tanner vs Teimuraz Kakulia",
-      "selection": "Roscoe Tanner (+1.5 сета)",
-      "odds": 1.18,
+      "odds": 0.94,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "7b989e488d453534..."
+      "sha_hash": "648d8d7e50b8b0ed..."
     },
     {
-      "time": "09:19:36",
+      "time": "09:23:59",
       "sport": "Баскетбол NBA",
-      "match": "DET vs CLE (117:91)",
-      "selection": "DET (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "ed8fd1870594e92d..."
-    },
-    {
-      "time": "09:19:36",
-      "sport": "Теннис ATP",
-      "match": "Rod Laver vs Raymond Moore",
-      "selection": "Rod Laver (+1.5 сета)",
-      "odds": 1.18,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "347e95ef66db0ca5..."
-    },
-    {
-      "time": "09:19:36",
-      "sport": "Баскетбол NBA",
-      "match": "BUF vs POR (114:105)",
-      "selection": "BUF (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "7f0f3d35d0748ef9..."
-    },
-    {
-      "time": "09:19:36",
-      "sport": "Теннис ATP",
-      "match": "Ken Rosewall vs Vijay Amritraj",
-      "selection": "Ken Rosewall (+1.5 сета)",
-      "odds": 1.18,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "d8e35a1d50ac72d4..."
-    },
-    {
-      "time": "09:19:36",
-      "sport": "Баскетбол NBA",
-      "match": "CLE vs KCO (124:91)",
-      "selection": "CLE (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "44eb7a90f90fa8da..."
-    },
-    {
-      "time": "09:19:36",
-      "sport": "Футбол Топ-5",
-      "match": "Tottenham vs Burnley",
-      "selection": "Tottenham (1X Двойной шанс)",
-      "odds": 1.12,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "4d41d6da47b28f99..."
-    },
-    {
-      "time": "09:19:36",
-      "sport": "Теннис ATP",
-      "match": "John Newcombe vs Bob Carmichael",
-      "selection": "John Newcombe (+1.5 сета)",
-      "odds": 1.18,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "064162258587da29..."
-    },
-    {
-      "time": "09:19:36",
-      "sport": "Баскетбол NBA",
-      "match": "SAA vs MMS (122:108)",
-      "selection": "SAA (+14.5 очков)",
-      "odds": 1.38,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "6073db818de35e94..."
-    },
-    {
-      "time": "09:19:36",
-      "sport": "Теннис ATP",
-      "match": "Bob Carmichael vs Charlie Pasarell",
-      "selection": "Bob Carmichael (+1.5 сета)",
-      "odds": 1.18,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "9fb1d77a6fb42049..."
-    },
-    {
-      "time": "09:19:36",
-      "sport": "Баскетбол NBA",
-      "match": "INA vs UTS (104:100)",
+      "match": "INA vs WSA (118:113)",
       "selection": "INA (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "9eca483a850b401d..."
+      "sha_hash": "4c00874a0b66ae58..."
     },
     {
-      "time": "09:19:36",
+      "time": "09:23:59",
       "sport": "Баскетбол NBA",
-      "match": "WSB vs POR (114:87)",
-      "selection": "WSB (+14.5 очков)",
+      "match": "DLC vs MMF (152:125)",
+      "selection": "DLC (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "2182d66f1bd7d5b1..."
+      "sha_hash": "9b62853aa25b43cf..."
     },
     {
-      "time": "09:19:36",
-      "sport": "Футбол Топ-5",
-      "match": "Liverpool vs Bournemouth",
-      "selection": "Liverpool (1X Двойной шанс)",
-      "odds": 0.93,
+      "time": "09:23:59",
+      "sport": "Баскетбол NBA",
+      "match": "NYK vs SEA (119:117)",
+      "selection": "NYK (+14.5 очков)",
+      "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "837584ebef93e918..."
+      "sha_hash": "53172ea39eed86d4..."
+    },
+    {
+      "time": "09:23:59",
+      "sport": "Баскетбол NBA",
+      "match": "BAL vs SFW (147:112)",
+      "selection": "BAL (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "76a2567b51cb6d41..."
+    },
+    {
+      "time": "09:23:59",
+      "sport": "Футбол Топ-5",
+      "match": "Man United vs Everton",
+      "selection": "Man United (1X Двойной шанс)",
+      "odds": 1.17,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "a04a3858a9dee0bf..."
+    },
+    {
+      "time": "09:23:59",
+      "sport": "Баскетбол NBA",
+      "match": "KEN vs CAR (117:105)",
+      "selection": "KEN (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "b218692bca179899..."
+    },
+    {
+      "time": "09:23:59",
+      "sport": "Баскетбол NBA",
+      "match": "DNR vs MMF (141:122)",
+      "selection": "DNR (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "4171a872bf634731..."
+    },
+    {
+      "time": "09:23:59",
+      "sport": "Баскетбол NBA",
+      "match": "PHI vs SFW (141:121)",
+      "selection": "PHI (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "346daa0508940194..."
     }
   ]
 }

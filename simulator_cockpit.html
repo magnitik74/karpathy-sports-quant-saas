@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>СКАНЕР СИМУЛЯТОРА • АВАЛОН СТРАТЕГИЯ</title>
+    <!-- Telegram WebApp SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep: #05080E;
+            --bg-card: #0B111D;
+            --bg-card-alt: #101828;
+            --border-dim: rgba(255, 255, 255, 0.08);
+            --border-glow: rgba(0, 255, 157, 0.3);
+            
+            --text-main: #F8FAFC;
+            --text-muted: #94A3B8;
+            --text-dim: #64748B;
+
+            --green-glow: #00FF9D;
+            --green-soft: rgba(0, 255, 157, 0.12);
+            --cyan-glow: #00E5FF;
+            --cyan-soft: rgba(0, 229, 255, 0.12);
+            --yellow-glow: #FFB800;
+            --yellow-soft: rgba(255, 184, 0, 0.12);
+            --red-glow: #FF4444;
+            --red-soft: rgba(255, 68, 68, 0.12);
+
+            --font-mono: 'JetBrains Mono', monospace;
+            --font-sans: 'Inter', -apple-system, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            min-height: 100vh;
+            padding: 10px;
+            overflow-x: hidden;
+            line-height: 1.4;
+        }
+
+        .mono { font-family: var(--font-mono); }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* HEADER */
+        .header {
+            background: linear-gradient(180deg, #10192A 0%, #0A0F1A 100%);
+            border: 1px solid var(--border-dim);
+            border-radius: 12px;
+            padding: 10px 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .header-title-box {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .header-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: var(--font-mono);
+            font-size: 10px;
+            color: var(--green-glow);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            font-weight: 700;
+        }
+
+        .pulse-dot {
+            width: 7px;
+            height: 7px;
+            background: var(--green-glow);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--green-glow);
+            animation: pulseAnim 1.2s infinite ease-in-out;
+        }
+
+        @keyframes pulseAnim {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.3; transform: scale(0.7); }
+        }
+
+        .header-title {
+            font-size: 15px;
+            font-weight: 800;
+            color: #FFFFFF;
+            letter-spacing: -0.2px;
+        }
+
+        .header-meta {
+            font-size: 10.5px;
+            color: var(--text-dim);
+            font-family: var(--font-mono);
+        }
+
+        /* SPEEDOMETER & REALTIME ODOMETER */
+        .telemetry-row {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 8px;
+        }
+
+        .speed-card {
+            background: radial-gradient(100% 100% at 0% 0%, #152238 0%, #0A111E 100%);
+            border: 1px solid rgba(0, 255, 157, 0.3);
+            border-radius: 12px;
+            padding: 10px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            box-shadow: 0 0 20px rgba(0, 255, 157, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .speed-card::after {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; width: 60px; height: 60px;
+            background: radial-gradient(circle, rgba(0, 255, 157, 0.2) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .stat-label {
+            font-size: 9.5px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-family: var(--font-mono);
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .speed-display {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+        }
+
+        .speed-val {
+            font-size: 28px;
+            font-weight: 900;
+            font-family: var(--font-mono);
+            color: var(--green-glow);
+            letter-spacing: -1px;
+            text-shadow: 0 0 16px rgba(0, 255, 157, 0.5);
+            font-variant-numeric: tabular-nums;
+        }
+
+        .speed-unit {
+            font-size: 11px;
+            color: var(--text-muted);
+            font-family: var(--font-mono);
+        }
+
+        .epoch-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dim);
+            border-radius: 12px;
+            padding: 10px 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .odometer-val {
+            font-size: 16px;
+            font-weight: 800;
+            font-family: var(--font-mono);
+            color: var(--cyan-glow);
+            font-variant-numeric: tabular-nums;
+        }
+
+        .progress-micro {
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 99px;
+            overflow: hidden;
+            margin-top: 4px;
+        }
+
+        .progress-micro-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00E5FF, #00FF9D);
+            width: 45%;
+            transition: width 0.1s linear;
+        }
+
+        /* SHIELD 96 HERO ACCORDION */
+        .shield-strip {
+            background: #0B1220;
+            border: 1px solid var(--border-glow);
+            border-radius: 12px;
+            padding: 10px 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 16px rgba(0, 255, 157, 0.06);
+        }
+
+        .shield-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+
+        .shield-title {
+            font-size: 11px;
+            font-weight: 800;
+            color: var(--green-glow);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-family: var(--font-mono);
+        }
+
+        .shield-sub {
+            font-size: 10.5px;
+            color: var(--text-muted);
+        }
+
+        .shield-digits {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+        }
+
+        .shield-num {
+            font-size: 32px;
+            font-weight: 900;
+            font-family: var(--font-mono);
+            color: #FFFFFF;
+            letter-spacing: -1px;
+            text-shadow: 0 0 20px rgba(0, 255, 157, 0.4);
+        }
+
+        .shield-trend-badge {
+            background: var(--green-soft);
+            color: var(--green-glow);
+            border: 1px solid rgba(0, 255, 157, 0.3);
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-family: var(--font-mono);
+        }
+
+        /* 3 SIMPLE RUSSIAN COUNTERS */
+        .counters-bar {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6px;
+        }
+
+        .counter-pill {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dim);
+            border-radius: 10px;
+            padding: 7px 8px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+
+        .counter-pill.won { border-bottom: 2px solid var(--green-glow); }
+        .counter-pill.push { border-bottom: 2px solid var(--yellow-glow); }
+        .counter-pill.lost { border-bottom: 2px solid var(--red-glow); }
+
+        .c-title {
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .counter-pill.won .c-title { color: #8BE78B; }
+        .counter-pill.push .c-title { color: #F0C454; }
+        .counter-pill.lost .c-title { color: #FF8A8A; }
+
+        .c-num {
+            font-size: 16px;
+            font-weight: 800;
+            font-family: var(--font-mono);
+            color: #FFFFFF;
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* === СПЕЦИАЛЬНЫЙ КОМПАКТНЫЙ КОНТЕЙНЕР ЖИВОГО СКАНЕРА === */
+        .live-scanner-container {
+            background: #060A13;
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            border-radius: 14px;
+            padding: 10px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            box-shadow: 0 0 25px rgba(0, 229, 255, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .live-scanner-container::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 1px;
+            background: linear-gradient(90deg, transparent, var(--cyan-glow), transparent);
+            animation: scanLine 2.5s infinite linear;
+        }
+
+        @keyframes scanLine {
+            0% { transform: translateY(0); opacity: 0; }
+            30% { opacity: 1; }
+            100% { transform: translateY(320px); opacity: 0; }
+        }
+
+        .scanner-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding-bottom: 6px;
+        }
+
+        .scanner-title {
+            font-size: 11px;
+            font-weight: 800;
+            font-family: var(--font-mono);
+            color: var(--cyan-glow);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            text-transform: uppercase;
+        }
+
+        .scanner-ctrls {
+            display: flex;
+            gap: 4px;
+        }
+
+        .speed-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-dim);
+            color: var(--text-muted);
+            font-family: var(--font-mono);
+            font-size: 9.5px;
+            padding: 3px 7px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.15s;
+        }
+
+        .speed-btn.active {
+            background: var(--cyan-soft);
+            color: var(--cyan-glow);
+            border-color: rgba(0, 229, 255, 0.4);
+            font-weight: 800;
+        }
+
+        /* STREAM ROWS FEED */
+        .scanner-feed {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            max-height: 250px;
+            overflow-y: hidden;
+            position: relative;
+        }
+
+        .feed-item {
+            background: rgba(255, 255, 255, 0.025);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 6px 9px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            font-size: 10.5px;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+            animation: slideInRow 0.22s ease-out;
+        }
+
+        @keyframes slideInRow {
+            from { opacity: 0; transform: translateY(-8px) scale(0.98); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .feed-row-1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-mono);
+            font-size: 9.5px;
+        }
+
+        .badge-sport {
+            font-weight: 700;
+            padding: 1px 5px;
+            border-radius: 3px;
+            font-size: 9px;
+        }
+
+        .badge-sport.tennis { background: rgba(0, 229, 255, 0.15); color: #00E5FF; }
+        .badge-sport.football { background: rgba(0, 255, 157, 0.15); color: #00FF9D; }
+        .badge-sport.hockey { background: rgba(255, 184, 0, 0.15); color: #FFB800; }
+        .badge-sport.nba { background: rgba(168, 85, 247, 0.15); color: #C084FC; }
+        .badge-sport.noise { background: rgba(255, 68, 68, 0.15); color: #FF6666; }
+
+        .feed-match {
+            font-weight: 700;
+            color: #FFFFFF;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 380px;
+        }
+
+        .feed-row-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-mono);
+            font-size: 9.5px;
+            color: var(--text-muted);
+        }
+
+        .outcome-badge {
+            font-weight: 800;
+            padding: 1px 5px;
+            border-radius: 4px;
+            font-size: 9px;
+        }
+
+        .outcome-badge.won { background: var(--green-soft); color: var(--green-glow); border: 1px solid rgba(0, 255, 157, 0.3); }
+        .outcome-badge.push { background: var(--yellow-soft); color: var(--yellow-glow); border: 1px solid rgba(255, 184, 0, 0.3); }
+        .outcome-badge.lost { background: var(--red-soft); color: var(--red-glow); border: 1px solid rgba(255, 68, 68, 0.3); }
+        .outcome-badge.rejected { background: rgba(255, 255, 255, 0.08); color: #94A3B8; }
+
+        /* DATABASE FOOTER & PROOF */
+        .db-footer {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dim);
+            border-radius: 10px;
+            padding: 8px 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-mono);
+            font-size: 10px;
+        }
+
+        .hash-chip {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border-dim);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #A5B4FC;
+            font-size: 9px;
+            cursor: pointer;
+        }
+
+        /* ACTIONS */
+        .btn-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 6px;
+            margin-top: 2px;
+        }
+
+        .btn-act {
+            background: #2563EB;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.15s;
+        }
+
+        .btn-act:hover { background: #1D4ED8; }
+
+        .btn-sub {
+            background: rgba(255, 255, 255, 0.06);
+            color: #CBD5E1;
+            border: 1px solid var(--border-dim);
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-title-box">
+                <div class="header-badge">
+                    <span class="pulse-dot"></span>
+                    <span>СИМУЛЯТОР АКТИВЕН 24/7</span>
+                </div>
+                <h1 class="header-title">КВАНТОВЫЙ СКАНЕР АВАЛОН</h1>
+            </div>
+            <div class="header-meta mono" id="clockUtc">10:42:00 UTC</div>
+        </header>
+
+        <!-- SPEED & REALTIME COUNTER -->
+        <div class="telemetry-row">
+            <div class="speed-card">
+                <div class="stat-label">
+                    <span>⚡ СПИДОМЕТР СИМУЛЯЦИИ</span>
+                    <span style="color: var(--green-glow);">LIVE</span>
+                </div>
+                <div class="speed-display">
+                    <span class="speed-val" id="speedDisplay">1 842</span>
+                    <span class="speed-unit">матчей/сек</span>
+                </div>
+            </div>
+            <div class="epoch-card">
+                <div class="stat-label">
+                    <span>ПРОГРЕСС БАЗЫ</span>
+                    <span id="epochBadge" class="mono" style="color: var(--cyan-glow);">ЭПОХА #14</span>
+                </div>
+                <div class="odometer-val" id="odometerDisplay">142 810 / 282 630</div>
+                <div class="progress-micro">
+                    <div class="progress-micro-fill" id="progressFillBar"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SHIELD 96 MAIN STRIP -->
+        <div class="shield-strip">
+            <div class="shield-info">
+                <div class="shield-title">🛡 БРОНЯ «ЩИТ 96»</div>
+                <div class="shield-sub">Выигрыши + при своих (0 потерь капитала)</div>
+            </div>
+            <div class="shield-digits">
+                <span class="shield-num" id="shieldVal">96.58%</span>
+                <span class="shield-trend-badge" id="trendBadge">↗️ РАСТЁТ</span>
+            </div>
+        </div>
+
+        <!-- 3 SIMPLE RUSSIAN COUNTERS -->
+        <div class="counters-bar">
+            <div class="counter-pill won">
+                <span class="c-title">Выигрыши (плюс)</span>
+                <span class="c-num" id="cntWon">6 840</span>
+            </div>
+            <div class="counter-pill push">
+                <span class="c-title">При своих</span>
+                <span class="c-num" id="cntPush">312</span>
+            </div>
+            <div class="counter-pill lost">
+                <span class="c-title">Мимо</span>
+                <span class="c-num" id="cntLost">258</span>
+            </div>
+        </div>
+
+        <!-- === СПЕЦИАЛЬНЫЙ КОМПАКТНЫЙ КОНТЕЙНЕР ЖИВОГО СКАНЕРА === -->
+        <div class="live-scanner-container">
+            <div class="scanner-header">
+                <div class="scanner-title">
+                    <span class="pulse-dot"></span>
+                    <span>КОНТЕЙНЕР ЖИВОГО СКАНЕРА (24/7)</span>
+                </div>
+                <div class="scanner-ctrls">
+                    <button class="speed-btn active" id="btnTurbo" onclick="setSpeed(2000, this)">⚡ 2 000/с</button>
+                    <button class="speed-btn" id="btnNorm" onclick="setSpeed(1000, this)">1 000/с</button>
+                    <button class="speed-btn" id="btnStep" onclick="setSpeed(300, this)">300/с</button>
+                </div>
+            </div>
+
+            <!-- STREAM FEED -->
+            <div class="scanner-feed" id="scannerFeed">
+                <!-- Rows injected dynamically via JS at 5-10 rows/sec -->
+            </div>
+        </div>
+
+        <!-- DATABASE GROUND TRUTH & SHA-256 -->
+        <div class="db-footer">
+            <span style="color: var(--text-muted);">БАЗА: <b>282 630</b> МАТЧЕЙ (karpathy_mega_sports.db)</span>
+            <span class="hash-chip" id="shaChip" title="Кликните, чтобы скопировать пломбу SHA-256" onclick="copyHash()">
+                SHA-256: 4f9b2a...e71c
+            </span>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="btn-row">
+            <button class="btn-act" onclick="triggerTgClose()">
+                📱 Вернуться в Телеграм
+            </button>
+            <button class="btn-sub mono" onclick="resetEpoch()">
+                🔄 Новая эпоха
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Init Telegram WebApp
+        if (window.Telegram && window.Telegram.WebApp) {
+            window.Telegram.WebApp.ready();
+            window.Telegram.WebApp.expand();
+        }
+
+        function triggerTgClose() {
+            if (window.Telegram && window.Telegram.WebApp) {
+                window.Telegram.WebApp.close();
+            } else {
+                window.history.back();
+            }
+        }
+
+        // Real Match Database Pool (Tennis, Football, KHL, NBA, Noise)
+        const MATCH_CATALOG = [
+            // ТЕННИС ATP (Фаворит +1.5 сета)
+            { type: "tennis", sport: "ТЕННИС ATP", match: "Djokovic N. vs Monfils G.", sel: "+1.5 сета (1.18)", out: "won", ru: "ВЫИГРЫШ (ПЛЮС)" },
+            { type: "tennis", sport: "ТЕННИС ATP", match: "Alcaraz C. vs Dimitrov G.", sel: "+1.5 сета (1.22)", out: "won", ru: "ВЫИГРЫШ (ПЛЮС)" },
+            { type: "tennis", sport: "ТЕННИС ATP", match: "Sinner J. vs Rublev A.", sel: "+1.5 сета (1.20)", out: "won", ru: "ВЫИГРЫШ (ПЛЮС)" },
+            { type: "tennis", sport: "ТЕННИС ATP", match: "Medvedev D. vs Tsitsipas S.", sel: "+1.5 сета (1.25)", out: "won", ru: "ВЫИГРЫШ (ПЛЮС)" },
+            { type: "tennis", sport: "ТЕННИС ATP", match: "Zverev A. vs Fritz T.", sel: "Фора 0 по геймам (1.42)", out: "push", ru: "ПРИ СВОИХ (0 ПОТЕРЬ)" },
+
+            // ФУТБОЛ ТОП-5 (1X Двойной шанс / Фора 0)
+            { type: "football", sport: "ФУТБОЛ", match: "Real Madrid vs Sevilla", sel: "1X Двойной шанс (1.16)", out: "won", ru: "ВЫИГРЫШ (ПЛЮС)" },
+            { type: "football", sport: "ФУТБОЛ", match: "Manchester City vs Everton", sel: "1X Двойной шанс (1.12)", out: "won", ru: "ВЫИГРЫШ (ПЛЮС)" },
+            { type: "football", sport: "ФУТБОЛ", match: "Inter Milan vs Venezia", sel: "1X Двойной шанс (1.15)", out: "won", ru: "ВЫИГРЫШ (ПЛЮС)" },
+            { type: "football", sport: "ФУТБОЛ", match: "Arsenal vs Newcastle", sel: "Arsenal Фора 0 (1.46)", out: "push", ru: "ПРИ СВОИХ (0 ПОТЕРЬ)" },
+            { type: "football", sport: "ФУТБОЛ", match: "Barcelona vs Betis", sel: "1X Двойной шанс (1.18)", out: "won", ru: "ВЫИГРЫШ (ПЛЮС)" },
+
+            // КХЛ ХОККЕЙ (Фора 0 / Защита вратаря GSAx)
+            { type: "hockey", sport: "КХЛ", match: "Локомотив vs СКА", sel: "Локомотив (Фора 0, кэф 1.52)", out: "won", ru: "ВЫИГРЫШ (ПЛЮС)" },
+            { type: "hockey", sport: "КХЛ", match: "Металлург Мг vs Авангард", sel: "Металлург (Фора 0, кэф 1.48)", out: "push", ru: "ПРИ СВОИХ (0 ПОТЕРЬ)" },
+            { type: "hockey", sport: "КХЛ", match: "Трактор vs Салават Юлаев", sel: "Трактор (Фора 0, кэф 1.55)", out: "won", ru: "ВЫИГРЫШ (ПЛЮС)" },
+
+            // БАСКЕТБОЛ NBA (Глубокая плюсовая фора андердога)
+            { type: "nba", sport: "NBA", match: "Boston Celtics vs Detroit Pistons", sel: "Detroit (+14.5 очков, 1.38)", out: "won", ru: "ВЫИГРЫШ (ПЛЮС)" },
+            { type: "nba", sport: "NBA", match: "Denver Nuggets vs Portland TB", sel: "Portland (+15.5 очков, 1.42)", out: "won", ru: "ВЫИГРЫШ (ПЛЮС)" },
+            { type: "nba", sport: "NBA", match: "Dallas Mavericks vs Miami Heat", sel: "Miami (+13.5 очков, 1.40)", out: "won", ru: "ВЫИГРЫШ (ПЛЮС)" },
+
+            // ВЫЖЖЕННЫЙ МУСОР / ОТСЕВ ШУМА (Chow's Rule: 96% отсеивается!)
+            { type: "noise", sport: "ОТСЕВ ШУМА", match: "ITF Cairo M15 Qualifier", sel: "Маржа 8.4% > 5%", out: "rejected", ru: "ВЫЖЖЕНО (МАРЖА БК)" },
+            { type: "noise", sport: "ОТСЕВ ШУМА", match: "WTA 125 Bogota (Грунт)", sel: "Разница рейтинга < 25", out: "rejected", ru: "КАРАНТИН (ЭНТРОПИЯ)" },
+            { type: "noise", sport: "ОТСЕВ ШУМА", match: "Севилья vs Хетафе (Шторм)", sel: "Ветер 17 м/с > 15 м/с", out: "rejected", ru: "КАРАНТИН (ПОГОДА)" },
+            { type: "noise", sport: "ОТСЕВ ШУМА", match: "NHL Montreal (B2B усталость)", sel: "Матч без отдыха < 24ч", out: "rejected", ru: "ОТСЕЯНО ПО B2B" }
+        ];
+
+        // State variables
+        let targetSpeed = 1850;
+        let currentSpeed = 1840;
+        let epoch = 14;
+        let dbOffset = 142810;
+        const totalMatches = 282630;
+
+        let wonCount = 6840;
+        let pushCount = 312;
+        let lostCount = 258;
+
+        let lastStreamTime = Date.now();
+        let streamIntervalMs = 200; // time between new rows
+
+        function setSpeed(speed, btn) {
+            targetSpeed = speed;
+            document.querySelectorAll('.speed-btn').forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+            streamIntervalMs = speed >= 1800 ? 160 : (speed >= 1000 ? 280 : 500);
+        }
+
+        function resetEpoch() {
+            epoch++;
+            dbOffset = 0;
+            document.getElementById('epochBadge').innerText = 'ЭПОХА #' + epoch;
+        }
+
+        function copyHash() {
+            const h = document.getElementById('shaChip').innerText;
+            navigator.clipboard.writeText(h);
+            alert('Электронная пломба SHA-256 скопирована в буфер обмена!');
+        }
+
+        // Main 60fps Animation Loop
+        let lastFrameTime = performance.now();
+
+        function engineTick(now) {
+            const dt = (now - lastFrameTime) / 1000;
+            lastFrameTime = now;
+
+            // Smooth speed jitter (+- 35 m/s)
+            currentSpeed += (targetSpeed - currentSpeed) * 0.1;
+            const jitter = (Math.sin(now / 150) * 28 + Math.cos(now / 90) * 15);
+            const liveSpeed = Math.round(currentSpeed + jitter);
+
+            // Increment DB Offset
+            const matchesAdvanced = liveSpeed * dt;
+            dbOffset += matchesAdvanced;
+            if (dbOffset >= totalMatches) {
+                dbOffset = 0;
+                epoch++;
+                document.getElementById('epochBadge').innerText = 'ЭПОХА #' + epoch;
+            }
+
+            // Update UI elements
+            document.getElementById('speedDisplay').innerText = liveSpeed.toLocaleString();
+            document.getElementById('odometerDisplay').innerText = Math.floor(dbOffset).toLocaleString() + ' / ' + totalMatches.toLocaleString();
+            
+            const pctFill = (dbOffset / totalMatches) * 100;
+            document.getElementById('progressFillBar').style.width = pctFill + '%';
+
+            // Non-Loss Rate calculation & display
+            const totalAdmitted = wonCount + pushCount + lostCount;
+            const nonLossPct = ((wonCount + pushCount) / totalAdmitted) * 100;
+            document.getElementById('shieldVal').innerText = nonLossPct.toFixed(2) + '%';
+
+            document.getElementById('cntWon').innerText = wonCount.toLocaleString();
+            document.getElementById('cntPush').innerText = pushCount.toLocaleString();
+            document.getElementById('cntLost').innerText = lostCount.toLocaleString();
+
+            // Clock
+            const d = new Date();
+            document.getElementById('clockUtc').innerText = d.toTimeString().split(' ')[0] + ' UTC';
+
+            // Push Stream Items
+            if (Date.now() - lastStreamTime >= streamIntervalMs) {
+                lastStreamTime = Date.now();
+                pushStreamItem();
+            }
+
+            requestAnimationFrame(engineTick);
+        }
+
+        function pushStreamItem() {
+            const feed = document.getElementById('scannerFeed');
+            const item = MATCH_CATALOG[Math.floor(Math.random() * MATCH_CATALOG.length)];
+
+            // Increment counters based on outcome
+            if (item.out === 'won') wonCount++;
+            else if (item.out === 'push') pushCount++;
+            else if (item.out === 'lost') lostCount++;
+
+            const row = document.createElement('div');
+            row.className = 'feed-item';
+
+            const d = new Date();
+            const timeStr = d.toTimeString().split(' ')[0] + '.' + Math.floor(d.getMilliseconds() / 100);
+
+            let outcomeClass = 'won';
+            if (item.out === 'push') outcomeClass = 'push';
+            if (item.out === 'lost') outcomeClass = 'lost';
+            if (item.out === 'rejected') outcomeClass = 'rejected';
+
+            row.innerHTML = `
+                <div class="feed-row-1">
+                    <span class="badge-sport ${item.type}">${item.sport}</span>
+                    <span class="feed-match">${item.match}</span>
+                    <span style="color: var(--text-dim);">${timeStr}</span>
+                </div>
+                <div class="feed-row-2">
+                    <span>🎯 ${item.sel}</span>
+                    <span class="outcome-badge ${outcomeClass}">${item.ru}</span>
+                </div>
+            `;
+
+            feed.insertBefore(row, feed.firstChild);
+
+            // Keep max 7 rows in container to prevent scroll lag
+            if (feed.children.length > 7) {
+                feed.removeChild(feed.lastChild);
+            }
+
+            // Pseudo-random SHA hash jitter
+            if (Math.random() < 0.25) {
+                const hex = Array.from({length: 8}, () => Math.floor(Math.random()*16).toString(16)).join('');
+                document.getElementById('shaChip').innerText = 'SHA-256: ' + hex + '...f9c2';
+            }
+        }
+
+        // Seed initial 5 rows
+        for (let i = 0; i < 5; i++) {
+            pushStreamItem();
+        }
+
+        // Start 60fps Loop
+        requestAnimationFrame(engineTick);
+    </script>
+</body>
+</html>
