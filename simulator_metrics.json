@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-10-15 07:19:15 UTC",
+  "timestamp": "2026-10-15 07:33:40 UTC",
   "engine_status": "RUNNING_24_7",
   "cpu_speed_mps": 398,
-  "current_epoch": 9,
+  "current_epoch": 13,
   "total_db_matches": 282644,
-  "current_db_offset": 121048,
+  "current_db_offset": 99672,
   "db_file": "C:\\Project\\Pravilo_Karpatogo\\sports_swarm\\karpathy_mega_sports.db",
   "db_size_mb": 26.13,
   "active_tables": [
@@ -13,14 +13,14 @@
     "real_nba_games",
     "real_dota2_pro_matches"
   ],
-  "sha256_current_block": "84a4957e472f94a5d0e48a2a17f66ceeaf3884285537e747301ef0d03b6944d4",
-  "noise_rejected": 1726783,
+  "sha256_current_block": "86c102a7d83e796dace1139a9fb179c8967eb1c73d1a10a7ede9b64846358313",
+  "noise_rejected": 2492926,
   "golden_invariants": 34,
-  "won_count": 674551,
-  "push_count": 33942,
-  "lost_count": 28540,
-  "total_evaluated": 737033,
-  "non_loss_rate_pct": 96.13,
+  "won_count": 988418,
+  "push_count": 49645,
+  "lost_count": 42027,
+  "total_evaluated": 1080090,
+  "non_loss_rate_pct": 96.11,
   "trend": "РАСТЁТ ↗️",
   "active_weights": {
     "football_home_1x_min_ev": 5.8,
@@ -40,154 +40,154 @@
   ],
   "recent_stream": [
     {
-      "time": "07:19:15",
-      "sport": "Теннис ATP",
-      "match": "Raul Ramirez vs Rafael Ruiz",
-      "selection": "Raul Ramirez (+1.5 сета)",
-      "odds": 1.18,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "47c5ec56d2b9c339..."
-    },
-    {
-      "time": "07:19:15",
+      "time": "07:33:40",
       "sport": "Баскетбол NBA",
-      "match": "POR vs BUF (120:100)",
-      "selection": "POR (+14.5 очков)",
+      "match": "BOS vs MNL (115:106)",
+      "selection": "BOS (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "a44e59c127bbfe5a..."
+      "sha_hash": "4a34fd3850d2e068..."
     },
     {
-      "time": "07:19:15",
-      "sport": "Теннис ATP",
-      "match": "Ulrich Pinner vs Vijay Amritraj",
-      "selection": "Ulrich Pinner (+1.5 сета)",
-      "odds": 1.18,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "b1230cd5322c7eaa..."
-    },
-    {
-      "time": "07:19:15",
+      "time": "07:33:40",
       "sport": "Баскетбол NBA",
-      "match": "LAL vs SEA (101:98)",
-      "selection": "LAL (+14.5 очков)",
+      "match": "PHW vs STL (107:96)",
+      "selection": "PHW (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "942806f2ba41788d..."
+      "sha_hash": "5e9a404f990a070a..."
     },
     {
-      "time": "07:19:15",
-      "sport": "Теннис ATP",
-      "match": "Barry Phillips-Moore vs Frew McMillan",
-      "selection": "Barry Phillips-Moore (+1.5 сета)",
-      "odds": 1.18,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "e33aaa7faf3bbd62..."
-    },
-    {
-      "time": "07:19:15",
+      "time": "07:33:40",
       "sport": "Баскетбол NBA",
-      "match": "KCO vs HOU (132:118)",
-      "selection": "KCO (+14.5 очков)",
+      "match": "MNL vs ROC (107:99)",
+      "selection": "MNL (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "5ed54968508836a6..."
+      "sha_hash": "f8712c84ef293006..."
     },
     {
-      "time": "07:19:15",
-      "sport": "Футбол Топ-5",
-      "match": "Leeds vs Plymouth",
-      "selection": "Leeds (1X Двойной шанс)",
-      "odds": 0.89,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "f1bce635f12c0d57..."
-    },
-    {
-      "time": "07:19:15",
-      "sport": "Теннис ATP",
-      "match": "Andrew Pattison vs Joaquin Loyo-Mayo",
-      "selection": "Andrew Pattison (+1.5 сета)",
-      "odds": 1.18,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "be91699074c348be..."
-    },
-    {
-      "time": "07:19:15",
-      "sport": "Футбол Топ-5",
-      "match": "Ipswich vs Swansea",
-      "selection": "Ipswich (1X Двойной шанс)",
-      "odds": 1.12,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "958e8c511a7e455e..."
-    },
-    {
-      "time": "07:19:15",
-      "sport": "Теннис ATP",
-      "match": "Buster C. Mottram vs Gerald Battrick",
-      "selection": "Buster C. Mottram (+1.5 сета)",
-      "odds": 1.18,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "9c052bb44aa0417e..."
-    },
-    {
-      "time": "07:19:15",
-      "sport": "Теннис ATP",
-      "match": "Jose A. Moreno vs Jairo Velasco Sr",
-      "selection": "Jose A. Moreno (+1.5 сета)",
-      "odds": 1.18,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "161175d250835f06..."
-    },
-    {
-      "time": "07:19:15",
-      "sport": "Теннис ATP",
-      "match": "Raymond Moore vs Ray Keldie",
-      "selection": "Raymond Moore (+1.5 сета)",
-      "odds": 1.18,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "8fcea990551b9e8b..."
-    },
-    {
-      "time": "07:19:15",
+      "time": "07:33:40",
       "sport": "Баскетбол NBA",
-      "match": "UTS vs DNR (119:107)",
-      "selection": "UTS (+14.5 очков)",
+      "match": "BOS vs SYR (140:108)",
+      "selection": "BOS (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "51818f6e596d8967..."
+      "sha_hash": "b8dc51f22ffffd0f..."
     },
     {
-      "time": "07:19:15",
-      "sport": "Теннис ATP",
-      "match": "John Lloyd vs Anand Amritraj",
-      "selection": "John Lloyd (+1.5 сета)",
-      "odds": 1.18,
-      "outcome": "WON",
-      "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "2388e24908cea4ce..."
-    },
-    {
-      "time": "07:19:15",
+      "time": "07:33:40",
       "sport": "Баскетбол NBA",
-      "match": "INA vs VIR (127:119)",
-      "selection": "INA (+14.5 очков)",
+      "match": "NYK vs SYR (90:88)",
+      "selection": "NYK (+14.5 очков)",
       "odds": 1.38,
       "outcome": "WON",
       "outcome_ru": "Чистый выигрыш (плюс)",
-      "sha_hash": "5edebbf7d0df9e04..."
+      "sha_hash": "e6af14c3ec80f2f8..."
+    },
+    {
+      "time": "07:33:40",
+      "sport": "Баскетбол NBA",
+      "match": "SYR vs FTW (101:98)",
+      "selection": "SYR (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "176abcbc7cb97bec..."
+    },
+    {
+      "time": "07:33:40",
+      "sport": "Баскетбол NBA",
+      "match": "MNL vs ROC (114:107)",
+      "selection": "MNL (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "f532d82465d240ca..."
+    },
+    {
+      "time": "07:33:40",
+      "sport": "Баскетбол NBA",
+      "match": "BOS vs NYK (114:78)",
+      "selection": "BOS (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "248930c6993c6937..."
+    },
+    {
+      "time": "07:33:40",
+      "sport": "Баскетбол NBA",
+      "match": "NYK vs FTW (102:100)",
+      "selection": "NYK (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "6d675c24fdab47ed..."
+    },
+    {
+      "time": "07:33:40",
+      "sport": "Баскетбол NBA",
+      "match": "PHW vs SYR (96:94)",
+      "selection": "PHW (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "9d68e691642b298f..."
+    },
+    {
+      "time": "07:33:40",
+      "sport": "Баскетбол NBA",
+      "match": "BOS vs STL (126:117)",
+      "selection": "BOS (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "a0a03f7991999d56..."
+    },
+    {
+      "time": "07:33:40",
+      "sport": "Баскетбол NBA",
+      "match": "PHW vs SYR (103:108)",
+      "selection": "PHW (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "a30b74dc8b1682a8..."
+    },
+    {
+      "time": "07:33:40",
+      "sport": "Баскетбол NBA",
+      "match": "ROC vs SYR (88:97)",
+      "selection": "ROC (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "c8c67844a7118f0b..."
+    },
+    {
+      "time": "07:33:40",
+      "sport": "Баскетбол NBA",
+      "match": "PHW vs NYK (116:82)",
+      "selection": "PHW (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "a6bf7ce56bc3c130..."
+    },
+    {
+      "time": "07:33:40",
+      "sport": "Баскетбол NBA",
+      "match": "PHW vs ROC (112:93)",
+      "selection": "PHW (+14.5 очков)",
+      "odds": 1.38,
+      "outcome": "WON",
+      "outcome_ru": "Чистый выигрыш (плюс)",
+      "sha_hash": "b264e657c1899c6a..."
     }
   ]
 }
